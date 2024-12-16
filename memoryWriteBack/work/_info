@@ -1,0 +1,133 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/CUFE/3rd year/Arch/project
+Ememory
+Z0 w1734317001
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dF:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack
+Z5 8F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/memory.vhd
+Z6 FF:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/memory.vhd
+l0
+L5
+VVFYO6EhK8X`4k:TUVN^FY3
+!s100 I`2ZEci3F__GcVjI8HU@E3
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1734317004
+!i10b 1
+Z9 !s108 1734317004.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/memory.vhd|
+Z11 !s107 F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/memory.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 6 memory 0 22 VFYO6EhK8X`4k:TUVN^FY3
+l32
+L27
+Vl`AnMa?Z8<NPJVTn^RF;`3
+!s100 :=kkEbo^laNRMen[3oNMT3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ewb
+Z14 w1734316533
+R1
+R2
+R3
+R4
+Z15 8F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd
+Z16 FF:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd
+l0
+L6
+Vd8Oni<L><>R7BVMCAOU140
+!s100 @1H4U>mHj;eY^m@oRz_]92
+R7
+32
+Z17 !s110 1734317005
+!i10b 1
+Z18 !s108 1734317005.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd|
+Z20 !s107 F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 2 wb 0 22 d8Oni<L><>R7BVMCAOU140
+l27
+L26
+VaQ2^Q6O]Yz]0TZ78Zj7?N3
+!s100 1Va`5ejgS1DYcz;Ga]lP]1
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ewb_tb
+Z21 w1734316380
+R1
+R2
+R3
+R4
+Z22 8F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd
+Z23 FF:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd
+l0
+L5
+Vg1CBRk4Fmz:TbgJ@hR_2b0
+!s100 0KcKOkIZ6nFiG8h4UL]?Q2
+R7
+32
+R17
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd|
+Z25 !s107 F:/CUFE/3rd year/Arch/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+Z26 DEx4 work 5 wb_tb 0 22 g1CBRk4Fmz:TbgJ@hR_2b0
+l41
+L8
+Z27 VmC<YgCC98B4eP]n2SQUB63
+Z28 !s100 OSha5z4]na3cD@PzJC6MW1
+R7
+32
+R17
+!i10b 1
+R18
+R24
+R25
+!i113 1
+R12
+R13
