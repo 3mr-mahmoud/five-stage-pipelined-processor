@@ -112,14 +112,115 @@ R20
 !i113 1
 R5
 R6
+Eflags_register
+Z21 w1734317214
+R1
+R2
+Z22 dF:/Engineering/Archeticture/project/Execute
+Z23 8flags_register.vhd
+Z24 Fflags_register.vhd
+l0
+L4
+Vd1jjCL]E6THIjVTFMX]9O0
+!s100 BRzTcOo:M2Xk`8:@B50fd1
+R4
+33
+Z25 !s110 1734317690
+!i10b 1
+Z26 !s108 1734317690.000000
+Z27 !s90 -reportprogress|300|-2008|flags_register.vhd|
+Z28 !s107 flags_register.vhd|
+!i113 1
+Z29 o-2008
+R6
+Abehavioral
+R1
+R2
+DEx4 work 14 flags_register 0 22 d1jjCL]E6THIjVTFMX]9O0
+l27
+L17
+VKZ@J[z[ch:JjR^MRcAQjI3
+!s100 Aj5XRU4NlCX>WJZ1f87o32
+R4
+33
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R29
+R6
+Eflags_register_tb
+Z30 w1734317679
+R0
+R1
+R2
+R22
+Z31 8flags_register_tb.vhd
+Z32 Fflags_register_tb.vhd
+l0
+L5
+V<FBb04^fjZJdkWP<lJNS51
+!s100 e[zDL=aGejZ43ON7V6c7R2
+R4
+33
+Z33 !s110 1734317691
+!i10b 1
+Z34 !s108 1734317691.000000
+Z35 !s90 -reportprogress|300|-2008|flags_register_tb.vhd|
+Z36 !s107 flags_register_tb.vhd|
+!i113 1
+R29
+R6
+Abehavioral
+R0
+R1
+R2
+Z37 DEx4 work 17 flags_register_tb 0 22 <FBb04^fjZJdkWP<lJNS51
+l40
+L8
+VzV8<cDVFEhbIkkXA<RlR`3
+!s100 R@G7l]TmmZAbUlX]6lBAf1
+R4
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R29
+R6
+Abehavior
+Z38 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z39 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R1
+R2
+DEx4 work 17 flags_register_tb 0 22 dlQQG7njcRa5>7lC6J1aE2
+l37
+L9
+VV9?:lHPCm9?[Z2l^?QiF^0
+!s100 dn`D`e47H17A2I1G9=dF_0
+R4
+33
+!s110 1734317034
+!i10b 1
+!s108 1734317034.000000
+R35
+R36
+!i113 1
+R29
+R6
+w1734316666
 Eforward_unit
-Z21 w1734312697
+Z40 w1734312697
 R0
 R1
 R2
 R3
-Z22 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
-Z23 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
+Z41 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
+Z42 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
 l0
 L5
 VoA<KU3NFj1oU7ALGLzHj53
@@ -129,8 +230,8 @@ R4
 R17
 !i10b 1
 R18
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
-Z25 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
+Z44 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
 !i113 1
 R5
 R6
@@ -148,8 +249,51 @@ R4
 R17
 !i10b 1
 R18
-R24
-R25
+R43
+R44
 !i113 1
 R5
+R6
+Etb_flags_register
+Z45 w1734316356
+R38
+R39
+R1
+R2
+R22
+R31
+R32
+l0
+L6
+V07k`h88X3nM1]VmQNGAPm3
+!s100 1J`]og8k1gQ@T@bR>gMOM3
+R4
+33
+Z46 !s110 1734316401
+!i10b 1
+Z47 !s108 1734316401.000000
+R35
+R36
+!i113 1
+R29
+R6
+Abehavior
+R38
+R39
+R1
+R2
+DEx4 work 17 tb_flags_register 0 22 07k`h88X3nM1]VmQNGAPm3
+l37
+L9
+VJQYURZn[c4Z<WXV83O1M30
+!s100 >C>niQQZLWGAPRUY5e]TC0
+R4
+33
+R46
+!i10b 1
+R47
+R35
+R36
+!i113 1
+R29
 R6
