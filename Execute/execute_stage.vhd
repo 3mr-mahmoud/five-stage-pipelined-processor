@@ -27,7 +27,6 @@ ENTITY execute_stage IS
         -- Other outputs
         EPC : out std_logic_vector(15 downto 0); -- Exception Program Counter
         exception_sel : out std_logic_vector(1 downto 0); -- Exception Select
-        ID_EX_alu_src : out std_logic; -- ALU source
         branch_decision : out std_logic; -- Branch decision
         branch_pc: out std_logic_vector(15 downto 0) -- Branch PC
     );
@@ -113,6 +112,7 @@ ARCHITECTURE execute_arch OF execute_stage IS
     signal ForwardA, ForwardB, exception_sel_temp: std_logic_vector(1 downto 0);
     signal alu_flags, flags_out: std_logic_vector(2 downto 0);
     signal A, B, alu_out, ex_output, EPC_val: std_logic_vector(15 downto 0);
+    signal flags_enable: std_logic := '0';
 BEGIN
     forwarding: forward_unit PORT MAP(
         EX_MEM_Rdst => EX_MEM_Rdst,
@@ -135,7 +135,7 @@ BEGIN
     );   
     flags_reg: flags_register PORT MAP(
         clk => clk,
-        write_enable => alu_enable_in,
+        write_enable => flags_enable,
         int_signal => int_signal_in,
         rti_signal => rti_signal_in,
         input_Z => alu_flags(0),
@@ -218,9 +218,9 @@ BEGIN
     with alu_enable_in select
         ex_output <= alu_out when '1',
             B when others;
-    ID_EX_alu_src <= alu_src_in;
     carry <= alu_flags(2) or carry_in;
     reset_reg <= exception_sel_temp(0) or exception_sel_temp(1);
     exception_sel <= exception_sel_temp;
+    flags_enable <= alu_enable_in or carry_in;
 
 END ARCHITECTURE execute_arch;
