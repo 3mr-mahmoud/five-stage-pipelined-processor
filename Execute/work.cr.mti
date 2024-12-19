@@ -1,0 +1,91 @@
+{C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity execute_stage_tb
+-- Compiling architecture behavior of execute_stage_tb
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity execute_register
+-- Compiling architecture register_arch of execute_register
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity EX_MEM_reg
+-- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity forward_unit
+-- Compiling architecture forward_arch of forward_unit
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity flags_register
+-- Compiling architecture Behavioral of flags_register
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_unit
+-- Compiling architecture ALU_arch of ALU_unit
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity flags_register_tb
+-- Compiling architecture Behavioral of flags_register_tb
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity execute_stage
+-- Compiling architecture execute_arch of execute_stage
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity exception_unit
+-- Compiling architecture exception_arch of exception_unit
+
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU_unit_tb
+-- Compiling architecture testbench of ALU_unit_tb
+-- Loading entity ALU_unit
+
+} {} {}}
