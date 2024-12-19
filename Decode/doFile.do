@@ -7,7 +7,7 @@ vsim control_unit
 add wave *
 
 
-force -freeze sim:/control_unit/alu_src_execute 1 0
+force -freeze sim:/control_unit/alu_src_execute 0 0
 force -freeze sim:/control_unit/opcode 0000000 0
 run
 
