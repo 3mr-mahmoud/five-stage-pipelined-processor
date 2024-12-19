@@ -4,10 +4,10 @@ use IEEE.numeric_std.all;
 
 entity forward_unit is
     port (
-        EX_MEM_Rdst  : in  std_logic_vector(4 downto 0);
-        MEM_WB_Rdst  : in  std_logic_vector(4 downto 0);
-        ID_EX_Rsrc1   : in  std_logic_vector(4 downto 0);
-        ID_EX_Rsrc2   : in  std_logic_vector(4 downto 0);
+        EX_MEM_Rdst  : in  std_logic_vector(2 downto 0);
+        MEM_WB_Rdst  : in  std_logic_vector(2 downto 0);
+        ID_EX_Rsrc1   : in  std_logic_vector(2 downto 0);
+        ID_EX_Rsrc2   : in  std_logic_vector(2 downto 0);
         EX_MEM_WBReg : in  std_logic;
         MEM_WB_WBReg : in  std_logic;
         alu_src       : in std_logic;

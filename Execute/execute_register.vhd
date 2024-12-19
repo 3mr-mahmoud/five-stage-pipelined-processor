@@ -22,7 +22,7 @@ BEGIN
     BEGIN
         IF reset = '1' THEN
             DataOut <= (OTHERS => '0');
-        ELSIF clk'EVENT AND clk = '1' THEN
+        ELSIF rising_edge(clk) THEN
             IF enable = '1' THEN
                 DataOut <= DataIn;
             END IF;
