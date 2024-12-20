@@ -12,11 +12,11 @@ ENTITY Instruction_Stage IS
         Branch_PC : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         Branch_Decision : IN STD_LOGIC;
         Exception_Handling : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        RET_Signal, RTI_Signal : IN STD_LOGIC;
         WB_Date : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         WB_PC : IN STD_LOGIC;
         alu_src : IN STD_LOGIC;
         next_PC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-        pc : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         instruction : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
 END Instruction_Stage;
@@ -31,6 +31,7 @@ ARCHITECTURE behavior OF Instruction_Stage IS
     SIGNAL alu_src_14, alu_src_15 : STD_LOGIC;
     SIGNAL PC_plus_one : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL fetched_instruction : STD_LOGIC_VECTOR(15 DOWNTO 0); -- Internal signal for fetched instruction
+    signal if_id_reset : std_logic := '0';
 
     COMPONENT Instruction_Memory
         PORT (
@@ -41,10 +42,17 @@ ARCHITECTURE behavior OF Instruction_Stage IS
         );
     END COMPONENT;
 
+    COMPONENT IF_ID_reg
+        PORT (
+            clk, reset, en : IN STD_LOGIC;
+            next_pc_in, instruction_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+            next_pc_out, instruction_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+        );
+    END COMPONENT;
+
 BEGIN
     -- PC Increment Logic
     PC_plus_one <= STD_LOGIC_VECTOR(TO_UNSIGNED(TO_INTEGER(unsigned(current_PC)) + 1, 16));
-    pc <= current_PC; -- Assign current PC value to output
     -- PC Register process (with reset)
     PROCESS (clk, reset)
     BEGIN
@@ -62,7 +70,7 @@ BEGIN
     alu_src_15 <= alu_src AND fetched_instruction(15);
 
     -- PC enable logic
-    PC_enable <= ( NOT (NOT alu_src AND fetched_instruction(14) AND fetched_instruction(15))) OR from_ports;
+    PC_enable <= (NOT (NOT alu_src AND fetched_instruction(14) AND fetched_instruction(15))) OR from_ports;
 
     -- MUX Chain Logic
     mux1_out <= PC_plus_one WHEN reset = '0' AND alu_src_15 = '0' AND alu_src_14 = '0' ELSE
@@ -100,7 +108,20 @@ BEGIN
         IM_6 => IM_6,
         IM_7 => IM_7
     );
-    instruction <= fetched_instruction; -- Assign the fetched instruction to output
-    next_PC <= PC_plus_one; -- Assign next_PC value to output
+
+    if_id_reset <= Branch_Decision OR call_signal OR RET_Signal OR RTI_Signal or Exception_Handling(0) OR Exception_Handling(1);
+    -- IF_ID Register instance
+    U_IF_ID : IF_ID_reg
+    PORT MAP(
+        clk => clk,
+        reset => if_id_reset, -- Reset when branch, call, return, or exception
+        en => '1', -- Always enabled
+        next_pc_in => PC_plus_one, -- Assign next_PC_internal to next_pc_in
+        instruction_in => fetched_instruction, -- Assign fetched_instruction to instruction_in
+        next_pc_out => next_PC, -- Assign next_PC value to output
+        instruction_out => instruction -- Assign the fetched instruction to output
+    );
+    -- instruction <= fetched_instruction; -- Assign the fetched instruction to output
+    -- next_PC <= PC_plus_one; -- Assign next_PC value to output
 
 END behavior;

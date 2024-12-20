@@ -8,37 +8,37 @@ z2
 !i10f 100
 cModel Technology
 dC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute
-Ealu_unit
-Z0 w1734323124
+Eadder
+Z0 w1734660955
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor
-Z5 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd
-Z6 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd
+Z5 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Adder.vhd
+Z6 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Adder.vhd
 l0
 L5
-VjiQl^i]@FJMBK>L`TPkS70
-!s100 [H8lHK6k^JFLdJYojnm9G2
+V?]36zV^gX7@66<3Lf<E151
+!s100 IHWI8[Pc:ed]=XhH7[eUf3
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1734643291
+Z8 !s110 1734664044
 !i10b 1
-Z9 !s108 1734643291.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd|
-Z11 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd|
+Z9 !s108 1734664044.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Adder.vhd|
+Z11 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Adder.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1 CvgOpt 0
-Aalu_arch
+Abehavior
 R1
 R2
 R3
-Z14 DEx4 work 8 alu_unit 0 22 jiQl^i]@FJMBK>L`TPkS70
-l19
-L18
-VA@CfLRMoCaPdDSWi:e1z>0
-!s100 =M18e1d@9<KcK^A6nCjDE0
+DEx4 work 5 adder 0 22 ?]36zV^gX7@66<3Lf<E151
+l14
+L13
+V<X=Ve`l]_OLk2>^_o^XAP1
+!s100 ;`KY3fm?_JMn20Lk9GQYE1
 R7
 32
 R8
@@ -49,30 +49,71 @@ R11
 !i113 1
 R12
 R13
-Ealu_unit_tb
-Z15 w1734317885
+Ealu_unit
+Z14 w1734323124
 R1
 R2
 R3
 R4
-Z16 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd
-Z17 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd
+Z15 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd
+Z16 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd
+l0
+L5
+VjiQl^i]@FJMBK>L`TPkS70
+!s100 [H8lHK6k^JFLdJYojnm9G2
+R7
+32
+Z17 !s110 1734664043
+!i10b 1
+Z18 !s108 1734664043.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd|
+Z20 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit.vhd|
+!i113 1
+R12
+R13
+Aalu_arch
+R1
+R2
+R3
+Z21 DEx4 work 8 alu_unit 0 22 jiQl^i]@FJMBK>L`TPkS70
+l19
+L18
+VA@CfLRMoCaPdDSWi:e1z>0
+!s100 =M18e1d@9<KcK^A6nCjDE0
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Ealu_unit_tb
+Z22 w1734317885
+R1
+R2
+R3
+R4
+Z23 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd
+Z24 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd
 l0
 L5
 V6=LCbWzm61_aTlIlLFL6J1
 !s100 5_0UIGDFCj^eS4c5VoUn11
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd|
-Z19 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd|
+R18
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd|
+Z26 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/ALU_unit_tb.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R14
+R21
 R1
 R2
 R3
@@ -83,111 +124,111 @@ VHKB9zd2gC;08d0<d3W6SU3
 !s100 ;<2_b0[8eD2L^o_S6i>V83
 R7
 32
-R8
+R17
 !i10b 1
-R9
 R18
-R19
+R25
+R26
 !i113 1
 R12
 R13
 Econtrol_unit
-Z20 w1734637970
+Z27 w1734662330
 R2
 R3
 R4
-Z21 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd
-Z22 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd
+Z28 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd
+Z29 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd
 l0
 L4
-V>[z1FQ0U7>bkZUCCboVIn1
+VO0Uj7X9GAfGW==1@a4W2m3
 !s100 jSXSW<RIChO081hVKoA`?2
 R7
-33
-Z23 !s110 1734643290
+32
+Z30 !s110 1734664042
 !i10b 1
-Z24 !s108 1734643290.000000
-Z25 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd|
-Z26 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd|
+Z31 !s108 1734664042.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd|
+Z33 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/control_unit.vhd|
 !i113 1
-Z27 o-work work -2008 -explicit
+R12
 R13
 Acontrol_arch
 R2
 R3
-DEx4 work 12 control_unit 0 22 >[z1FQ0U7>bkZUCCboVIn1
+DEx4 work 12 control_unit 0 22 O0Uj7X9GAfGW==1@a4W2m3
 l31
 L30
-VF<Fglog[7QjF4<ck3J0Y90
+V<lJZVi1oaP<0o_3XaZC6G1
 !s100 N_Xd4RU380H6oHjznF4X[2
 R7
-33
-R23
+32
+R30
 !i10b 1
-R24
-R25
-R26
+R31
+R32
+R33
 !i113 1
-R27
+R12
 R13
 Edecode_stage
-Z28 w1734642710
+Z34 w1734664003
 R2
 R3
 R4
-Z29 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd
-Z30 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd
+Z35 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd
+Z36 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd
 l0
 L5
-VY<dBF_YZQ3cVVF1lX8Dk13
-!s100 e0QmbYhhN76LKCYDNok5K1
+VW];NXiT=:LJ734I?7I=TA2
+!s100 HVnG7>FHgJl<_Il`3BUII2
 R7
 32
-Z31 !s110 1734643293
+R30
 !i10b 1
-Z32 !s108 1734643293.000000
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd|
-Z34 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd|
+R31
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd|
+Z38 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd|
 !i113 1
 R12
 R13
 Adecode_arch
 R2
 R3
-DEx4 work 12 decode_stage 0 22 Y<dBF_YZQ3cVVF1lX8Dk13
-l128
-L29
-V=67<ji=Hf9CogoFodZO<70
-!s100 Jmmihn]XQGNn]bFRMl7l71
+DEx4 work 12 decode_stage 0 22 W];NXiT=:LJ734I?7I=TA2
+l130
+L33
+VOA@J0L2goglXO=6fm?Re?3
+!s100 5Z`fVFED]>:Z^BQkE7z8B2
 R7
 32
-R31
+R30
 !i10b 1
-R32
-R33
-R34
+R31
+R37
+R38
 !i113 1
 R12
 R13
 Eex_mem_reg
-Z35 w1734363951
+Z39 w1734363951
 R1
 R2
 R3
 R4
-Z36 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd
-Z37 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd
+Z40 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd
+Z41 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd
 l0
 L5
 VaKTmm8KO0j;6n]U7kEBV92
 !s100 Ti2iO?3aP4NY?FPzMFzAe2
 R7
 32
-R8
+R17
 !i10b 1
-R9
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd|
-Z39 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd|
+R18
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd|
+Z43 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd|
 !i113 1
 R12
 R13
@@ -202,33 +243,33 @@ Vd[8UQXBddA762fmA^7E2@0
 !s100 I>2V:7l?8=[;7iSYTd`0n2
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R38
-R39
+R18
+R42
+R43
 !i113 1
 R12
 R13
 Eexception_unit
-Z40 w1734363401
+Z44 w1734363401
 R1
 R2
 R3
 R4
-Z41 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd
-Z42 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd
+Z45 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd
+Z46 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd
 l0
 L5
 VOW5ZTcHR81@4c_>Lm=``E3
 !s100 =2o2^6aC5DR:D[2NgD_lF2
 R7
 32
-Z43 !s110 1734643292
+R17
 !i10b 1
-Z44 !s108 1734643292.000000
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd|
-Z46 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd|
+R18
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd|
+Z48 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/exception_unit.vhd|
 !i113 1
 R12
 R13
@@ -243,33 +284,33 @@ V^C5:NReL7ea<lA9:LSTUX3
 !s100 _8TN=HDM:<nh[[?Ji;F901
 R7
 32
-R43
+R17
 !i10b 1
-R44
-R45
-R46
+R18
+R47
+R48
 !i113 1
 R12
 R13
 Eexecute_register
-Z47 w1734360768
+Z49 w1734360768
 R1
 R2
 R3
 R4
-Z48 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd
-Z49 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd
+Z50 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd
+Z51 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd
 l0
 L6
 VnZE]fRJ2zGm]anof^nRZQ3
 !s100 :K3<6;n[NCU_dN:L8a6j=0
 R7
 32
-R43
+R17
 !i10b 1
-R44
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd|
-Z51 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd|
+R18
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd|
+Z53 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_register.vhd|
 !i113 1
 R12
 R13
@@ -284,33 +325,33 @@ V[1Zzib8S1=e2D5ihdaUc]1
 !s100 2_SDW7j<^aVS4KoPeGMNn0
 R7
 32
-R43
+R17
 !i10b 1
-R44
-R50
-R51
+R18
+R52
+R53
 !i113 1
 R12
 R13
 Eexecute_stage
-Z52 w1734642748
+Z54 w1734642748
 R1
 R2
 R3
 R4
-Z53 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd
-Z54 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd
+Z55 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd
+Z56 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd
 l0
 L5
 V62F<NEciPY:]QDHAC1D0R3
 !s100 STl9iX=7geMQRT]f5T:nT3
 R7
 32
-R43
+R17
 !i10b 1
-R44
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd|
-Z56 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd|
+R18
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd|
+Z58 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage.vhd|
 !i113 1
 R12
 R13
@@ -325,33 +366,33 @@ V11dGCB5IoaO<l6Bb3bnXZ1
 !s100 mNNgoD>7]JnGT9aQB4_PC0
 R7
 32
-R43
+R17
 !i10b 1
-R44
-R55
-R56
+R18
+R57
+R58
 !i113 1
 R12
 R13
 Eexecute_stage_tb
-Z57 w1734367792
+Z59 w1734367792
 R1
 R2
 R3
 R4
-Z58 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd
-Z59 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd
+Z60 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd
+Z61 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd
 l0
 L5
 VKBN7Qa5l_i]j_gkG0gk?O3
 !s100 Kb<mamlbQJEgV9a<z?mEz0
 R7
 32
-R43
+R8
 !i10b 1
-R44
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd|
-Z61 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd|
+R9
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd|
+Z63 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/execute_stage_tb.vhd|
 !i113 1
 R12
 R13
@@ -366,32 +407,32 @@ V?C5Y_a=CZolJ@KfIKO1Ab0
 !s100 Ljai=QIl1JZ65UFHME_==2
 R7
 32
-R43
+R8
 !i10b 1
-R44
-R60
-R61
+R9
+R62
+R63
 !i113 1
 R12
 R13
 Eflags_register
-Z62 w1734323214
+Z64 w1734323214
 R2
 R3
 R4
-Z63 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd
-Z64 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd
+Z65 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd
+Z66 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd
 l0
 L4
 V@fSb<o6cZIOo==E=eH1NQ0
 !s100 BRzTcOo:M2Xk`8:@B50fd1
 R7
 32
-R43
+R8
 !i10b 1
-R44
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd|
-Z66 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd|
+R9
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd|
+Z68 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register.vhd|
 !i113 1
 R12
 R13
@@ -405,33 +446,33 @@ VBhZKEL^f3YkL152Dg;><D3
 !s100 Aj5XRU4NlCX>WJZ1f87o32
 R7
 32
-R43
+R8
 !i10b 1
-R44
-R65
-R66
+R9
+R67
+R68
 !i113 1
 R12
 R13
 Eflags_register_tb
-Z67 w1734319170
+Z69 w1734319170
 R1
 R2
 R3
 R4
-Z68 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd
-Z69 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd
+Z70 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd
+Z71 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd
 l0
 L5
 VQe4fBj9YDO]hYCf5Vc9R93
 !s100 e[zDL=aGejZ43ON7V6c7R2
 R7
 32
-R43
+R8
 !i10b 1
-R44
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd|
-Z71 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd|
+R9
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd|
+Z73 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/flags_register_tb.vhd|
 !i113 1
 R12
 R13
@@ -446,33 +487,33 @@ V;>2fUEHn`DBz;[?n5Y:@d0
 !s100 R@G7l]TmmZAbUlX]6lBAf1
 R7
 32
-R43
+R8
 !i10b 1
-R44
-R70
-R71
+R9
+R72
+R73
 !i113 1
 R12
 R13
 Eforward_unit
-Z72 w1734358066
+Z74 w1734358066
 R1
 R2
 R3
 R4
-Z73 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
-Z74 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
+Z75 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
+Z76 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd
 l0
 L5
 VmOI`KFi:KmD0:HMALgQbE1
 !s100 V[i6IU`ZLLL]V[@0269bI3
 R7
 32
-R8
+R30
 !i10b 1
-R9
-Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
-Z76 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
+R31
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
+Z78 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/forward_unit.vhd|
 !i113 1
 R12
 R13
@@ -487,33 +528,33 @@ VO=?<LZb7KCAE5YCd;Ik=:3
 !s100 9X3cOcjWPLaU@PYdOEHe@2
 R7
 32
-R8
+R30
 !i10b 1
-R9
-R75
-R76
+R31
+R77
+R78
 !i113 1
 R12
 R13
 Eid_ex_register
-Z77 w1734635157
+Z79 w1734661655
 R1
 R2
 R3
 R4
-Z78 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd
-Z79 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd
+Z80 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd
+Z81 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd
 l0
 L6
 Ve3nhAW<1N6iWDCMQ^C=jA3
 !s100 f7D`cA1m_UEJ7c:UVfPeY1
 R7
 32
-R8
+R30
 !i10b 1
-R9
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd|
-Z81 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd|
+R31
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd|
+Z83 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/ID_EX_reg.vhd|
 !i113 1
 R12
 R13
@@ -528,33 +569,197 @@ V?bbLjI:fkEWVHikWee7La1
 !s100 ic_J7lRVR0WX:c63FcdNg3
 R7
 32
-R8
+R30
 !i10b 1
-R9
-R80
-R81
+R31
+R82
+R83
 !i113 1
 R12
 R13
-Ememory
-R52
+Eif_id_reg
+Z84 w1734662190
 R1
 R2
 R3
 R4
-Z82 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd
-Z83 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd
+Z85 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/IF_ID_reg.vhd
+Z86 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/IF_ID_reg.vhd
+l0
+L5
+Vk@f[Wzdn[2=ogJA@02m<01
+!s100 kCbhb8UP[M[:Mb7<T;zKL1
+R7
+32
+Z87 !s110 1734664045
+!i10b 1
+Z88 !s108 1734664045.000000
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/IF_ID_reg.vhd|
+Z90 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/IF_ID_reg.vhd|
+!i113 1
+R12
+R13
+Aif_id_reg_architecture
+R1
+R2
+R3
+DEx4 work 9 if_id_reg 0 22 k@f[Wzdn[2=ogJA@02m<01
+l18
+L15
+VQ`^VNI5fXKCmfNjeK1Z_h3
+!s100 WVh1<[8W640k@AzeR_UTP1
+R7
+32
+R87
+!i10b 1
+R88
+R89
+R90
+!i113 1
+R12
+R13
+Einstruction_memory
+R0
+R1
+R2
+R3
+R4
+Z91 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/instruction_memory.vhd
+Z92 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/instruction_memory.vhd
+l0
+L5
+V4]cJh;AM<TTikclSZd:2`1
+!s100 <ji=[Gk9ojkR8E7l>hDV21
+R7
+32
+R87
+!i10b 1
+R88
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/instruction_memory.vhd|
+Z94 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/instruction_memory.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 18 instruction_memory 0 22 4]cJh;AM<TTikclSZd:2`1
+l25
+L21
+Va497Q`RXlR;6QMc`j0GU=3
+!s100 `ZjE>DbH_de8h@VQP8[ZQ0
+R7
+32
+R87
+!i10b 1
+R88
+R93
+R94
+!i113 1
+R12
+R13
+Einstruction_stage
+Z95 w1734663633
+R1
+R2
+R3
+R4
+Z96 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/TopLevelFetchStage.vhd
+Z97 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/TopLevelFetchStage.vhd
+l0
+L5
+Vz@8VzGHlRf1U]Ohz4kS9f3
+!s100 e=UGN^@QSh`SEF_FFoF9d0
+R7
+32
+R8
+!i10b 1
+R9
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/TopLevelFetchStage.vhd|
+Z99 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/TopLevelFetchStage.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 17 instruction_stage 0 22 z@8VzGHlRf1U]Ohz4kS9f3
+l53
+L24
+V@>OVWXOb@5<2i]`I2aM>>1
+!s100 3a988InZoAKXnhU^V<;^H3
+R7
+32
+R8
+!i10b 1
+R9
+R98
+R99
+!i113 1
+R12
+R13
+Einstruction_stage_tb
+R0
+R1
+R2
+R3
+R4
+Z100 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Fetch_tb.vhd
+Z101 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Fetch_tb.vhd
+l0
+L5
+V>aZdg2=klZ8i=EMU4AL;=2
+!s100 0a?1jSdV`d;JkaCBH9oLg2
+R7
+32
+R87
+!i10b 1
+R88
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Fetch_tb.vhd|
+Z103 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/Fetch_tb.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 20 instruction_stage_tb 0 22 >aZdg2=klZ8i=EMU4AL;=2
+l45
+L8
+Vf<2]VK>=kjzXz`X[H7]1o1
+!s100 1_BNe:fN>M=DkZ`S49=5S3
+R7
+32
+R87
+!i10b 1
+R88
+R102
+R103
+!i113 1
+R12
+R13
+Ememory
+R54
+R1
+R2
+R3
+R4
+Z104 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd
+Z105 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd
 l0
 L5
 Vof:YBoom>=091PF<c1C[O3
 !s100 9?egN_XIEeP18ZP:56T:T1
 R7
 32
-R31
+Z106 !s110 1734664046
 !i10b 1
-R32
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd|
-Z85 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd|
+Z107 !s108 1734664046.000000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd|
+Z109 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/memory.vhd|
 !i113 1
 R12
 R13
@@ -569,32 +774,71 @@ Vj`ob_54BWX5QR5GQ<Z5Ln2
 !s100 <1^A;jNY>Dn96_z`AG<^U2
 R7
 32
-R31
+R106
 !i10b 1
-R32
-R84
-R85
+R107
+R108
+R109
+!i113 1
+R12
+R13
+Emy_dff
+R0
+R2
+R3
+R4
+Z110 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/DFF.vhd
+Z111 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/DFF.vhd
+l0
+L4
+VYajOWMfHaQ@3?Pi=3j_;R2
+!s100 _kniBUTK^>LlDbeD>WD@X0
+R7
+32
+R87
+!i10b 1
+R9
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/DFF.vhd|
+Z113 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/DFF.vhd|
+!i113 1
+R12
+R13
+Aa_my_dff
+R2
+R3
+DEx4 work 6 my_dff 0 22 YajOWMfHaQ@3?Pi=3j_;R2
+l15
+L14
+VfXmm5WkhdOKJCYl:;5U[M1
+!s100 FVCLYKYl_Ln5G7o@]89dd0
+R7
+32
+R87
+!i10b 1
+R9
+R112
+R113
 !i113 1
 R12
 R13
 Eoperand_mux
-R77
+Z114 w1734635157
 R2
 R3
 R4
-Z86 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd
-Z87 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd
+Z115 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd
+Z116 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd
 l0
 L4
 VhAi<5M[fWoJ_cLNhkObnb1
 !s100 W^go3VF<7=6Y6No3FM__l3
 R7
 32
-R8
+R30
 !i10b 1
-R9
-Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd|
-Z89 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd|
+R31
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd|
+Z118 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/operand_mux.vhd|
 !i113 1
 R12
 R13
@@ -608,32 +852,71 @@ V9kYCf4=`EfeM=71djdGMe1
 !s100 bfPVRX0KRYTkDd7zG6^=I3
 R7
 32
-R8
+R30
 !i10b 1
-R9
+R31
+R117
+R118
+!i113 1
+R12
+R13
+Epc_register
+R0
+R2
+R3
+R4
+Z119 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/PC_Register.vhd
+Z120 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/PC_Register.vhd
+l0
+L4
+VzbFLa[XoY7NzQFZ:2TU?^3
+!s100 1CkZ@mNHlJ5^QYKIDV43Q0
+R7
+32
+R106
+!i10b 1
 R88
-R89
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/PC_Register.vhd|
+Z122 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Fetch/PC_Register.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+DEx4 work 11 pc_register 0 22 zbFLa[XoY7NzQFZ:2TU?^3
+l26
+L13
+VojVnFYaQCa4kjf81o]VAB0
+!s100 @OJV2RnzkRm<@2o>CJed=1
+R7
+32
+R106
+!i10b 1
+R88
+R121
+R122
 !i113 1
 R12
 R13
 Epipeline_processor
-Z90 w1734652551
+Z123 w1734664036
 R2
 R3
 R4
-Z91 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd
-Z92 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd
+Z124 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd
+Z125 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd
 l0
 L4
 V]iVi?aQ]zh^R1d^jPIaJj1
 !s100 Uzi=@548f<K<`LY@5B4XE0
 R7
 32
-Z93 !s110 1734652556
+Z126 !s110 1734664041
 !i10b 1
-Z94 !s108 1734652556.000000
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd|
-Z96 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd|
+Z127 !s108 1734664041.000000
+Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd|
+Z129 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/pipleLine.vhd|
 !i113 1
 R12
 R13
@@ -641,39 +924,39 @@ Abehavioral
 R2
 R3
 DEx4 work 18 pipeline_processor 0 22 ]iVi?aQ]zh^R1d^jPIaJj1
-l147
+l174
 L13
-VF=56U0lFhkXkBCAJJ]k[G3
-!s100 `[71@hlSEe57?adjXYPO?1
+VEQ`m1NLgS9gjN1L0iG9VL1
+!s100 FOK6kgOEl2F@0f66f2C@F1
 R7
 32
-R93
+R126
 !i10b 1
-R94
-R95
-R96
+R127
+R128
+R129
 !i113 1
 R12
 R13
 Eregister_file
-R77
+R114
 R1
 R2
 R3
 R4
-Z97 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd
-Z98 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd
+Z130 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd
+Z131 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd
 l0
 L5
 VFU3T73UXTMm1JVL2A7I[h3
 !s100 UnakZKIhPhJobifEkFcA53
 R7
 32
-R8
+R30
 !i10b 1
-R9
-Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd|
-Z100 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd|
+R31
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd|
+Z133 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file.vhd|
 !i113 1
 R12
 R13
@@ -688,33 +971,33 @@ VaGDFmFAbDCZcLG@^JiIM=1
 !s100 fA9hNRUQXkZFKK<hg5`:L3
 R7
 32
-R8
+R30
 !i10b 1
-R9
-R99
-R100
+R31
+R132
+R133
 !i113 1
 R12
 R13
 Eregister_file_tb
-R77
+R114
 R1
 R2
 R3
 R4
-Z101 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd
-Z102 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd
+Z134 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd
+Z135 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd
 l0
 L5
 VGJ@eUlSSO_MV@NZWJl:?`0
 !s100 8_g`Z@KoD=bzbaV3d_]Y52
 R7
 32
-R23
+R126
 !i10b 1
-R24
-Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd|
-Z104 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd|
+R127
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd|
+Z137 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/register_file_tb.vhd|
 !i113 1
 R12
 R13
@@ -729,33 +1012,33 @@ V`VX8JgE3YBBBz488azcQH1
 !s100 bRL_7K;N=_Q5e55;zXSIh3
 R7
 32
-R23
+R126
 !i10b 1
-R24
-R103
-R104
+R127
+R136
+R137
 !i113 1
 R12
 R13
 Ewb
-R52
+R54
 R1
 R2
 R3
 R4
-Z105 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd
-Z106 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd
+Z138 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd
+Z139 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd
 l0
 L6
 V?ZkjISHQb]<PcemTL6hlT0
 !s100 N;ccnM4mKk>cBR5b54MhY2
 R7
 32
-R31
+Z140 !s110 1734664047
 !i10b 1
-R32
-Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd|
-Z108 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd|
+R107
+Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd|
+Z142 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack.vhd|
 !i113 1
 R12
 R13
@@ -763,40 +1046,40 @@ Abehavioral
 R1
 R2
 R3
-DEx4 work 2 wb 0 22 ?ZkjISHQb]<PcemTL6hlT0
+Z143 DEx4 work 2 wb 0 22 ?ZkjISHQb]<PcemTL6hlT0
 l27
 L26
-V8k@F5j5<IlLCm^QRO[SFJ0
-!s100 iSgBgNGPVlgJ4oWVcij<h0
+Z144 V8k@F5j5<IlLCm^QRO[SFJ0
+Z145 !s100 iSgBgNGPVlgJ4oWVcij<h0
 R7
 32
-R31
+R140
 !i10b 1
-R32
 R107
-R108
+R141
+R142
 !i113 1
 R12
 R13
 Ewb_tb
-R77
+R114
 R1
 R2
 R3
 R4
-Z109 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd
-Z110 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd
+Z146 8C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd
+Z147 FC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd
 l0
 L5
 Vg1CBRk4Fmz:TbgJ@hR_2b0
 !s100 0KcKOkIZ6nFiG8h4UL]?Q2
 R7
 32
-R31
+R106
 !i10b 1
-R44
-Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd|
-Z112 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd|
+R107
+Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd|
+Z149 !s107 C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/memoryWriteBack/writeBack_tb.vhd|
 !i113 1
 R12
 R13
@@ -811,11 +1094,11 @@ VmC<YgCC98B4eP]n2SQUB63
 !s100 OSha5z4]na3cD@PzJC6MW1
 R7
 32
-R31
+R106
 !i10b 1
-R44
-R111
-R112
+R107
+R148
+R149
 !i113 1
 R12
 R13

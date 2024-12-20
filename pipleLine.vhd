@@ -12,6 +12,25 @@ end entity;
 
 architecture Behavioral of pipeline_processor is
 
+    component Instruction_Stage IS
+    PORT (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC; -- Reset input
+        Src2 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        from_ports : IN STD_LOGIC;
+        Call_Signal : IN STD_LOGIC;
+        Branch_PC : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        Branch_Decision : IN STD_LOGIC;
+        Exception_Handling : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        RET_Signal, RTI_Signal : IN STD_LOGIC;
+        WB_Date : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        WB_PC : IN STD_LOGIC;
+        alu_src : IN STD_LOGIC;
+        next_PC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+        instruction : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+    );
+    END component;
+
     component decode_stage IS
     PORT (
         clk: IN std_logic;
@@ -31,7 +50,11 @@ architecture Behavioral of pipeline_processor is
         alu_function : out std_logic_vector(2 downto 0);
         branch_code : out std_logic_vector(1 downto 0);
         rsrc1, rsrc2, rdst : out std_logic_vector(2 downto 0);
-        sp_memory_value, rsrc1_data, rsrc2_data, in_value, pc : out std_logic_vector(15 downto 0)
+        sp_memory_value, rsrc1_data, rsrc2_data, in_value, pc : out std_logic_vector(15 downto 0);
+        call_signal: out std_logic;
+
+        rsrc2_out: out std_logic_vector(15 downto 0);
+        ret_signal: out std_logic
     );
     end component;
 
@@ -105,6 +128,9 @@ architecture Behavioral of pipeline_processor is
         );
     end component;
 
+    signal rsrc2_out_wire: std_logic_vector(15 downto 0);
+    signal ret_signal: std_logic;
+
     -- signal write_enable_writeback: std_logic;
     -- signal write_address_writeback: std_logic_vector(2 downto 0);
     -- signal write_data_writeback:  std_logic_vector(15 downto 0);
@@ -113,6 +139,7 @@ architecture Behavioral of pipeline_processor is
     signal instruction: std_logic_vector(15 downto 0);
     signal stackpointer_value: std_logic_vector(15 downto 0);
     signal reset_decode_execute: std_logic;
+    signal call: std_logic;
     -- signal enable_decode_execute: std_logic;
 
 
@@ -148,6 +175,24 @@ begin
 
     reset_decode_execute <= branch_decision or exception_sel(0) or exception_sel(1);
 
+    instruction_stage_inst: Instruction_Stage port map (
+        clk => clk,
+        reset => '1',
+        Src2 => rsrc2_out_wire,
+        from_ports => reset,
+        Call_Signal => call,
+        Branch_PC => branch_pc,
+        Branch_Decision => branch_decision,
+        Exception_Handling => exception_sel,
+        RET_Signal => ret_signal,
+        RTI_Signal => ex_rti_signal_in,
+        WB_Date => memOut,
+        WB_PC => ex_wb_pc_out,
+        alu_src => ex_alu_src_in,
+        next_PC => pcIn,
+        instruction => instruction
+    );
+
     decode_stage_inst: decode_stage port map (
         clk => clk,
         write_enable_writeback => ex_wb_reg_out,
@@ -182,7 +227,10 @@ begin
         rsrc1_data => ex_rsrc1_data_in,
         rsrc2_data => ex_rsrc2_data_in,
         in_value => ex_in_value_in,
-        pc => ex_pc_in
+        pc => ex_pc_in,
+        call_signal => call,
+        rsrc2_out => rsrc2_out_wire,
+        ret_signal => ret_signal
     );
 
     execute_stage_inst: execute_stage port map (

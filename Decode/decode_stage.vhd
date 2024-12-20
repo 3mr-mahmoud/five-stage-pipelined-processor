@@ -21,7 +21,11 @@ PORT (
     alu_function : out std_logic_vector(2 downto 0);
     branch_code : out std_logic_vector(1 downto 0);
     rsrc1, rsrc2, rdst : out std_logic_vector(2 downto 0);
-    sp_memory_value, rsrc1_data, rsrc2_data, in_value, pc : out std_logic_vector(15 downto 0)
+    sp_memory_value, rsrc1_data, rsrc2_data, in_value, pc : out std_logic_vector(15 downto 0);
+    call_signal: out std_logic;
+
+    rsrc2_out: out std_logic_vector(15 downto 0);
+    ret_signal: out std_logic
 );
 END ENTITY decode_stage;
 
@@ -44,10 +48,8 @@ architecture decode_arch of decode_stage is
     signal writeback_port_wire: std_logic;
     signal writeback_pc_wire: std_logic;
     signal input_signal_wire: std_logic;
-    signal ret_signal_wire: std_logic;
     signal rti_signal_wire: std_logic;
     signal int_signal_wire: std_logic;
-    signal call_signal_wire: std_logic;
     signal Rsrc1_wire: std_logic_vector(2 downto 0);
     signal Rdst_wire: std_logic_vector(2 downto 0);
     signal Rsrc2_wire: std_logic_vector(2 downto 0);
@@ -126,7 +128,6 @@ architecture decode_arch of decode_stage is
      );
     end component;
 begin
-
     opcode <= instruction(15 downto 9);
 
     control_unit_inst: control_unit PORT MAP (
@@ -147,10 +148,10 @@ begin
         writeback_port => writeback_port_wire,
         writeback_pc => writeback_pc_wire,
         input_signal => input_signal_wire,
-        ret_signal => ret_signal_wire,
+        ret_signal => ret_signal,
         rti_signal => rti_signal_wire,
         int_signal => int_signal_wire,
-        call_signal => call_signal_wire
+        call_signal => call_signal
     );
 
     Rdst_wire <= instruction(8 downto 6);
@@ -231,6 +232,6 @@ begin
         in_value_out =>  in_value,
         pc_out => pc
     );
-
+    rsrc2_out <= rsrc2_out_wire;
 
 end architecture decode_arch;
