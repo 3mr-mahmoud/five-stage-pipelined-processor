@@ -4,7 +4,9 @@ use IEEE.std_logic_1164.all;
 entity pipeline_processor is
     port (
         clk : in std_logic;
-        reset : in std_logic
+        reset : in std_logic;
+        in_port: in std_logic_vector(15 downto 0);
+        out_port: out std_logic_vector(15 downto 0)
     );
 end entity;
 
@@ -103,15 +105,15 @@ architecture Behavioral of pipeline_processor is
         );
     end component;
 
-    signal write_enable_writeback: std_logic;
-    signal write_address_writeback: std_logic_vector(2 downto 0);
-    signal write_data_writeback:  std_logic_vector(15 downto 0);
+    -- signal write_enable_writeback: std_logic;
+    -- signal write_address_writeback: std_logic_vector(2 downto 0);
+    -- signal write_data_writeback:  std_logic_vector(15 downto 0);
     signal pcIn:  std_logic_vector(15 downto 0);
-    signal input_value: std_logic_vector(15 downto 0);
+    -- signal input_value: std_logic_vector(15 downto 0);
     signal instruction: std_logic_vector(15 downto 0);
     signal stackpointer_value: std_logic_vector(15 downto 0);
     signal reset_decode_execute: std_logic;
-    signal enable_decode_execute: std_logic;
+    -- signal enable_decode_execute: std_logic;
 
 
 
@@ -148,11 +150,11 @@ begin
 
     decode_stage_inst: decode_stage port map (
         clk => clk,
-        write_enable_writeback => write_enable_writeback,
-        write_address_writeback => write_address_writeback,
-        write_data_writeback => write_data_writeback,
+        write_enable_writeback => ex_wb_reg_out,
+        write_address_writeback => ex_rdst_out,
+        write_data_writeback => muxOut,
         pcIn => pcIn,
-        input_value => input_value,
+        input_value => in_port,
         instruction => instruction,
         stackpointer_value => stackpointer_value,
         reset_decode_execute => reset_decode_execute,
@@ -270,4 +272,5 @@ begin
         muxOut => muxOut
     );
     
+    out_port <= muxOut when ex_wb_port_out = '1' else (others => '0');
 end architecture;

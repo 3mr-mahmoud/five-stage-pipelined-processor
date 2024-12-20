@@ -140,6 +140,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity ID_EX_REGISTER
 -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
 
+} {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Decode/decode_stage.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decode_stage
+-- Compiling architecture decode_arch of decode_stage
+
 } {} {}} {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute/EX_MEM_reg.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
