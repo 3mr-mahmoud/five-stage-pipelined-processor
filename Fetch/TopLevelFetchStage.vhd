@@ -16,6 +16,7 @@ ENTITY Instruction_Stage IS
         WB_PC : IN STD_LOGIC;
         alu_src : IN STD_LOGIC;
         next_PC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+        pc : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         instruction : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
 END Instruction_Stage;
@@ -43,7 +44,7 @@ ARCHITECTURE behavior OF Instruction_Stage IS
 BEGIN
     -- PC Increment Logic
     PC_plus_one <= STD_LOGIC_VECTOR(TO_UNSIGNED(TO_INTEGER(unsigned(current_PC)) + 1, 16));
-
+    pc <= current_PC; -- Assign current PC value to output
     -- PC Register process (with reset)
     PROCESS (clk, reset)
     BEGIN
@@ -57,11 +58,11 @@ BEGIN
     END PROCESS;
 
     -- ALU source control signals
-    alu_src_14 <= alu_src AND IM_0(14);
-    alu_src_15 <= alu_src AND IM_0(15);
+    alu_src_14 <= alu_src AND fetched_instruction(14);
+    alu_src_15 <= alu_src AND fetched_instruction(15);
 
     -- PC enable logic
-    PC_enable <= (NOT (alu_src AND IM_0(14) AND IM_0(15))) OR from_ports;
+    PC_enable <= ( NOT (NOT alu_src AND fetched_instruction(14) AND fetched_instruction(15))) OR from_ports;
 
     -- MUX Chain Logic
     mux1_out <= PC_plus_one WHEN reset = '0' AND alu_src_15 = '0' AND alu_src_14 = '0' ELSE

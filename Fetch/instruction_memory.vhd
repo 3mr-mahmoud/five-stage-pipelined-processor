@@ -34,11 +34,11 @@ BEGIN
     IM_7 <= dataMemory(65535);
 
     -- Combinatorial process for instruction fetch
-    PROCESS (PC, enable)
+    PROCESS (PC, enable,address)
     BEGIN
         IF enable = '1' THEN
             address <= to_integer(unsigned(PC));
-            instruction <= dataMemory(address);
+            instruction <= dataMemory(to_integer(unsigned(PC)));
         END IF;
     END PROCESS;
 

@@ -21,6 +21,7 @@ ARCHITECTURE behavior OF Instruction_Stage_TB IS
             WB_PC : IN STD_LOGIC;
             alu_src : IN STD_LOGIC;
             next_PC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+            pc : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
             instruction : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
     END COMPONENT;
@@ -38,6 +39,7 @@ ARCHITECTURE behavior OF Instruction_Stage_TB IS
     SIGNAL WB_PC : STD_LOGIC := '0';
     SIGNAL alu_src : STD_LOGIC := '0';
     SIGNAL next_PC : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    SIGNAL pc : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL instruction : STD_LOGIC_VECTOR(15 DOWNTO 0);
 
 BEGIN
@@ -45,9 +47,9 @@ BEGIN
     clk_process : PROCESS
     BEGIN
         WHILE TRUE LOOP
-            clk <= '1';
-            WAIT FOR 10 ps;
             clk <= '0';
+            WAIT FOR 10 ps;
+            clk <= '1';
             WAIT FOR 10 ps;
         END LOOP;
     END PROCESS;
@@ -67,6 +69,7 @@ BEGIN
         WB_PC => WB_PC,
         alu_src => alu_src,
         next_PC => next_PC,
+        pc => pc,
         instruction => instruction
     );
 
@@ -85,7 +88,89 @@ BEGIN
         WB_Date <= "0000000000000000";
         WB_PC <= '0';
         alu_src <= '0';
-        WAIT FOR 40 ps; -- Increased clock cycles for this test case
+        WAIT FOR 20 ps; -- Increased clock cycles for this test case
+
+        -- Test Case 2: Test with default values
+        Src2 <= "0000000000000000";
+        Branch_PC <= "0000000000000000";
+        Branch_Decision <= '0';
+        Exception_Handling <= "00";
+        WB_Date <= "0000000000000000";
+        WB_PC <= '0';
+        alu_src <= '0';
+        WAIT FOR 20 ps;
+
+        -- Test Case 2: Test with default values
+        Src2 <= "0000000000000000";
+        Branch_PC <= "0000000000000000";
+        Branch_Decision <= '0';
+        Exception_Handling <= "00";
+        Call_Signal <= '0';
+        WB_Date <= "0000000000000000";
+        WB_PC <= '0';
+        alu_src <= '0';
+        from_ports <= '1';
+        WAIT FOR 40 ps;
+
+        from_ports <= '0';
+        WAIT FOR 80 ps;
+
+
+        Src2 <= "0000000000001000";
+        Call_Signal <= '1';
+        Branch_PC <= "0000000000000000";
+        Branch_Decision <= '0';
+        Exception_Handling <= "00";
+        WB_Date <= "0000000000000000";
+        WB_PC <= '0';
+        alu_src <= '0';
+        WAIT FOR 20 ps; 
+        Call_Signal <= '0';
+        WAIT FOR 20 ps; 
+
+
+
+
+        Src2 <= "0000000000001000";
+        Call_Signal <= '1';
+        Branch_PC <= "0000000000000000";
+        Branch_Decision <= '0';
+        Exception_Handling <= "10";
+        WB_Date <= "0000000000000000";
+        WB_PC <= '0';
+        alu_src <= '0';
+        WAIT FOR 20 ps; 
+        Exception_Handling <= "00";
+        WAIT FOR 20 ps; 
+
+
+
+        Src2 <= "0000000000001000";
+        Call_Signal <= '0';
+        Branch_PC <= "0000000000000000";
+        Branch_Decision <= '0';
+        Exception_Handling <= "01";
+        WB_Date <= "0000000000000000";
+        WB_PC <= '0';
+        alu_src <= '0';
+        WAIT FOR 20 ps; 
+        Exception_Handling <= "00";
+        WAIT FOR 20 ps;
+
+
+
+        Src2 <= "0000000000001000";
+        Call_Signal <= '0';
+        Branch_PC <= "1111111111110000";
+        Branch_Decision <= '1';
+        Exception_Handling <= "00";
+        WB_Date <= "0000000000000000";
+        WB_PC <= '0';
+        alu_src <= '0';
+        WAIT FOR 20 ps;
+        Branch_Decision <= '0';
+        WAIT FOR 20 ps; 
+
         WAIT;
     END PROCESS;
 
