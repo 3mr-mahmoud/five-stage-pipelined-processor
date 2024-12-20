@@ -1,0 +1,81 @@
+# do doFile.do
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 04:42:06 on Dec 20,2024
+# vcom -reportprogress 300 -2002 stack_pointer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity stack_pointer
+# -- Compiling architecture Behavioral of stack_pointer
+# End time: 04:42:06 on Dec 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim stack_pointer 
+# Start time: 04:42:06 on Dec 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.stack_pointer(behavioral)
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /stack_pointer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /stack_pointer
+force -freeze sim:/stack_pointer/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/stack_pointer/reset 1 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ps  Iteration: 1  Instance: /stack_pointer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 300 ps  Iteration: 1  Instance: /stack_pointer
+force -freeze sim:/stack_pointer/reset 0 0
+force -freeze sim:/stack_pointer/sp_value_decode 16'b0 0
+force -freeze sim:/stack_pointer/stack_signal 0 0
+force -freeze sim:/stack_pointer/sp_operation 0 0
+force -freeze sim:/stack_pointer/w_en 0 0
+run
+run
+do doFile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 04:50:19 on Dec 20,2024
+# vcom -reportprogress 300 -2002 stack_pointer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity stack_pointer
+# -- Compiling architecture Behavioral of stack_pointer
+# End time: 04:50:19 on Dec 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:50:21 on Dec 20,2024, Elapsed time: 0:08:15
+# Errors: 0, Warnings: 4
+# vsim stack_pointer 
+# Start time: 04:50:21 on Dec 20,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.stack_pointer(behavioral)
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /stack_pointer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /stack_pointer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /stack_pointer
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /stack_pointer
+run
+# End time: 04:51:50 on Dec 20,2024, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 4
