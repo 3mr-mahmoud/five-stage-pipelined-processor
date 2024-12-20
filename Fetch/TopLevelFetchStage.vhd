@@ -29,6 +29,7 @@ ARCHITECTURE behavior OF Instruction_Stage IS
     SIGNAL PC_enable : STD_LOGIC;
     SIGNAL alu_src_14, alu_src_15 : STD_LOGIC;
     SIGNAL PC_plus_one : STD_LOGIC_VECTOR(15 DOWNTO 0);
+    SIGNAL fetched_instruction : STD_LOGIC_VECTOR(15 DOWNTO 0); -- Internal signal for fetched instruction
 
     COMPONENT Instruction_Memory
         PORT (
@@ -88,7 +89,7 @@ BEGIN
     PORT MAP(
         PC => current_PC, -- Use current PC for instruction fetch
         enable => '1', -- Always enabled
-        instruction => instruction, -- Directly assign the instruction
+        instruction => fetched_instruction, -- Store fetched instruction in internal signal
         IM_0 => IM_0,
         IM_1 => IM_1,
         IM_2 => IM_2,
@@ -98,7 +99,7 @@ BEGIN
         IM_6 => IM_6,
         IM_7 => IM_7
     );
+    instruction <= fetched_instruction; -- Assign the fetched instruction to output
+    next_PC <= PC_plus_one; -- Assign next_PC value to output
 
-    -- Outputs
-    next_PC <= next_PC_internal; -- Output the next PC value
 END behavior;
