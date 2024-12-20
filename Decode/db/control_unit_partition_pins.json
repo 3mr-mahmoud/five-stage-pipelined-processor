@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "operand2_selector",
+					"strict" : false
+				},
+				{
+					"name" : "alu_src",
+					"strict" : false
+				},
+				{
+					"name" : "branch_signal",
+					"strict" : false
+				},
+				{
+					"name" : "branch_code[0]",
+					"strict" : false
+				},
+				{
+					"name" : "branch_code[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_enable",
+					"strict" : false
+				},
+				{
+					"name" : "alu_function[0]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_function[1]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_function[2]",
+					"strict" : false
+				},
+				{
+					"name" : "set_carry_signal",
+					"strict" : false
+				},
+				{
+					"name" : "stack_signal",
+					"strict" : false
+				},
+				{
+					"name" : "stack_operation",
+					"strict" : false
+				},
+				{
+					"name" : "memory_read",
+					"strict" : false
+				},
+				{
+					"name" : "memory_write",
+					"strict" : false
+				},
+				{
+					"name" : "writeback_register",
+					"strict" : false
+				},
+				{
+					"name" : "writeback_port",
+					"strict" : false
+				},
+				{
+					"name" : "writeback_pc",
+					"strict" : false
+				},
+				{
+					"name" : "input_signal",
+					"strict" : false
+				},
+				{
+					"name" : "ret_signal",
+					"strict" : false
+				},
+				{
+					"name" : "rti_signal",
+					"strict" : false
+				},
+				{
+					"name" : "int_signal",
+					"strict" : false
+				},
+				{
+					"name" : "call_signal",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[5]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[6]",
+					"strict" : false
+				},
+				{
+					"name" : "alu_src_execute",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

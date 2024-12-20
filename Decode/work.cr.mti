@@ -1,0 +1,30 @@
+F:/Engineering/Archeticture/project/Decode/control_unit.vhd {0 {vcom -work work -2002 -explicit -stats=none F:/Engineering/Archeticture/project/Decode/control_unit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control_unit
+-- Compiling architecture control_arch of control_unit
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(51): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(73): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(79): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(88): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(96): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(108): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(121): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(127): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(138): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(146): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(155): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(165): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(180): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(185): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(191): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(197): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(202): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(207): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(212): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(218): Illegal sequential statement.
+** Error: F:/Engineering/Archeticture/project/Decode/control_unit.vhd(247): VHDL Compiler exiting
+
+} {8.0 29.0} {}}
