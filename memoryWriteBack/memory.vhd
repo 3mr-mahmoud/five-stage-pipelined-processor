@@ -10,11 +10,11 @@ entity memory is
         memWrite: in std_logic;
         SPOperation: in std_logic;
         SPMemoryValue: in std_logic_vector(15 downto 0);
-        output: in std_logic_vector(15 downto 0);
-        WBReg: out std_logic_vector(15 downto 0);
-        WBPort: out std_logic_vector(15 downto 0);
-        WBPC: out std_logic_vector(15 downto 0);
-        rDest: out std_logic_vector(2 downto 0);
+        ex_output: in std_logic_vector(15 downto 0);
+        WBReg: inout std_logic;
+        WBPort: inout std_logic;
+        WBPC: inout std_logic;
+        rDest: inout std_logic_vector(2 downto 0);
         inSig: in std_logic;
         inVal: in std_logic_vector(15 downto 0);
         rSrcData2: in std_logic_vector(15 downto 0);
@@ -32,7 +32,7 @@ architecture Behavioral of memory is
 begin
     -- Concurrent address and data assignment based on the selection signals
     with stackSignal select
-        address <= output when '0',
+        address <= ex_output when '0',
                   SPMemoryValue when '1',
                   (others => '0') when others;
 

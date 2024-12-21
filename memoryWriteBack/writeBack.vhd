@@ -17,7 +17,7 @@ entity WB is
 
         inVal: inout std_logic_vector(15 downto 0);
         memOut: inout std_logic_vector(15 downto 0);
-        output: inout std_logic_vector(15 downto 0);
+        ex_output: inout std_logic_vector(15 downto 0);
 
         muxOut: out std_logic_vector(15 downto 0)
     );
@@ -37,7 +37,7 @@ architecture Behavioral of WB is
                     when "01" =>
                         muxOut <= memOut;
                     when "00" =>
-                        muxOut <= output;
+                        muxOut <= ex_output;
                     when others =>
                         muxOut <= (others => '0');
                 end case;
