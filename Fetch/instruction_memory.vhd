@@ -38,7 +38,7 @@ BEGIN
     IM_7 <= dataMemory(65535);
 
     -- Combinatorial process for instruction fetch
-    PROCESS (PC, enable,address)
+    PROCESS (PC, enable,address, dataMemory, seed_memory)
         FILE insturcions_file : text;
         VARIABLE file_line : line;
         VARIABLE temp_data : STD_LOGIC_VECTOR(15 DOWNTO 0);

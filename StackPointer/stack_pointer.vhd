@@ -30,7 +30,7 @@ begin
         end if;
     end process;
 
-    process(sp_current, sp_operation)
+    process(sp_current, sp_operation, sp_value_decode)
     begin
         if sp_operation = '1' then
             sp_next <= sp_value_decode + 1;

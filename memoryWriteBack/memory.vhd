@@ -70,7 +70,7 @@ begin
                (others => '0') when others;
 
     -- Process to handle memory read and write operations
-    process(clk)
+    process(clk, enable)
     begin
         if rising_edge(clk) and enable = '1' then
 

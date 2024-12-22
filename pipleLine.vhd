@@ -120,17 +120,17 @@ architecture Behavioral of pipeline_processor is
     component WB is 
         port (
             clk: in std_logic;
-            wbReg: inout std_logic;
-            rDest: inout std_logic_vector(2 downto 0);
-            wbOutEn: inout std_logic;
-            wbPC: inout std_logic;
+            wbReg: in std_logic;
+            rDest: in std_logic_vector(2 downto 0);
+            wbOutEn: in std_logic;
+            wbPC: in std_logic;
         
-            inSig: inout std_logic;
-            memRead: inout std_logic;
+            inSig: in std_logic;
+            memRead: in std_logic;
     
-            inVal: inout std_logic_vector(15 downto 0);
-            memOut: inout std_logic_vector(15 downto 0);
-            ex_output: inout std_logic_vector(15 downto 0);
+            inVal: in std_logic_vector(15 downto 0);
+            memOut: in std_logic_vector(15 downto 0);
+            ex_output: in std_logic_vector(15 downto 0);
     
             muxOut: out std_logic_vector(15 downto 0)
         );
@@ -187,7 +187,6 @@ architecture Behavioral of pipeline_processor is
     signal branch_decision : std_logic;
     signal branch_pc: std_logic_vector(15 downto 0);
 
-    signal memOut: std_logic_vector(15 downto 0);
     signal muxOut: std_logic_vector(15 downto 0);
 
     signal mew_wb_read_out: std_logic;
@@ -217,7 +216,7 @@ begin
         Exception_Handling => exception_sel,
         RET_Signal => ret_signal,
         RTI_Signal => ex_rti_signal_in,
-        WB_Date => memOut,
+        WB_Date => muxOut,
         WB_PC => ex_wb_pc_out,
         alu_src => ex_alu_src_in,
         next_PC => pcIn,
@@ -305,7 +304,7 @@ begin
         EX_MEM_Rdst => ex_rdst_out,
         MEM_WB_Rdst => mew_wb_rdst_out,
         EX_MEM_ex_output => ex_output_EX_MEM,
-        MEM_WB_output => mew_wb_ex_output_out,
+        MEM_WB_output => muxOut,
         stack_out => ex_stack_out,
         mem_read_out => ex_mem_read_out,
         mem_write_out => ex_mem_write_out,
