@@ -91,21 +91,29 @@ architecture Behavioral of pipeline_processor is
         port (
             clk: in std_logic;
             stackSignal: in std_logic;
-            memRead: in std_logic;
+            memRead_in: in std_logic;
+            memRead_out: out std_logic;
             memWrite: in std_logic;
             SPOperation: in std_logic;
             SPMemoryValue: in std_logic_vector(15 downto 0);
-            ex_output: in std_logic_vector(15 downto 0);
-            WBReg: inout std_logic;
-            WBPort: inout std_logic;
-            WBPC: inout std_logic;
-            rDest: inout std_logic_vector(2 downto 0);
-            inSig: in std_logic;
-            inVal: in std_logic_vector(15 downto 0);
+            ex_output_in: in std_logic_vector(15 downto 0);
+            ex_output_out: out std_logic_vector(15 downto 0);
+            WBReg_in: in std_logic;
+            WBReg_out: out std_logic;
+            WBPort_in: in std_logic;
+            WBPort_out: out std_logic;
+            WBPC_in: in std_logic;
+            WBPC_out: out std_logic;
+            rDest_in: in std_logic_vector(2 downto 0);
+            rDest_out: out std_logic_vector(2 downto 0);
+            inSig_in: in std_logic;
+            inSig_out: out std_logic;
+            inVal_in: in std_logic_vector(15 downto 0);
+            inVal_out: out std_logic_vector(15 downto 0);
             rSrcData2: in std_logic_vector(15 downto 0);
             PC: in std_logic_vector(15 downto 0);
-            INTSign: in std_logic;
-            memOut: out std_logic_vector(15 downto 0)
+            memOut: out std_logic_vector(15 downto 0);
+            enable: in std_logic
         );
     end component;
 
@@ -125,6 +133,18 @@ architecture Behavioral of pipeline_processor is
             ex_output: inout std_logic_vector(15 downto 0);
     
             muxOut: out std_logic_vector(15 downto 0)
+        );
+    end component;
+
+
+    component stack_pointer is
+        Port (
+            clk           : in  std_logic;         
+            reset         : in  std_logic;  
+            sp_operation  : in  std_logic;         
+            w_en          : in  std_logic;         
+            sp_value_decode   : in  std_logic_vector(15 downto 0);
+            sp_memory_out : out std_logic_vector(15 downto 0)
         );
     end component;
 
@@ -161,7 +181,7 @@ architecture Behavioral of pipeline_processor is
     ex_wb_port_out, ex_wb_pc_out, ex_in_signal_out : std_logic;
     signal ex_rdst_out : std_logic_vector(2 downto 0);
     signal ex_sp_memory_value_out, ex_output_out, ex_in_value_out, ex_rsrc2_data_out, ex_pc_out : std_logic_vector(15 downto 0);
-
+    signal ex_output_EX_MEM: std_logic_vector(15 downto 0);  
     signal EPC : std_logic_vector(15 downto 0); 
     signal exception_sel : std_logic_vector(1 downto 0);
     signal branch_decision : std_logic;
@@ -170,6 +190,17 @@ architecture Behavioral of pipeline_processor is
     signal memOut: std_logic_vector(15 downto 0);
     signal muxOut: std_logic_vector(15 downto 0);
 
+    signal mew_wb_read_out: std_logic;
+    signal mew_wb_ex_output_out: std_logic_vector(15 downto 0);
+    signal mew_wb_reg_out: std_logic;
+    signal mew_wb_port_out: std_logic;
+    signal mew_wb_pc_out: std_logic;
+    signal mew_wb_rdst_out: std_logic_vector(2 downto 0);
+    signal mew_wb_in_signal_out: std_logic;
+    signal mew_wb_in_value_out: std_logic_vector(15 downto 0);
+    signal mew_wb_mem_out: std_logic_vector(15 downto 0);
+
+
 
 begin
 
@@ -177,7 +208,7 @@ begin
 
     instruction_stage_inst: Instruction_Stage port map (
         clk => clk,
-        reset => '1',
+        reset => reset,
         Src2 => rsrc2_out_wire,
         from_ports => reset,
         Call_Signal => call,
@@ -193,10 +224,19 @@ begin
         instruction => instruction
     );
 
+    stack_pointer_inst: stack_pointer port map (
+        clk => clk,
+        reset => reset,
+        sp_operation => ex_sp_op_in,
+        w_en => ex_stack_in,
+        sp_value_decode => ex_sp_memory_value_in,
+        sp_memory_out => stackpointer_value
+    );
+
     decode_stage_inst: decode_stage port map (
         clk => clk,
-        write_enable_writeback => ex_wb_reg_out,
-        write_address_writeback => ex_rdst_out,
+        write_enable_writeback => mew_wb_reg_out,
+        write_address_writeback => mew_wb_rdst_out,
         write_data_writeback => muxOut,
         pcIn => pcIn,
         input_value => in_port,
@@ -259,13 +299,13 @@ begin
         rsrc2_data_in => ex_rsrc2_data_in,
         in_value_in => ex_in_value_in,
         pc_in => ex_pc_in,
-        immed_value => ex_immed_value,
-        EX_MEM_WBReg => EX_MEM_WBReg,
-        MEM_WB_WBReg => MEM_WB_WBReg,
-        EX_MEM_Rdst => EX_MEM_Rdst,
-        MEM_WB_Rdst => MEM_WB_Rdst,
-        EX_MEM_ex_output => EX_MEM_ex_output,
-        MEM_WB_output => MEM_WB_output,
+        immed_value => instruction,
+        EX_MEM_WBReg => ex_wb_reg_out,
+        MEM_WB_WBReg => mew_wb_reg_out,
+        EX_MEM_Rdst => ex_rdst_out,
+        MEM_WB_Rdst => mew_wb_rdst_out,
+        EX_MEM_ex_output => ex_output_EX_MEM,
+        MEM_WB_output => mew_wb_ex_output_out,
         stack_out => ex_stack_out,
         mem_read_out => ex_mem_read_out,
         mem_write_out => ex_mem_write_out,
@@ -276,7 +316,7 @@ begin
         in_signal_out => ex_in_signal_out,
         rdst_out => ex_rdst_out,
         sp_memory_value_out => ex_sp_memory_value_out,
-        ex_output_out => ex_output_out,
+        ex_output_out => ex_output_EX_MEM,
         in_value_out => ex_in_value_out,
         rsrc2_data_out => ex_rsrc2_data_out,
         pc_out => ex_pc_out,
@@ -289,36 +329,44 @@ begin
     memory_stage: memory port map (
         clk => clk,
         stackSignal => ex_stack_out,
-        memRead => ex_mem_read_out,
+        memRead_in => ex_mem_read_out,
+        memRead_out => mew_wb_read_out,
         memWrite => ex_mem_write_out,
         SPOperation => ex_sp_op_out,
         SPMemoryValue => ex_sp_memory_value_out,
-        ex_output => ex_output_out,
-        WBReg => ex_wb_reg_out,
-        WBPort => ex_wb_port_out,
-        WBPC => ex_wb_pc_out,
-        rDest => ex_rdst_out,
-        inSig => ex_in_signal_out,
-        inVal => ex_in_value_out,
+        ex_output_in => ex_output_EX_MEM,
+        ex_output_out => mew_wb_ex_output_out,
+        WBReg_in => ex_wb_reg_out,
+        WBReg_out => mew_wb_reg_out,
+        WBPort_in => ex_wb_port_out,
+        WBPort_out => mew_wb_port_out,
+        WBPC_in => ex_wb_pc_out,
+        WBPC_out => mew_wb_pc_out,
+        rDest_in => ex_rdst_out,
+        rDest_out => mew_wb_rdst_out,
+        inSig_in => ex_in_signal_out,
+        inSig_out => mew_wb_in_signal_out,
+        inVal_in => ex_in_value_out,
+        inVal_out => mew_wb_in_value_out,
         rSrcData2 => ex_rsrc2_data_out,
         PC => ex_pc_out,
-        INTSign => ex_int_signal_in,
-        memOut => memOut
+        memOut => mew_wb_mem_out,
+        enable => '1'
     );
 
     write_back_stage: WB port map (
         clk => clk,
-        wbReg => ex_wb_reg_out,
-        rDest => ex_rdst_out,
-        wbOutEn => ex_wb_port_out,
-        wbPC => ex_wb_pc_out,
-        inSig => ex_in_signal_out,
-        memRead => ex_mem_read_out,
-        inVal => ex_in_value_out,
-        memOut => memOut,
-        ex_output => ex_output_out,
+        wbReg => mew_wb_reg_out,
+        rDest => mew_wb_rdst_out,
+        wbOutEn => mew_wb_port_out,
+        wbPC => mew_wb_pc_out,
+        inSig => mew_wb_in_signal_out,
+        memRead => mew_wb_read_out,
+        inVal => mew_wb_in_value_out,
+        memOut => mew_wb_mem_out,
+        ex_output => mew_wb_ex_output_out,
         muxOut => muxOut
     );
     
-    out_port <= muxOut when ex_wb_port_out = '1' else (others => '0');
+    out_port <= muxOut when mew_wb_port_out = '1' else (others => '0');
 end architecture;

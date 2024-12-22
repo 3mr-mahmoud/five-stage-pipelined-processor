@@ -1,6 +1,9 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-USE ieee.numeric_std.ALL;
+USE ieee.std_logic_textio.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.numeric_std.ALL;
+USE std.textio.ALL;
 
 ENTITY Instruction_Memory IS
     PORT (
@@ -22,6 +25,7 @@ ARCHITECTURE behavior OF Instruction_Memory IS
     SIGNAL address : INTEGER RANGE 0 TO 65535;
     TYPE ram_type IS ARRAY (0 TO 65535) OF STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL dataMemory : ram_type := (OTHERS => (OTHERS => '0'));
+    SIGNAL seed_memory : STD_LOGIC := '1';
 BEGIN
 
     IM_0 <= dataMemory(65528);
@@ -35,10 +39,24 @@ BEGIN
 
     -- Combinatorial process for instruction fetch
     PROCESS (PC, enable,address)
+        FILE insturcions_file : text;
+        VARIABLE file_line : line;
+        VARIABLE temp_data : STD_LOGIC_VECTOR(15 DOWNTO 0);
     BEGIN
         IF enable = '1' THEN
             address <= to_integer(unsigned(PC));
             instruction <= dataMemory(to_integer(unsigned(PC)));
+        end if;
+        if seed_memory = '1' then
+            file_open(insturcions_file, "input.txt",  read_mode);
+            FOR i IN dataMemory'RANGE LOOP
+                IF NOT endfile(insturcions_file) THEN
+                    readline(insturcions_file, file_line);
+                    read(file_line, temp_data);
+                    dataMemory(i) <= temp_data;
+                END IF;
+            END LOOP;
+            seed_memory <= '0';
         END IF;
     END PROCESS;
 

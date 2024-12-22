@@ -18,14 +18,15 @@ end forward_unit;
 
 architecture forward_arch of forward_unit is
 begin
-    process(EX_MEM_Rdst, MEM_WB_Rdst, ID_EX_Rsrc1, ID_EX_Rsrc2, EX_MEM_WBReg, MEM_WB_WBReg)
+    process(alu_src, EX_MEM_Rdst, MEM_WB_Rdst, ID_EX_Rsrc1, ID_EX_Rsrc2, EX_MEM_WBReg, MEM_WB_WBReg)
     begin
-        ForwardA <= "00";
-        ForwardB <= "00";
+ 
         if(EX_MEM_WBReg = '1' and EX_MEM_Rdst = ID_EX_Rsrc1) then
             ForwardA <= "01";
         elsif (MEM_WB_WBReg = '1' and MEM_WB_Rdst = ID_EX_Rsrc1) then
             ForwardA <= "10";
+        else 
+            ForwardA <= "00";
         end if;
 
         if alu_src = '1' then
@@ -35,6 +36,8 @@ begin
                 ForwardB <= "01";
             elsif (MEM_WB_WBReg = '1' and MEM_WB_Rdst = ID_EX_Rsrc2) then
                 ForwardB <= "10";
+            else 
+                ForwardB <= "00";
             end if;
         end if;
     end process;

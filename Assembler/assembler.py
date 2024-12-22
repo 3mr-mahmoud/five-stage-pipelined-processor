@@ -96,17 +96,29 @@ def assemble_instruction(line):
     return [binary_line]
 
 def assemble_file(input_file, output_file):
+    max_memory_size = 65535  # Maximum memory size (65536 locations)
+    hlt_opcode = "1100000"  # HLT opcode
+    hlt_instruction = hlt_opcode + "000000000"  # HLT instruction with padding
+
+    instruction_count = 0
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         for line in infile:
             if line.strip():  # Skip empty lines
                 try:
                     binary_lines = assemble_instruction(line)
-                    outfile.write(line)
                     for binary_line in binary_lines:
+                        instruction_count += 1
                         outfile.write(binary_line + "\n")
                     
                 except ValueError as e:
                     print(f"Error: {e}")
+    
+        remaining_instructions = max_memory_size - instruction_count
+        for i in range(remaining_instructions):
+            line = hlt_instruction
+            if i != remaining_instructions - 1:
+                line += "\n"
+            outfile.write(line)  # Write HLT instruction to fill memory
 
 # Example usage
 assemble_file("input.txt", "output.txt")
