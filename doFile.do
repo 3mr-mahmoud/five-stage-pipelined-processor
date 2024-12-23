@@ -49,6 +49,7 @@ vsim pipeline_processor
 add wave *
 
 add wave sim:/pipeline_processor/decode_stage_inst/register_file_inst/registers
+add wave sim:/pipeline_processor/instruction_stage_inst/*
 add wave sim:/pipeline_processor/execute_stage_inst/* 
 add wave sim:/pipeline_processor/decode_stage_inst/* 
 add wave sim:/pipeline_processor/memory_stage/* 

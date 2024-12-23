@@ -9,7 +9,7 @@ entity ID_EX_REGISTER is
         -- Input signals
         stack_in, mem_read_in, mem_write_in, sp_op_in, alu_enable_in, wb_reg_in,
         wb_port_in, wb_pc_in, in_signal_in, branch_signal_in, alu_src_in, 
-        rti_signal_in, int_signal_in, carry_in : in std_logic;
+        rti_signal_in, int_signal_in, carry_in, call_signal_in , push_signal_in : in std_logic;
         alu_function_in : in std_logic_vector(2 downto 0);
         branch_code_in : in std_logic_vector(1 downto 0);
         rsrc1_in, rsrc2_in, rdst_in : in std_logic_vector(2 downto 0);
@@ -17,7 +17,7 @@ entity ID_EX_REGISTER is
         -- Output signals
         stack_out, mem_read_out, mem_write_out, sp_op_out, alu_enable_out, wb_reg_out,
         wb_port_out, wb_pc_out, in_signal_out, branch_signal_out, alu_src_out, 
-        rti_signal_out, int_signal_out, carry_out : out std_logic;
+        rti_signal_out, int_signal_out, carry_out, call_signal_out, push_signal_out : out std_logic;
         alu_function_out : out std_logic_vector(2 downto 0);
         branch_code_out : out std_logic_vector(1 downto 0);
         rsrc1_out, rsrc2_out, rdst_out : out std_logic_vector(2 downto 0);
@@ -29,7 +29,7 @@ architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER is
     -- Internal signals
     signal stack, mem_read, mem_write, sp_op, alu_enable, wb_reg,
            wb_port, wb_pc, in_signal, branch_signal, alu_src, 
-           rti_signal, int_signal, carry : std_logic;
+           rti_signal, int_signal, carry, call_signal, push_signal : std_logic;
     signal alu_function : std_logic_vector(2 downto 0);
     signal branch_code : std_logic_vector(1 downto 0);
     signal rsrc1, rsrc2, rdst : std_logic_vector(2 downto 0);
@@ -61,6 +61,9 @@ begin
     in_value_out <= in_value;
     pc_out <= pc;
 
+    call_signal_out <= call_signal;
+    push_signal_out <= push_signal;
+
 
     process (clk, reset)
     begin
@@ -88,6 +91,8 @@ begin
             rsrc1_data <= (others => '0');
             rsrc2_data <= (others => '0');
             in_value <= (others => '0');
+            call_signal <= '0';
+            push_signal <= '0';
             pc <= (others => '0');
         elsif rising_edge(clk) then
             if en = '1' then
@@ -111,6 +116,8 @@ begin
                 rsrc1 <= rsrc1_in;
                 rsrc2 <= rsrc2_in;
                 rdst <= rdst_in;
+                call_signal <= call_signal_in;
+                push_signal <= push_signal_in;
                 sp_memory_value <= sp_memory_value_in;
                 rsrc1_data <= rsrc1_data_in;
                 rsrc2_data <= rsrc2_data_in;

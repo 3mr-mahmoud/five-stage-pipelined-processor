@@ -20,6 +20,8 @@ architecture Behavioral of pipeline_processor is
         from_ports : IN STD_LOGIC;
         Call_Signal : IN STD_LOGIC;
         Branch_PC : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        stack_value_fetch_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        stack_value_fetch_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         Branch_Decision : IN STD_LOGIC;
         Exception_Handling : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
         RET_Signal, RTI_Signal : IN STD_LOGIC;
@@ -41,12 +43,14 @@ architecture Behavioral of pipeline_processor is
         input_value: IN std_logic_vector(15 downto 0);
         instruction: IN std_logic_vector(15 downto 0);
         stackpointer_value: IN std_logic_vector(15 downto 0);
+        stack_value_fetch: IN std_logic_vector(15 downto 0);
         reset_decode_execute: IN std_logic;
         enable_decode_execute: IN std_logic;
         -- Output signals
+        stack_immediate, stack_op_immediate : out std_logic;
         stack, mem_read, mem_write, sp_op, alu_enable, wb_reg,
         wb_port, wb_pc, in_signal, branch_signal, alu_src, 
-        rti_signal, int_signal, carry : out std_logic;
+        rti_signal, int_signal, carry, push_signal : out std_logic;
         alu_function : out std_logic_vector(2 downto 0);
         branch_code : out std_logic_vector(1 downto 0);
         rsrc1, rsrc2, rdst : out std_logic_vector(2 downto 0);
@@ -64,7 +68,7 @@ architecture Behavioral of pipeline_processor is
             -- Inputs from ID/EX register
             stack_in, mem_read_in, mem_write_in, sp_op_in, alu_enable_in, wb_reg_in,
             wb_port_in, wb_pc_in, in_signal_in, branch_signal_in, alu_src_in, 
-            rti_signal_in, int_signal_in, carry_in : in std_logic;
+            rti_signal_in, int_signal_in, carry_in, push_signal_in : in std_logic;
             alu_function_in : in std_logic_vector(2 downto 0);
             branch_code_in : in std_logic_vector(1 downto 0);
             rsrc1_in, rsrc2_in, rdst_in : in std_logic_vector(2 downto 0);
@@ -76,14 +80,15 @@ architecture Behavioral of pipeline_processor is
             EX_MEM_ex_output, MEM_WB_output: in std_logic_vector(15 downto 0); -- for forwarding
             -- Outputs from EX/MEM register
             stack_out, mem_read_out, mem_write_out, sp_op_out, wb_reg_out,
-            wb_port_out, wb_pc_out, in_signal_out : out std_logic;
+            wb_port_out, wb_pc_out, in_signal_out , push_signal_out : out std_logic;
             rdst_out : out std_logic_vector(2 downto 0);
             sp_memory_value_out, ex_output_out, in_value_out, rsrc2_data_out, pc_out : out std_logic_vector(15 downto 0);
             -- Other outputs
             EPC : out std_logic_vector(15 downto 0); -- Exception Program Counter
             exception_sel : out std_logic_vector(1 downto 0); -- Exception Select
             branch_decision : out std_logic; -- Branch decision
-            branch_pc: out std_logic_vector(15 downto 0) -- Branch PC
+            branch_pc: out std_logic_vector(15 downto 0); -- Branch PC
+            forwarded_rsrc2 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
     end component;
 
@@ -113,7 +118,8 @@ architecture Behavioral of pipeline_processor is
             rSrcData2: in std_logic_vector(15 downto 0);
             PC: in std_logic_vector(15 downto 0);
             memOut: out std_logic_vector(15 downto 0);
-            enable: in std_logic
+            enable: in std_logic;
+            push_signal: in std_logic
         );
     end component;
 
@@ -149,6 +155,7 @@ architecture Behavioral of pipeline_processor is
     end component;
 
     signal rsrc2_out_wire: std_logic_vector(15 downto 0);
+    signal rsrc2_toberemove: std_logic_vector(15 downto 0);
     signal ret_signal: std_logic;
 
     -- signal write_enable_writeback: std_logic;
@@ -199,12 +206,16 @@ architecture Behavioral of pipeline_processor is
     signal mew_wb_in_value_out: std_logic_vector(15 downto 0);
     signal mew_wb_mem_out: std_logic_vector(15 downto 0);
 
+    signal stack_value_fetch_out: std_logic_vector(15 downto 0);
 
+    signal ex_push_signal_in: std_logic;
+    signal ex_push_signal_out: std_logic;
+
+    signal stack_decode_immediate: std_logic;
+    signal stack_op_decode_immediate: std_logic;
 
 begin
-
     reset_decode_execute <= branch_decision or exception_sel(0) or exception_sel(1);
-
     instruction_stage_inst: Instruction_Stage port map (
         clk => clk,
         reset => reset,
@@ -212,12 +223,14 @@ begin
         from_ports => reset,
         Call_Signal => call,
         Branch_PC => branch_pc,
+        stack_value_fetch_in => stackpointer_value,
+        stack_value_fetch_out => stack_value_fetch_out,
         Branch_Decision => branch_decision,
         Exception_Handling => exception_sel,
         RET_Signal => ret_signal,
         RTI_Signal => ex_rti_signal_in,
         WB_Date => muxOut,
-        WB_PC => ex_wb_pc_out,
+        WB_PC => mew_wb_pc_out,
         alu_src => ex_alu_src_in,
         next_PC => pcIn,
         instruction => instruction
@@ -226,8 +239,8 @@ begin
     stack_pointer_inst: stack_pointer port map (
         clk => clk,
         reset => reset,
-        sp_operation => ex_sp_op_in,
-        w_en => ex_stack_in,
+        sp_operation => stack_op_decode_immediate,
+        w_en => stack_decode_immediate,
         sp_value_decode => ex_sp_memory_value_in,
         sp_memory_out => stackpointer_value
     );
@@ -238,9 +251,12 @@ begin
         write_address_writeback => mew_wb_rdst_out,
         write_data_writeback => muxOut,
         pcIn => pcIn,
+        stack_immediate => stack_decode_immediate,
+        stack_op_immediate => stack_op_decode_immediate,
         input_value => in_port,
         instruction => instruction,
         stackpointer_value => stackpointer_value,
+        stack_value_fetch => stack_value_fetch_out,
         reset_decode_execute => reset_decode_execute,
         enable_decode_execute => '1',
         stack => ex_stack_in,
@@ -254,6 +270,7 @@ begin
         in_signal => ex_in_signal_in,
         branch_signal => ex_branch_signal_in,
         alu_src => ex_alu_src_in,
+        push_signal => ex_push_signal_in,
         rti_signal => ex_rti_signal_in,
         int_signal => ex_int_signal_in,
         carry => ex_carry_in,
@@ -268,7 +285,7 @@ begin
         in_value => ex_in_value_in,
         pc => ex_pc_in,
         call_signal => call,
-        rsrc2_out => rsrc2_out_wire,
+        rsrc2_out => rsrc2_toberemove,
         ret_signal => ret_signal
     );
 
@@ -277,6 +294,7 @@ begin
         stack_in => ex_stack_in,
         mem_read_in => ex_mem_read_in,
         mem_write_in => ex_mem_write_in,
+        push_signal_in => ex_push_signal_in,
         sp_op_in => ex_sp_op_in,
         alu_enable_in => ex_alu_enable_in,
         wb_reg_in => ex_wb_reg_in,
@@ -313,6 +331,7 @@ begin
         wb_port_out => ex_wb_port_out,
         wb_pc_out => ex_wb_pc_out,
         in_signal_out => ex_in_signal_out,
+        push_signal_out => ex_push_signal_out,
         rdst_out => ex_rdst_out,
         sp_memory_value_out => ex_sp_memory_value_out,
         ex_output_out => ex_output_EX_MEM,
@@ -322,7 +341,8 @@ begin
         EPC => EPC,
         exception_sel => exception_sel,
         branch_decision => branch_decision,
-        branch_pc => branch_pc
+        branch_pc => branch_pc,
+        forwarded_rsrc2 => rsrc2_out_wire
     );
 
     memory_stage: memory port map (
@@ -348,6 +368,7 @@ begin
         inVal_in => ex_in_value_out,
         inVal_out => mew_wb_in_value_out,
         rSrcData2 => ex_rsrc2_data_out,
+        push_signal => ex_push_signal_out,
         PC => ex_pc_out,
         memOut => mew_wb_mem_out,
         enable => '1'

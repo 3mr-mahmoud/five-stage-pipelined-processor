@@ -28,7 +28,8 @@ entity memory is
         rSrcData2: in std_logic_vector(15 downto 0);
         PC: in std_logic_vector(15 downto 0);
         memOut: out std_logic_vector(15 downto 0);
-        enable: in std_logic
+        enable: in std_logic;
+        push_signal: in std_logic
     );
 end memory;
 
@@ -64,14 +65,15 @@ begin
                   SPMemoryValue when '1',
                   (others => '0') when others;
 
-    with SPOperation select
-        data <= rSrcData2 when '0',
-               PC when '1',
-               (others => '0') when others;
-
     -- Process to handle memory read and write operations
-    process(clk, enable)
+    process(clk, enable, SPOperation, stackSignal, push_signal)
     begin
+        if (SPOperation = '0' and push_signal = '0') and stackSignal = '1' then
+            data <= PC;
+        else
+            data <= rSrcData2;
+        end if;
+
         if rising_edge(clk) and enable = '1' then
 
             memRead_reg <= memRead_in;

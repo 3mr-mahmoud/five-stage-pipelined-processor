@@ -23,7 +23,8 @@ ENTITY control_unit IS
         ret_signal : OUT STD_LOGIC;
         rti_signal : OUT STD_LOGIC;
         int_signal : OUT STD_LOGIC;
-        call_signal : OUT STD_LOGIC
+        call_signal : OUT STD_LOGIC;
+        push_signal : OUT STD_LOGIC
     );
 END ENTITY control_unit;
 
@@ -51,11 +52,18 @@ BEGIN
 
             -- Handle branch_signal
             CASE opcode IS
-                WHEN "0001110" | "0010011" | "0010100" | "0010101" | "0010110" =>
+                WHEN "0010011" | "0010100" | "0010101" | "0010110" =>
                     branch_signal <= '1';
                 WHEN OTHERS =>
                     branch_signal <= '0';
             END CASE;
+
+            if opcode = "0001100" then
+                push_signal <= '1';
+            else 
+                push_signal <= '0';
+            end if;
+
 
             -- Handle branch_code
             CASE opcode IS

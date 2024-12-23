@@ -97,8 +97,8 @@ def assemble_instruction(line):
 
 def assemble_file(input_file, output_file):
     max_memory_size = 65535  # Maximum memory size (65536 locations)
-    hlt_opcode = "1100000"  # HLT opcode
-    hlt_instruction = hlt_opcode + "000000000"  # HLT instruction with padding
+    nop_opcode = "0000000"  # HLT opcode
+    nop_instruction = nop_opcode + "000000000"
 
     instruction_count = 0
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
@@ -115,7 +115,7 @@ def assemble_file(input_file, output_file):
     
         remaining_instructions = max_memory_size - instruction_count
         for i in range(remaining_instructions):
-            line = hlt_instruction
+            line = nop_instruction
             if i != remaining_instructions - 1:
                 line += "\n"
             outfile.write(line)  # Write HLT instruction to fill memory

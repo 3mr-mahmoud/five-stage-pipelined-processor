@@ -3,5 +3,19 @@ LDM $2, 15
 ADD $1, $0, $2
 MOV $5, $1
 MOV $7, $5
+NOP
 STD $7, 10($0)
 LDD $6, 10($0)
+SETC
+NOT $4, $6
+SUB $5, $4, $4
+IADD $5, $5, 32768
+PUSH $5
+POP $7
+LDM $4, 26
+CALL $4
+INC $0, $0
+NOP
+NOP
+INC $0, $0
+RET

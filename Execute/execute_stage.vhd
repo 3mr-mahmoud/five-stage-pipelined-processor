@@ -8,11 +8,11 @@ ENTITY execute_stage IS
         -- Inputs from ID/EX register
         stack_in, mem_read_in, mem_write_in, sp_op_in, alu_enable_in, wb_reg_in,
         wb_port_in, wb_pc_in, in_signal_in, branch_signal_in, alu_src_in,
-        rti_signal_in, int_signal_in, carry_in : IN STD_LOGIC;
+        rti_signal_in, int_signal_in, carry_in, push_signal_in : IN STD_LOGIC;
         alu_function_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
         branch_code_in : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
         rsrc1_in, rsrc2_in, rdst_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-        sp_memory_value_in, rsrc1_data_in, rsrc2_data_in, in_value_in, pc_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        sp_memory_value_in, rsrc1_data_in, rsrc2_data_in, in_value_in, pc_in: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         -- Other inputs
         immed_value : IN STD_LOGIC_VECTOR(15 DOWNTO 0); -- 16-bit after current instruction
         EX_MEM_WBReg, MEM_WB_WBReg : IN STD_LOGIC; -- for forwarding
@@ -21,14 +21,15 @@ ENTITY execute_stage IS
 
         -- Outputs from EX/MEM register
         stack_out, mem_read_out, mem_write_out, sp_op_out, wb_reg_out,
-        wb_port_out, wb_pc_out, in_signal_out : OUT STD_LOGIC;
+        wb_port_out, wb_pc_out, in_signal_out, push_signal_out : OUT STD_LOGIC;
         rdst_out : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         sp_memory_value_out, ex_output_out, in_value_out, rsrc2_data_out, pc_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         -- Other outputs
         EPC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0); -- Exception Program Counter
         exception_sel : OUT STD_LOGIC_VECTOR(1 DOWNTO 0); -- Exception Select
         branch_decision : OUT STD_LOGIC; -- Branch decision
-        branch_pc : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) -- Branch PC
+        branch_pc : OUT STD_LOGIC_VECTOR(15 DOWNTO 0); -- Branch PC
+        forwarded_rsrc2 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0) -- Forwarded Rsrc2
     );
 END ENTITY execute_stage;
 ARCHITECTURE execute_arch OF execute_stage IS
@@ -49,12 +50,12 @@ ARCHITECTURE execute_arch OF execute_stage IS
             clk, reset, en : IN STD_LOGIC;
             -- input signals
             stack_in, mem_read_in, mem_write_in, sp_op_in, wb_reg_in,
-            wb_port_in, wb_pc_in, in_signal_in : IN STD_LOGIC;
+            wb_port_in, wb_pc_in, in_signal_in, push_signal_in : IN STD_LOGIC;
             rdst_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
             sp_memory_value_in, ex_output_in, in_value_in, rsrc2_data_in, pc_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
             -- output signals
             stack_out, mem_read_out, mem_write_out, sp_op_out, wb_reg_out,
-            wb_port_out, wb_pc_out, in_signal_out : OUT STD_LOGIC;
+            wb_port_out, wb_pc_out, in_signal_out , push_signal_out : OUT STD_LOGIC;
             rdst_out : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
             sp_memory_value_out, ex_output_out, in_value_out, rsrc2_data_out, pc_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
@@ -168,6 +169,7 @@ BEGIN
         stack_in => stack_in,
         mem_read_in => mem_read_in,
         mem_write_in => mem_write_in,
+        push_signal_in => push_signal_in,
         sp_op_in => sp_op_in,
         wb_reg_in => wb_reg_in,
         wb_port_in => wb_port_in,
@@ -187,6 +189,7 @@ BEGIN
         wb_port_out => wb_port_out,
         wb_pc_out => wb_pc_out,
         in_signal_out => in_signal_out,
+        push_signal_out => push_signal_out,
         rdst_out => rdst_out,
         sp_memory_value_out => sp_memory_value_out,
         ex_output_out => ex_output_out,
@@ -194,6 +197,9 @@ BEGIN
         rsrc2_data_out => rsrc2_data_out,
         pc_out => pc_out
     );
+
+    forwarded_rsrc2 <= Rsrc2_out;
+
     WITH ForwardA SELECT
         A <= rsrc1_data_in WHEN "00",
         EX_MEM_ex_output WHEN "01",
@@ -213,7 +219,7 @@ BEGIN
         alu_flags(1) WHEN "10",
         alu_flags(2) WHEN OTHERS;
     branch_decision_temp <= selected_flag AND branch_signal_in;
-    branch_decision <= branch_decision_temp;
+    branch_decision <= selected_flag AND branch_signal_in;
     WITH branch_decision_temp SELECT
         branch_pc <= A WHEN '1',
         pc_in WHEN OTHERS;

@@ -33,7 +33,7 @@ begin
     -- Unified process for flag management
     process (clk)
     begin
-        if rising_edge(clk) then
+        if falling_edge(clk) then
             -- Prioritize interrupt and return from interrupt signals
             if rti_signal = '1' then
                 -- Restore flags from temporary storage
