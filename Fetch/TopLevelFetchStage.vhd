@@ -14,6 +14,8 @@ ENTITY Instruction_Stage IS
         Exception_Handling : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
         RET_Signal, RTI_Signal : IN STD_LOGIC;
         WB_Date : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        stack_value_fetch_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        stack_value_fetch_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
         WB_PC : IN STD_LOGIC;
         alu_src : IN STD_LOGIC;
         next_PC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -45,8 +47,9 @@ ARCHITECTURE behavior OF Instruction_Stage IS
     COMPONENT IF_ID_reg
         PORT (
             clk, reset, en : IN STD_LOGIC;
-            next_pc_in, instruction_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-            next_pc_out, instruction_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+            
+            next_pc_in, instruction_in, stack_value_fetch_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+            next_pc_out, instruction_out, stack_value_fetch_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
     END COMPONENT;
 
@@ -109,7 +112,9 @@ BEGIN
         IM_7 => IM_7
     );
 
-    if_id_reset <= Branch_Decision OR call_signal OR RET_Signal OR RTI_Signal or Exception_Handling(0) OR Exception_Handling(1);
+    -- if_id_reset <= Branch_Decision OR Call_Signal OR RET_Signal OR RTI_Signal or Exception_Handling(0) OR Exception_Handling(1);
+    if_id_reset <= Call_Signal;
+   
     -- IF_ID Register instance
     U_IF_ID : IF_ID_reg
     PORT MAP(
@@ -119,6 +124,8 @@ BEGIN
         next_pc_in => PC_plus_one, -- Assign next_PC_internal to next_pc_in
         instruction_in => fetched_instruction, -- Assign fetched_instruction to instruction_in
         next_pc_out => next_PC, -- Assign next_PC value to output
+        stack_value_fetch_in => stack_value_fetch_in, -- Assign stack_value_fetch_in to output
+        stack_value_fetch_out => stack_value_fetch_out, -- Assign stack_value_fetch_out to output
         instruction_out => instruction -- Assign the fetched instruction to output
     );
     -- instruction <= fetched_instruction; -- Assign the fetched instruction to output

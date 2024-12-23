@@ -9,125 +9,131 @@ z2
 cModel Technology
 Z0 dF:/Engineering/Archeticture/project/Fetch
 Einstruction_memory
-Z1 w1734658246
+Z1 w1734895706
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8instruction_memory.vhd
-Z6 Finstruction_memory.vhd
+Z8 8instruction_memory.vhd
+Z9 Finstruction_memory.vhd
 l0
-L5
-VL<;=fXA>][^e?O``XT0DR0
-!s100 <ji=[Gk9ojkR8E7l>hDV21
-Z7 OV;C;10.5b;63
+L8
+V9@1meVdGMA3MoAHOSiF0D2
+!s100 Lzo@IdM7mNMo8zTXVK@RZ1
+Z10 OV;C;10.5b;63
 32
-Z8 !s110 1734660802
+Z11 !s110 1734911429
 !i10b 1
-Z9 !s108 1734660802.000000
-Z10 !s90 -reportprogress|300|-2002|instruction_memory.vhd|
-Z11 !s107 instruction_memory.vhd|
+Z12 !s108 1734911429.000000
+Z13 !s90 -reportprogress|300|-2002|instruction_memory.vhd|
+Z14 !s107 instruction_memory.vhd|
 !i113 1
-Z12 o-2002
-Z13 tExplicit 1 CvgOpt 0
+Z15 o-2002
+Z16 tExplicit 1 CvgOpt 0
 Abehavior
 R2
 R3
 R4
-DEx4 work 18 instruction_memory 0 22 L<;=fXA>][^e?O``XT0DR0
-l25
-L21
-V:QZj5jb`A@C]h1^T=NWla3
-!s100 `ZjE>DbH_de8h@VQP8[ZQ0
+R5
+R6
 R7
-32
-R8
-!i10b 1
-R9
-R10
-R11
-!i113 1
-R12
-R13
-Einstruction_stage
-Z14 w1734659416
-R2
-R3
-R4
-R0
-Z15 8TopLevelFetchStage.vhd
-Z16 FTopLevelFetchStage.vhd
-l0
-L5
-V^afL1NnI95MDA]nZj3YWi3
-!s100 7`Tmm>cz0YTGfgkVFbU@Y2
-R7
-32
-Z17 !s110 1734660803
-!i10b 1
-Z18 !s108 1734660803.000000
-Z19 !s90 -reportprogress|300|-2002|TopLevelFetchStage.vhd|
-Z20 !s107 TopLevelFetchStage.vhd|
-!i113 1
-R12
-R13
-Abehavior
-R2
-R3
-R4
-DEx4 work 17 instruction_stage 0 22 ^afL1NnI95MDA]nZj3YWi3
-l44
+DEx4 work 18 instruction_memory 0 22 9@1meVdGMA3MoAHOSiF0D2
+l29
 L24
-V=6bSMzKmR<h1<L@iI5GjW1
-!s100 =7:]H:LYo[Y1_J]bK[EG33
-R7
+V_2J^f=;D]TPm^jLJK8OgQ0
+!s100 `=2c]zZi;]3AQah0>Ff2B3
+R10
 32
-R17
+R11
 !i10b 1
-R18
-R19
-R20
-!i113 1
 R12
 R13
-Einstruction_stage_tb
-Z21 w1734660799
+R14
+!i113 1
+R15
+R16
+Einstruction_stage
+Z17 w1734910442
 R2
-R3
-R4
+R6
+R7
 R0
-Z22 8Fetch_tb.vhd
-Z23 FFetch_tb.vhd
+Z18 8TopLevelFetchStage.vhd
+Z19 FTopLevelFetchStage.vhd
+l0
+L5
+VUdkUFEYmkigehV2?P>?>91
+!s100 e=UGN^@QSh`SEF_FFoF9d0
+R10
+32
+Z20 !s110 1734911430
+!i10b 1
+R12
+Z21 !s90 -reportprogress|300|-2002|TopLevelFetchStage.vhd|
+Z22 !s107 TopLevelFetchStage.vhd|
+!i113 1
+R15
+R16
+Abehavior
+R2
+R6
+R7
+DEx4 work 17 instruction_stage 0 22 UdkUFEYmkigehV2?P>?>91
+l53
+L24
+V>Q6<09FR?K5X@c?JBDlh;2
+!s100 KRjUamzogfkOP;l0EicJD0
+R10
+32
+R20
+!i10b 1
+R12
+R21
+R22
+!i113 1
+R15
+R16
+Einstruction_stage_tb
+Z23 w1734911109
+R2
+R6
+R7
+R0
+Z24 8Fetch_tb.vhd
+Z25 FFetch_tb.vhd
 l0
 L5
 V6Kzl74]7n<nL8h?nH]=ml3
 !s100 0a?1jSdV`d;JkaCBH9oLg2
-R7
+R10
 32
-R17
+R20
 !i10b 1
-R18
-Z24 !s90 -reportprogress|300|-2002|Fetch_tb.vhd|
-Z25 !s107 Fetch_tb.vhd|
+Z26 !s108 1734911430.000000
+Z27 !s90 -reportprogress|300|-2002|Fetch_tb.vhd|
+Z28 !s107 Fetch_tb.vhd|
 !i113 1
-R12
-R13
+R15
+R16
 Abehavior
 R2
-R3
-R4
-Z26 DEx4 work 20 instruction_stage_tb 0 22 6Kzl74]7n<nL8h?nH]=ml3
-l45
-L8
-V9I<nd=L88ZoXlhfhf<<2=1
-!s100 1_BNe:fN>M=DkZ`S49=5S3
+R6
 R7
+Z29 DEx4 work 20 instruction_stage_tb 0 22 6Kzl74]7n<nL8h?nH]=ml3
+l34
+L8
+Z30 Vg4V0;kRz2dce1Afb_Rfg21
+Z31 !s100 OP^5feDmHzR>mCnVH23dI0
+R10
 32
-R17
+R20
 !i10b 1
-R18
-R24
-R25
+R26
+R27
+R28
 !i113 1
-R12
-R13
+R15
+R16
