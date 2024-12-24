@@ -33,7 +33,7 @@ ARCHITECTURE behavior OF Instruction_Stage IS
     SIGNAL alu_src_14, alu_src_15 : STD_LOGIC;
     SIGNAL PC_plus_one : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL fetched_instruction : STD_LOGIC_VECTOR(15 DOWNTO 0); -- Internal signal for fetched instruction
-    signal if_id_reset : std_logic := '0';
+    -- signal if_id_reset : std_logic := '0';
 
     COMPONENT Instruction_Memory
         PORT (
@@ -47,7 +47,7 @@ ARCHITECTURE behavior OF Instruction_Stage IS
     COMPONENT IF_ID_reg
         PORT (
             clk, reset, en : IN STD_LOGIC;
-            
+
             next_pc_in, instruction_in, stack_value_fetch_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
             next_pc_out, instruction_out, stack_value_fetch_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
@@ -59,9 +59,10 @@ BEGIN
     -- PC Register process (with reset)
     PROCESS (clk, reset)
     BEGIN
-        IF reset = '1' THEN
-            current_PC <= (OTHERS => '0'); -- Reset PC to 0
-        ELSIF rising_edge(clk) THEN
+        -- IF reset = '1' THEN
+        --     current_PC <= (OTHERS => '0'); -- Reset PC to 0
+        -- ELSIF 
+        IF rising_edge(clk) THEN
             IF PC_enable = '1' THEN
                 current_PC <= next_PC_internal; -- Update the PC with next_PC_internal
             END IF;
@@ -113,13 +114,13 @@ BEGIN
     );
 
     -- if_id_reset <= Branch_Decision OR Call_Signal OR RET_Signal OR RTI_Signal or Exception_Handling(0) OR Exception_Handling(1);
-    if_id_reset <= Call_Signal;
-   
+    -- if_id_reset <= Call_Signal;
+
     -- IF_ID Register instance
     U_IF_ID : IF_ID_reg
     PORT MAP(
         clk => clk,
-        reset => if_id_reset, -- Reset when branch, call, return, or exception
+        reset => reset, -- Reset when branch, call, return, or exception
         en => '1', -- Always enabled
         next_pc_in => PC_plus_one, -- Assign next_PC_internal to next_pc_in
         instruction_in => fetched_instruction, -- Assign fetched_instruction to instruction_in

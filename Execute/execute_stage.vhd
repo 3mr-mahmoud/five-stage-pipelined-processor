@@ -62,10 +62,10 @@ ARCHITECTURE execute_arch OF execute_stage IS
     END COMPONENT;
     COMPONENT exception_unit
         PORT (
-            memory_read, memory_write, stack_signal : IN STD_LOGIC;
+            memory_read, memory_write, stack_signal, clk : IN STD_LOGIC;
             SP_value, ex_output, PC : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-            exception_sel : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-            exception_PC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+            exception_sel_out : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+            exception_PC_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
     END COMPONENT;
     COMPONENT execute_register
@@ -106,7 +106,7 @@ ARCHITECTURE execute_arch OF execute_stage IS
             ForwardB : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
         );
     END COMPONENT;
-    SIGNAL selected_flag, carry, reset_reg, branch_decision_temp : STD_LOGIC;
+    SIGNAL selected_flag, carry, branch_decision_temp : STD_LOGIC;
     SIGNAL ForwardA, ForwardB, exception_sel_temp : STD_LOGIC_VECTOR(1 DOWNTO 0);
     SIGNAL alu_flags, flags_out : STD_LOGIC_VECTOR(2 DOWNTO 0);
     SIGNAL A, B, alu_out, ex_output, EPC_val : STD_LOGIC_VECTOR(15 DOWNTO 0);
@@ -145,14 +145,15 @@ BEGIN
         negative_flag => flags_out(1)
     );
     exception : exception_unit PORT MAP(
+        clk => clk,
         memory_read => mem_read_in,
         memory_write => mem_write_in,
         stack_signal => stack_in,
         SP_value => sp_memory_value_in,
         ex_output => ex_output,
         PC => pc_in,
-        exception_sel => exception_sel_temp,
-        exception_PC => EPC_val
+        exception_sel_out => exception_sel_temp,
+        exception_PC_out => EPC_val
     );
     EPC_reg : execute_register GENERIC MAP(
         16) PORT MAP(
@@ -164,7 +165,7 @@ BEGIN
     );
     ex_mem : EX_MEM_reg PORT MAP(
         clk => clk,
-        reset => reset_reg,
+        reset => '0',
         en => '1',
         stack_in => stack_in,
         mem_read_in => mem_read_in,
@@ -227,7 +228,6 @@ BEGIN
         ex_output <= alu_out WHEN '1',
         B WHEN OTHERS;
     carry <= alu_flags(2) OR carry_in;
-    reset_reg <= exception_sel_temp(0) OR exception_sel_temp(1);
     exception_sel <= exception_sel_temp;
     flags_enable <= alu_enable_in OR carry_in;
 

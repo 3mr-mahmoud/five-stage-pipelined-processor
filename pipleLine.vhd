@@ -213,12 +213,15 @@ architecture Behavioral of pipeline_processor is
 
     signal stack_decode_immediate: std_logic;
     signal stack_op_decode_immediate: std_logic;
+    signal reset_IF_ID: std_logic;
+    signal sp_reset: std_logic;
 
 begin
-    reset_decode_execute <= branch_decision or exception_sel(0) or exception_sel(1);
+    reset_decode_execute <= exception_sel(0) or exception_sel(1);
+    reset_IF_ID <= call or ret_signal or ex_rti_signal_in or branch_decision or exception_sel(0) or exception_sel(1);
     instruction_stage_inst: Instruction_Stage port map (
         clk => clk,
-        reset => reset,
+        reset => reset_IF_ID,
         Src2 => rsrc2_out_wire,
         from_ports => reset,
         Call_Signal => call,
@@ -235,10 +238,11 @@ begin
         next_PC => pcIn,
         instruction => instruction
     );
-
+    
+    sp_reset <= (exception_sel(0) and (not exception_sel(1))) or reset;
     stack_pointer_inst: stack_pointer port map (
         clk => clk,
-        reset => reset,
+        reset => sp_reset,
         sp_operation => stack_op_decode_immediate,
         w_en => stack_decode_immediate,
         sp_value_decode => ex_sp_memory_value_in,

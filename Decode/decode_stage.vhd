@@ -120,14 +120,14 @@ architecture decode_arch of decode_stage is
         clk, reset, en : in std_logic;
         stack_in, mem_read_in, mem_write_in, sp_op_in, alu_enable_in, wb_reg_in,
         wb_port_in, wb_pc_in, in_signal_in, branch_signal_in, alu_src_in, 
-        rti_signal_in, int_signal_in, carry_in, call_signal_in, push_signal_in : in std_logic;
+        rti_signal_in, int_signal_in, carry_in, call_signal_in, push_signal_in, ret_signal_in : in std_logic;
         alu_function_in : in std_logic_vector(2 downto 0);
         branch_code_in : in std_logic_vector(1 downto 0);
         rsrc1_in, rsrc2_in, rdst_in : in std_logic_vector(2 downto 0);
         sp_memory_value_in, rsrc1_data_in, rsrc2_data_in, in_value_in, pc_in : in std_logic_vector(15 downto 0);
         stack_out, mem_read_out, mem_write_out, sp_op_out, alu_enable_out, wb_reg_out,
         wb_port_out, wb_pc_out, in_signal_out, branch_signal_out, alu_src_out, 
-        rti_signal_out, int_signal_out, carry_out, call_signal_out, push_signal_out : out std_logic;
+        rti_signal_out, int_signal_out, carry_out, call_signal_out, push_signal_out, ret_signal_out : out std_logic;
         alu_function_out : out std_logic_vector(2 downto 0);
         branch_code_out : out std_logic_vector(1 downto 0);
         rsrc1_out, rsrc2_out, rdst_out : out std_logic_vector(2 downto 0);
@@ -136,6 +136,7 @@ architecture decode_arch of decode_stage is
     end component;
 
     signal stackpointer_value_memory: std_logic_vector(15 downto 0);
+    signal ret_signal_wire: std_logic;
 begin
     opcode <= instruction(15 downto 9);
 
@@ -157,7 +158,7 @@ begin
         writeback_port => writeback_port_wire,
         writeback_pc => writeback_pc_wire,
         input_signal => input_signal_wire,
-        ret_signal => ret_signal,
+        ret_signal => ret_signal_wire,
         rti_signal => rti_signal_wire,
         int_signal => int_signal_wire,
         call_signal => call_signal_wire,
@@ -205,6 +206,7 @@ begin
         mem_read_in => memory_read_wire,
         call_signal_in => call_signal_wire,
         push_signal_in => push_signal_wire,
+        ret_signal_in => ret_signal_wire,
         mem_write_in => memory_write_wire,
         sp_op_in => stack_operation_wire,
         alu_enable_in => alu_enable_wire,
@@ -252,7 +254,8 @@ begin
         rsrc1_data_out => rsrc1_data,
         rsrc2_data_out => rsrc2_data,
         in_value_out =>  in_value,
-        pc_out => pc
+        pc_out => pc,
+        ret_signal_out => ret_signal
     );
     rsrc2_out <= rsrc2_out_wire;
 
