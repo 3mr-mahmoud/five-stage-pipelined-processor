@@ -216,9 +216,9 @@ BEGIN
         immed_value WHEN OTHERS;
     WITH branch_code_in SELECT
         selected_flag <= '1' WHEN "00",
-        alu_flags(0) WHEN "01",
-        alu_flags(1) WHEN "10",
-        alu_flags(2) WHEN OTHERS;
+        flags_out(0) WHEN "01",
+        flags_out(1) WHEN "10",
+        flags_out(2) WHEN OTHERS;
     branch_decision_temp <= selected_flag AND branch_signal_in;
     branch_decision <= selected_flag AND branch_signal_in;
     WITH branch_decision_temp SELECT

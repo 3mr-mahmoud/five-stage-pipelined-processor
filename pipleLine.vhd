@@ -153,7 +153,7 @@ architecture Behavioral of pipeline_processor is
             sp_memory_out : out std_logic_vector(15 downto 0)
         );
     end component;
-
+    signal out_port_reg: std_logic_vector(15 downto 0);
     signal rsrc2_out_wire: std_logic_vector(15 downto 0);
     signal rsrc2_toberemove: std_logic_vector(15 downto 0);
     signal ret_signal: std_logic;
@@ -392,5 +392,12 @@ begin
         muxOut => muxOut
     );
     
-    out_port <= muxOut when mew_wb_port_out = '1' else (others => '0');
+    
+    process(clk)
+    begin
+        if falling_edge(clk) and mew_wb_port_out = '1' then
+            out_port_reg <= muxOut;
+        end if;
+    end process;
+    out_port <= out_port_reg;
 end architecture;

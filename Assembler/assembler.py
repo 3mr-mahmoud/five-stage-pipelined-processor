@@ -84,8 +84,10 @@ def assemble_instruction(line):
         binary_line += f"{parse_register(operands[0])}{'000'}{'000'}"
     elif instruction == "CALL":
         binary_line += f"{'000'}{'000'}{parse_register(operands[0])}"
-    elif instruction in ["IN", "OUT"]:
+    elif instruction == "IN":
         binary_line += f"{parse_register(operands[0])}{'000'}{'000'}"
+    elif instruction == "OUT":
+        binary_line += f"{'000'}{'000'}{parse_register(operands[0])}"
     elif instruction in ["JZ", "JN", "JC", "JMP"]:
         binary_line += f"{'000'}{parse_register(operands[0])}{'000'}"
 

@@ -55,6 +55,7 @@ add wave sim:/pipeline_processor/decode_stage_inst/*
 add wave sim:/pipeline_processor/memory_stage/* 
 
 force -freeze sim:/pipeline_processor/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pipeline_processor/in_port 16'd20 0
 force -freeze sim:/pipeline_processor/reset 1 0
 run 50ps
 force -freeze sim:/pipeline_processor/reset 0 0
