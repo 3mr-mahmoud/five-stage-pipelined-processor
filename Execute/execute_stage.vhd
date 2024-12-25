@@ -38,8 +38,9 @@ ARCHITECTURE execute_arch OF execute_stage IS
             WIDTH : INTEGER := 16
         );
         PORT (
-            enable : IN STD_LOGIC;
+            enable, reset : IN STD_LOGIC;
             ALU_func : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+            branch_code : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
             A, B : IN STD_LOGIC_VECTOR(WIDTH - 1 DOWNTO 0);
             ALU_output : OUT STD_LOGIC_VECTOR(WIDTH - 1 DOWNTO 0);
             flags : OUT STD_LOGIC_VECTOR(2 DOWNTO 0) -- Order: carry, negative, zero
@@ -125,7 +126,9 @@ BEGIN
     );
     ALU : ALU_unit GENERIC MAP(
         16) PORT MAP(
+        reset => branch_decision_temp,
         enable => alu_enable_in,
+        branch_code => branch_code_in,
         ALU_func => alu_function_in,
         A => A,
         B => B,
@@ -220,15 +223,18 @@ BEGIN
         flags_out(1) WHEN "10",
         flags_out(2) WHEN OTHERS;
     branch_decision_temp <= selected_flag AND branch_signal_in;
-    branch_decision <= selected_flag AND branch_signal_in;
-    WITH branch_decision_temp SELECT
-        branch_pc <= A WHEN '1',
-        pc_in WHEN OTHERS;
+    branch_pc <= A;
     WITH alu_enable_in SELECT
         ex_output <= alu_out WHEN '1',
         B WHEN OTHERS;
     carry <= alu_flags(2) OR carry_in;
     exception_sel <= exception_sel_temp;
-    flags_enable <= alu_enable_in OR carry_in;
+    flags_enable <= alu_enable_in OR carry_in or branch_code_in(1) or branch_code_in(0);
+    process(clk)
+    begin
+        if falling_edge(clk) then
+            branch_decision <= branch_decision_temp;
+        end if;
+    end process;
 
 END ARCHITECTURE execute_arch;

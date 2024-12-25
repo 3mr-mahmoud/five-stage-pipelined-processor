@@ -58,7 +58,7 @@ architecture Behavioral of pipeline_processor is
         call_signal: out std_logic;
 
         rsrc2_out: out std_logic_vector(15 downto 0);
-        ret_signal: out std_logic
+        ret_signal, alu_src_immed: out std_logic
     );
     end component;
 
@@ -215,6 +215,7 @@ architecture Behavioral of pipeline_processor is
     signal stack_op_decode_immediate: std_logic;
     signal reset_IF_ID: std_logic;
     signal sp_reset: std_logic;
+    signal alu_src_immed: std_logic;
 
 begin
     reset_decode_execute <= exception_sel(0) or exception_sel(1);
@@ -234,7 +235,7 @@ begin
         RTI_Signal => ex_rti_signal_in,
         WB_Date => muxOut,
         WB_PC => mew_wb_pc_out,
-        alu_src => ex_alu_src_in,
+        alu_src => alu_src_immed,
         next_PC => pcIn,
         instruction => instruction
     );
@@ -290,7 +291,8 @@ begin
         pc => ex_pc_in,
         call_signal => call,
         rsrc2_out => rsrc2_toberemove,
-        ret_signal => ret_signal
+        ret_signal => ret_signal,
+        alu_src_immed => alu_src_immed
     );
 
     execute_stage_inst: execute_stage port map (

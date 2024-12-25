@@ -29,7 +29,7 @@ PORT (
     push_signal: out std_logic;
 
     rsrc2_out: out std_logic_vector(15 downto 0);
-    ret_signal: out std_logic
+    ret_signal, alu_src_immed: out std_logic
 );
 END ENTITY decode_stage;
 
@@ -138,6 +138,7 @@ architecture decode_arch of decode_stage is
     signal stackpointer_value_memory: std_logic_vector(15 downto 0);
     signal ret_signal_wire: std_logic;
 begin
+    alu_src_immed <= alu_src_wire;
     opcode <= instruction(15 downto 9);
 
     control_unit_inst: control_unit PORT MAP (

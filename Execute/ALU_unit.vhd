@@ -1,65 +1,76 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
 
 ENTITY ALU_unit IS
-    GENERIC(
-        WIDTH: INTEGER := 16
+    GENERIC (
+        WIDTH : INTEGER := 16
     );
     PORT (
-        enable: IN std_logic;
-        ALU_func: IN std_logic_vector(2 downto 0);
-        A, B: IN std_logic_vector(WIDTH-1 downto 0);
-        ALU_output: OUT std_logic_vector(WIDTH-1 downto 0);
-        flags: OUT std_logic_vector(2 downto 0) -- Order: carry, negative, zero
+        reset : IN STD_LOGIC;
+        enable : IN STD_LOGIC;
+        branch_code : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+        ALU_func : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+        A, B : IN STD_LOGIC_VECTOR(WIDTH - 1 DOWNTO 0);
+        ALU_output : OUT STD_LOGIC_VECTOR(WIDTH - 1 DOWNTO 0);
+        flags : OUT STD_LOGIC_VECTOR(2 DOWNTO 0) -- Order: carry, negative, zero
     );
 END ENTITY ALU_unit;
 
 ARCHITECTURE ALU_arch OF ALU_unit IS
 BEGIN
     -- Process for ALU operations
-    process(enable, ALU_func, A, B)
-    VARIABLE result: std_logic_vector(WIDTH-1 downto 0) := (others => '0');
-    begin
-        if enable = '1' then
+    PROCESS (reset, enable, branch_code, ALU_func, A, B)
+        VARIABLE result : STD_LOGIC_VECTOR(WIDTH - 1 DOWNTO 0) := (OTHERS => '0');
+    BEGIN
+        IF reset = '1' THEN
+            result := (OTHERS => '0');
+            if branch_code = "01" then
+                flags(0) <= '0';
+            elsif branch_code = "10" then
+                flags(1) <= '0';
+            elsif branch_code = "11" then
+                flags(2) <= '0';
+            end if;
+        ELSIF enable = '1' THEN
             CASE ALU_func IS
                 WHEN "000" => -- NOT operation
-                    result := not A;
+                    result := NOT A;
                     flags(2) <= '0';
                 WHEN "001" => -- Increment (no change in carry)
-                    result := std_logic_vector(unsigned(A) + 1);
+                    result := STD_LOGIC_VECTOR(unsigned(A) + 1);
                     flags(2) <= '0';
                 WHEN "010" => -- AND operation
                     result := A AND B;
                     flags(2) <= '0';
                 WHEN "011" => -- Addition
-                    result := std_logic_vector(unsigned(A) + unsigned(B));
-                    if unsigned(A) + unsigned(B) > 2**WIDTH - 1 then
+                    result := STD_LOGIC_VECTOR(unsigned(A) + unsigned(B));
+                    IF unsigned(A) + unsigned(B) > 2 ** WIDTH - 1 THEN
                         flags(2) <= '1';
-                    else
+                    ELSE
                         flags(2) <= '0';
-                    end if;
+                    END IF;
                 WHEN "100" => -- Subtraction
-                    result := std_logic_vector(unsigned(A) - unsigned(B));
-                    if unsigned(A) < unsigned(B) then
+                    result := STD_LOGIC_VECTOR(unsigned(A) - unsigned(B));
+                    IF unsigned(A) < unsigned(B) THEN
                         flags(2) <= '1';
-                    else
+                    ELSE
                         flags(2) <= '0';
-                    end if;
+                    END IF;
                 WHEN OTHERS => -- Default case
-                    result := (others => '0');
+                    result := (OTHERS => '0');
                     flags(2) <= '0';
             END CASE;
-            flags(1) <= result(WIDTH-1);
-            if unsigned(result) = 0 then
+            flags(1) <= result(WIDTH - 1);
+            IF unsigned(result) = 0 THEN
                 flags(0) <= '1';
-            else
+            ELSE
                 flags(0) <= '0';
-            end if;
-        else
+            END IF;
+        ELSE
             result := result;
-        end if;
+        END IF;
         ALU_output <= result;
-    end process;
+    END PROCESS;
 
 END ARCHITECTURE ALU_arch;
