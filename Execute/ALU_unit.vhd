@@ -37,9 +37,13 @@ BEGIN
                 WHEN "000" => -- NOT operation
                     result := NOT A;
                     flags(2) <= '0';
-                WHEN "001" => -- Increment (no change in carry)
+                WHEN "001" => -- Increment
                     result := STD_LOGIC_VECTOR(unsigned(A) + 1);
-                    flags(2) <= '0';
+                    IF unsigned(A) = 2**WIDTH - 1 THEN
+                        flags(2) <= '1';
+                    ELSE
+                        flags(2) <= '0';
+                    END IF;
                 WHEN "010" => -- AND operation
                     result := A AND B;
                     flags(2) <= '0';

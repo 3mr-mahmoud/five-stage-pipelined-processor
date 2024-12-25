@@ -60,6 +60,7 @@ BEGIN
     -- PC Register process (with reset)
     PROCESS (clk, reset)
     BEGIN
+
         -- IF reset = '1' THEN
         --     current_PC <= (OTHERS => '0'); -- Reset PC to 0
         -- ELSIF 
@@ -102,7 +103,7 @@ BEGIN
     -- Instruction Memory instance
     U_IM : Instruction_Memory
     PORT MAP(
-        PC => current_PC, -- Use current PC for instruction fetch
+        PC => next_PC_internal, -- Use current PC for instruction fetch
         enable => '1', -- Always enabled
         instruction => fetched_instruction, -- Store fetched instruction in internal signal
         IM_0 => IM_0,
@@ -124,7 +125,7 @@ BEGIN
         clk => clk,
         reset => reset, -- Reset when branch, call, return, or exception
         en => '1', -- Always enabled
-        next_pc_in => PC_plus_one, -- Assign next_PC_internal to next_pc_in
+        next_pc_in => next_PC_internal, -- Assign next_PC_internal to next_pc_in
         instruction_in => fetched_instruction, -- Assign fetched_instruction to instruction_in
         next_pc_out => next_PC, -- Assign next_PC value to output
         stack_value_fetch_in => stack_value_fetch_in, -- Assign stack_value_fetch_in to output

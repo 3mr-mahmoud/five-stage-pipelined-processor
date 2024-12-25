@@ -36,6 +36,7 @@ architecture Behavioral of pipeline_processor is
     component decode_stage IS
     PORT (
         clk: IN std_logic;
+        reset: IN std_logic;
         write_enable_writeback: IN std_logic;
         write_address_writeback: IN std_logic_vector(2 downto 0);
         write_data_writeback: IN std_logic_vector(15 downto 0);
@@ -252,6 +253,7 @@ begin
 
     decode_stage_inst: decode_stage port map (
         clk => clk,
+        reset=> reset,
         write_enable_writeback => mew_wb_reg_out,
         write_address_writeback => mew_wb_rdst_out,
         write_data_writeback => muxOut,

@@ -5,6 +5,7 @@ use IEEE.std_logic_1164.all;
 ENTITY decode_stage IS
 PORT (
     clk: IN std_logic;
+    reset: IN std_logic;
     write_enable_writeback: IN std_logic;
     write_address_writeback: IN std_logic_vector(2 downto 0);
     write_data_writeback: IN std_logic_vector(15 downto 0);
@@ -105,6 +106,7 @@ architecture decode_arch of decode_stage is
     component register_file
     PORT (
         clk: IN STD_LOGIC;
+        reset: IN STD_LOGIC;
         write_enable: IN STD_LOGIC;
         write_data: IN std_logic_vector(15 downto 0);
         write_address: IN std_logic_vector(2 downto 0);
@@ -183,6 +185,7 @@ begin
 
     register_file_inst: register_file PORT MAP (
         clk => clk,
+        reset => reset,
         write_enable => write_enable_writeback,
         write_data => write_data_writeback,
         write_address => write_address_writeback,

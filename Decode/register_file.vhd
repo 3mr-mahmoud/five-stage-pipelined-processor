@@ -5,6 +5,7 @@ USE ieee.numeric_std.ALL;
 ENTITY register_file IS 
 PORT (
     clk: IN STD_LOGIC;
+    reset: IN STD_LOGIC;
     write_enable: IN STD_LOGIC;
     write_data: IN std_logic_vector(15 downto 0);
     write_address: IN std_logic_vector(2 downto 0);
@@ -20,9 +21,11 @@ ARCHITECTURE register_file_arch OF register_file IS
     TYPE register_array IS ARRAY (0 TO 7) OF std_logic_vector(15 DOWNTO 0);
     SIGNAL registers: register_array;
 BEGIN
-    PROCESS(clk)
+    PROCESS(clk, reset)
     BEGIN
-        IF clk'EVENT AND clk = '0' THEN
+        IF reset = '1' THEN
+            registers <= (OTHERS => (OTHERS => '0'));
+        ELSIF clk'EVENT AND clk = '0' THEN
             IF write_enable = '1' THEN
                 registers(to_integer(unsigned(write_address))) <= write_data;
             END IF;

@@ -1,2796 +1,2810 @@
 m255
 K4
 z2
+Z0 !s99 nomlopt
+R0
+!s11e MIXED_VERSIONS
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute
+Z1 dC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor/Execute
 <<<<<<< Updated upstream
 !s110 1735003555
 !i10b 1
 !s108 1735003555.000000
-Z1 =======
-Z2 !s110 1735002703
+Z2 =======
+Z3 !s110 1735002703
 !i10b 1
-Z3 !s108 1735002703.000000
-R0
-<<<<<<< Updated upstream
-w1734637420
+Z4 !s108 1735002703.000000
 R1
-Z4 w1735001727
-R0
 <<<<<<< Updated upstream
+Z5 w1734637420
 R2
+Z6 w1735001727
+R1
+<<<<<<< Updated upstream
+R3
 !i10b 1
 !s108 1735003554.000000
-Z5 !s90 -reportprogress|300|-2002|./Execute/ALU_unit.vhd|
-Z6 !s107 ./Execute/ALU_unit.vhd|
-R1
-Z7 !s110 1735002702
+Z7 !s90 -reportprogress|300|-2002|./Execute/ALU_unit.vhd|
+Z8 !s107 ./Execute/ALU_unit.vhd|
+R2
+Z9 !s110 1735002702
 !i10b 1
-Z8 !s108 1735002702.000000
-R5
+Z10 !s108 1735002702.000000
+R7
+R8
+R1
+<<<<<<< Updated upstream
+R3
+!i10b 1
+R2
+R1
+<<<<<<< Updated upstream
 R6
-R0
-<<<<<<< Updated upstream
 R2
-!i10b 1
-R1
-R0
-<<<<<<< Updated upstream
-R4
-R1
 w1735002658
-R0
+R1
 <<<<<<< Updated upstream
-R2
-!i10b 1
 R3
-Z9 !s90 -reportprogress|300|-2002|./Execute/ALU_unit_tb.vhd|
-Z10 !s107 ./Execute/ALU_unit_tb.vhd|
-R1
-R7
 !i10b 1
-R8
-R9
-R10
-R0
-<<<<<<< Updated upstream
+R4
+Z11 !s90 -reportprogress|300|-2002|./Execute/ALU_unit_tb.vhd|
+Z12 !s107 ./Execute/ALU_unit_tb.vhd|
 R2
+R9
 !i10b 1
+R10
+R11
+R12
+R1
+<<<<<<< Updated upstream
 R3
+!i10b 1
+R4
+R11
+R12
+R2
 R9
-R10
-R1
-R7
 !i10b 1
-R8
+R10
+R11
+R12
+R1
+<<<<<<< Updated upstream
+Z13 w1735003325
+R2
+Z14 w1734990379
+R1
+<<<<<<< Updated upstream
+Z15 !s110 1735003554
+!i10b 1
 R9
-R10
-R0
-<<<<<<< Updated upstream
-w1735003325
-R1
-Z11 w1734990379
-R0
-<<<<<<< Updated upstream
-Z12 !s110 1735003554
+Z16 !s90 -reportprogress|300|-2002|./Decode/control_unit.vhd|
+Z17 !s107 ./Decode/control_unit.vhd|
+R2
+R9
 !i10b 1
-R7
-Z13 !s90 -reportprogress|300|-2002|./Decode/control_unit.vhd|
-Z14 !s107 ./Decode/control_unit.vhd|
-R1
-R7
-!i10b 1
-Z15 !s108 1735002701.000000
-R13
-R14
-R0
-<<<<<<< Updated upstream
-R7
-R13
-R15
-R1
-R15
-R13
-R14
-R0
-<<<<<<< Updated upstream
-Z16 w1735000246
-Z17 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z18 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z19 dF:/Engineering/Archeticture/project
-Z20 8./Decode/decode_stage.vhd
-Z21 F./Decode/decode_stage.vhd
-R1
-w1734997670
+Z18 !s108 1735002701.000000
+R16
 R17
+R1
+<<<<<<< Updated upstream
+R9
+R16
 R18
-R19
+R2
+R18
+R16
+R17
+R1
+<<<<<<< Updated upstream
+Z19 w1735000246
+Z20 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z21 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z22 dF:/Engineering/Archeticture/project
+Z23 8./Decode/decode_stage.vhd
+Z24 F./Decode/decode_stage.vhd
+R2
+w1734997670
 R20
 R21
-<<<<<<< Updated upstream
-R7
-Z22 !s90 -reportprogress|300|-2002|./Decode/decode_stage.vhd|
-Z23 !s107 ./Decode/decode_stage.vhd|
-R1
-R8
 R22
 R23
-R0
-<<<<<<< Updated upstream
-R7
-R22
-R23
-R1
-R8
-R22
-R23
-R0
-<<<<<<< Updated upstream
-w1734920364
-R1
-R11
-R0
-<<<<<<< Updated upstream
-Z24 !s90 -reportprogress|300|-2002|./Execute/EX_MEM_reg.vhd|
-Z25 !s107 ./Execute/EX_MEM_reg.vhd|
-R1
 R24
+<<<<<<< Updated upstream
+R9
+Z25 !s90 -reportprogress|300|-2002|./Decode/decode_stage.vhd|
+Z26 !s107 ./Decode/decode_stage.vhd|
+R2
+R10
 R25
-R0
-<<<<<<< Updated upstream
-R24
-R24
+R26
 R1
-R24
+<<<<<<< Updated upstream
+R9
 R25
-R0
-<<<<<<< Updated upstream
-R16
+R26
+R2
+R10
+R25
+R26
 R1
-Z26 w1734998714
-R0
 <<<<<<< Updated upstream
-Z27 8./Execute/exception_unit.vhd
-Z28 F./Execute/exception_unit.vhd
+Z27 w1734920364
+R2
+R14
 R1
-R27
+<<<<<<< Updated upstream
+Z28 !s90 -reportprogress|300|-2002|./Execute/EX_MEM_reg.vhd|
+Z29 !s107 ./Execute/EX_MEM_reg.vhd|
+R2
 R28
-R0
+R29
+R1
 <<<<<<< Updated upstream
+R28
+R28
 R2
-!i10b 1
-R3
-Z29 !s90 -reportprogress|300|-2002|./Execute/exception_unit.vhd|
-Z30 !s107 ./Execute/exception_unit.vhd|
-R1
-R7
-!i10b 1
-R8
+R28
 R29
-R30
-R0
+R1
 <<<<<<< Updated upstream
+R19
 R2
-!i10b 1
-R3
-R29
-R30
+w1734998714
 R1
-R7
-!i10b 1
-R8
-R29
-R30
-R0
 <<<<<<< Updated upstream
-Z31 8./Execute/execute_register.vhd
-Z32 F./Execute/execute_register.vhd
-R1
+Z30 8./Execute/exception_unit.vhd
+Z31 F./Execute/exception_unit.vhd
+R2
+R30
 R31
+R1
+<<<<<<< Updated upstream
+R3
+!i10b 1
+R4
+Z32 !s90 -reportprogress|300|-2002|./Execute/exception_unit.vhd|
+Z33 !s107 ./Execute/exception_unit.vhd|
+R2
+R9
+!i10b 1
+R10
 R32
-R0
+R33
+R1
 <<<<<<< Updated upstream
 R3
-Z33 !s90 -reportprogress|300|-2002|./Execute/execute_register.vhd|
-Z34 !s107 ./Execute/execute_register.vhd|
-R1
-R8
+!i10b 1
+R4
+R32
 R33
-R34
-R0
+R2
+R9
+!i10b 1
+R10
+R32
+R33
+R1
 <<<<<<< Updated upstream
-R3
-R33
+Z34 8./Execute/execute_register.vhd
+Z35 F./Execute/execute_register.vhd
+R2
 R34
+R35
 R1
-R8
-R33
-R34
-R0
+<<<<<<< Updated upstream
+R4
+Z36 !s90 -reportprogress|300|-2002|./Execute/execute_register.vhd|
+Z37 !s107 ./Execute/execute_register.vhd|
+R2
+R10
+R36
+R37
+R1
+<<<<<<< Updated upstream
+R4
+R36
+R37
+R2
+R10
+R36
+R37
+R1
 <<<<<<< Updated upstream
 w1735002282
-R1
+R2
 w1735002697
-R0
-<<<<<<< Updated upstream
-Z35 8./Execute/execute_stage.vhd
-Z36 F./Execute/execute_stage.vhd
 R1
-R35
-R36
-R0
 <<<<<<< Updated upstream
-Z37 !s90 -reportprogress|300|-2002|./Execute/execute_stage.vhd|
-Z38 !s107 ./Execute/execute_stage.vhd|
-R1
-R37
+Z38 8./Execute/execute_stage.vhd
+Z39 F./Execute/execute_stage.vhd
+R2
 R38
-R0
+R39
+R1
+<<<<<<< Updated upstream
+Z40 !s90 -reportprogress|300|-2002|./Execute/execute_stage.vhd|
+Z41 !s107 ./Execute/execute_stage.vhd|
+R2
+R40
+R41
+R1
 <<<<<<< Updated upstream
 V2:e7GMXKMU8OX^BCKc]DG0
 !s100 =nN[Nii06]g>o?IMZn^Pn2
-R1
+R2
 VB:O`d4b[F?X]gX_CWN7iR2
 !s100 Rezlzl8BLFdPE:AHTPOWm1
-R0
-<<<<<<< Updated upstream
-R37
-R38
 R1
-R37
-R38
-R0
 <<<<<<< Updated upstream
-Z39 8./Execute/execute_stage_tb.vhd
-Z40 F./Execute/execute_stage_tb.vhd
-R1
-R39
 R40
-R0
-<<<<<<< Updated upstream
-Z41 !s90 -reportprogress|300|-2002|./Execute/execute_stage_tb.vhd|
-Z42 !s107 ./Execute/execute_stage_tb.vhd|
-R1
 R41
-R42
-R0
-<<<<<<< Updated upstream
+R2
+R40
 R41
-R42
 R1
-R41
-R42
-R0
 <<<<<<< Updated upstream
-w1734900463
-R17
-R18
-R19
-Z43 8./Execute/flags_register.vhd
-Z44 F./Execute/flags_register.vhd
-R1
-R11
-R17
-R18
-R19
+Z42 8./Execute/execute_stage_tb.vhd
+Z43 F./Execute/execute_stage_tb.vhd
+R2
+R42
 R43
+R1
+<<<<<<< Updated upstream
+Z44 !s90 -reportprogress|300|-2002|./Execute/execute_stage_tb.vhd|
+Z45 !s107 ./Execute/execute_stage_tb.vhd|
+R2
 R44
-<<<<<<< Updated upstream
-Z45 !s90 -reportprogress|300|-2002|./Execute/flags_register.vhd|
-Z46 !s107 ./Execute/flags_register.vhd|
-R1
-R45
-R46
-R0
-<<<<<<< Updated upstream
-R45
 R45
 R1
-R45
-R46
-R0
 <<<<<<< Updated upstream
-Z47 8./Execute/flags_register_tb.vhd
-Z48 F./Execute/flags_register_tb.vhd
+R44
+R45
+R2
+R44
+R45
 R1
+<<<<<<< Updated upstream
+Z46 w1734900463
+R20
+R21
+R22
+Z47 8./Execute/flags_register.vhd
+Z48 F./Execute/flags_register.vhd
+R2
+R14
+R20
+R21
+R22
 R47
 R48
-R0
 <<<<<<< Updated upstream
-Z49 !s90 -reportprogress|300|-2002|./Execute/flags_register_tb.vhd|
-Z50 !s107 ./Execute/flags_register_tb.vhd|
-R1
+Z49 !s90 -reportprogress|300|-2002|./Execute/flags_register.vhd|
+Z50 !s107 ./Execute/flags_register.vhd|
+R2
 R49
 R50
-R0
+R1
 <<<<<<< Updated upstream
 R49
 R49
-R1
+R2
 R49
 R50
-R0
-<<<<<<< Updated upstream
-w1734895706
 R1
-Z51 w1734832826
-R0
 <<<<<<< Updated upstream
-Z52 8./Execute/forward_unit.vhd
-Z53 F./Execute/forward_unit.vhd
-R1
+Z51 8./Execute/flags_register_tb.vhd
+Z52 F./Execute/flags_register_tb.vhd
+R2
+R51
 R52
+R1
+<<<<<<< Updated upstream
+Z53 !s90 -reportprogress|300|-2002|./Execute/flags_register_tb.vhd|
+Z54 !s107 ./Execute/flags_register_tb.vhd|
+R2
 R53
-R0
-<<<<<<< Updated upstream
-Z54 !s90 -reportprogress|300|-2002|./Execute/forward_unit.vhd|
-Z55 !s107 ./Execute/forward_unit.vhd|
-R1
-R54
-R55
-R0
-<<<<<<< Updated upstream
-R54
 R54
 R1
+<<<<<<< Updated upstream
+R53
+R53
+R2
+R53
 R54
-R55
-R0
-<<<<<<< Updated upstream
-R16
 R1
-Z56 w1734997614
-R0
 <<<<<<< Updated upstream
-Z57 8./Decode/ID_EX_reg.vhd
-Z58 F./Decode/ID_EX_reg.vhd
+Z55 w1734895706
+R2
+w1734832826
 R1
+<<<<<<< Updated upstream
+Z56 8./Execute/forward_unit.vhd
+Z57 F./Execute/forward_unit.vhd
+R2
+R56
 R57
+R1
+<<<<<<< Updated upstream
+Z58 !s90 -reportprogress|300|-2002|./Execute/forward_unit.vhd|
+Z59 !s107 ./Execute/forward_unit.vhd|
+R2
 R58
-R0
-<<<<<<< Updated upstream
-R7
-Z59 !s90 -reportprogress|300|-2002|./Decode/ID_EX_reg.vhd|
-Z60 !s107 ./Decode/ID_EX_reg.vhd|
-R1
-R8
 R59
-R60
-R0
+R1
 <<<<<<< Updated upstream
-R7
+R58
+R58
+R2
+R58
 R59
-R60
 R1
-R8
-R59
-R60
-R0
 <<<<<<< Updated upstream
-w1734928815
-R1
-R11
-R0
-<<<<<<< Updated upstream
-Z61 8./Fetch/IF_ID_reg.vhd
-Z62 F./Fetch/IF_ID_reg.vhd
-R1
-R61
-R62
-R0
-<<<<<<< Updated upstream
-R3
-Z63 !s90 -reportprogress|300|-2002|./Fetch/IF_ID_reg.vhd|
-Z64 !s107 ./Fetch/IF_ID_reg.vhd|
-R1
-Z65 !s108 1735002704.000000
-R63
-R64
-R0
-<<<<<<< Updated upstream
-R3
-R63
-R64
-R1
-R65
-R63
-R64
-R0
-<<<<<<< Updated upstream
-Z66 w1734911980
-Z67 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z68 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z69 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z70 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
-R17
-R18
 R19
-Z71 8./Fetch/instruction_memory.vhd
-Z72 F./Fetch/instruction_memory.vhd
+R2
+w1734997614
 R1
-Z73 w1734837196
+<<<<<<< Updated upstream
+Z60 8./Decode/ID_EX_reg.vhd
+Z61 F./Decode/ID_EX_reg.vhd
+R2
+R60
+R61
+R1
+<<<<<<< Updated upstream
+R9
+Z62 !s90 -reportprogress|300|-2002|./Decode/ID_EX_reg.vhd|
+Z63 !s107 ./Decode/ID_EX_reg.vhd|
+R2
+R10
+R62
+R63
+R1
+<<<<<<< Updated upstream
+R9
+R62
+R63
+R2
+R10
+R62
+R63
+R1
+<<<<<<< Updated upstream
+Z64 w1734928815
+R2
+R14
+R1
+<<<<<<< Updated upstream
+Z65 8./Fetch/IF_ID_reg.vhd
+Z66 F./Fetch/IF_ID_reg.vhd
+R2
+R65
+R66
+R1
+<<<<<<< Updated upstream
+R4
+Z67 !s90 -reportprogress|300|-2002|./Fetch/IF_ID_reg.vhd|
+Z68 !s107 ./Fetch/IF_ID_reg.vhd|
+R2
+Z69 !s108 1735002704.000000
 R67
 R68
+R1
+<<<<<<< Updated upstream
+R4
+R67
+R68
+R2
 R69
-R70
-R17
-R18
-R19
+R67
+R68
+R1
+<<<<<<< Updated upstream
+Z70 w1734911980
+Z71 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z72 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z73 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z74 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R20
+R21
+R22
+Z75 8./Fetch/instruction_memory.vhd
+Z76 F./Fetch/instruction_memory.vhd
+R2
+Z77 w1734837196
 R71
 R72
-<<<<<<< Updated upstream
-R3
-Z74 !s90 -reportprogress|300|-2002|./Fetch/instruction_memory.vhd|
-Z75 !s107 ./Fetch/instruction_memory.vhd|
-R1
-R66
-R74
-R75
-R0
-<<<<<<< Updated upstream
-R68
-R69
 R73
-R1
-R68
-R69
 R74
-R0
-<<<<<<< Updated upstream
-R3
-R74
+R20
+R21
+R22
 R75
-R1
-R66
-R74
-R75
-R0
-<<<<<<< Updated upstream
-R16
-R1
-w1734997157
-R0
-<<<<<<< Updated upstream
-Z76 8./Fetch/TopLevelFetchStage.vhd
-Z77 F./Fetch/TopLevelFetchStage.vhd
-R1
 R76
+<<<<<<< Updated upstream
+R4
+Z78 !s90 -reportprogress|300|-2002|./Fetch/instruction_memory.vhd|
+Z79 !s107 ./Fetch/instruction_memory.vhd|
+R2
+R70
+R78
+R79
+R1
+<<<<<<< Updated upstream
+R72
+R73
 R77
-R0
-<<<<<<< Updated upstream
-Z78 !s110 1735003556
-!i10b 1
-Z79 !s108 1735003556.000000
-Z80 !s90 -reportprogress|300|-2002|./Fetch/TopLevelFetchStage.vhd|
-Z81 !s107 ./Fetch/TopLevelFetchStage.vhd|
-R1
-R64
-!i10b 1
-R66
-R80
-R81
-R0
-<<<<<<< Updated upstream
+R2
+R72
+R73
 R78
-!i10b 1
+R1
+<<<<<<< Updated upstream
+R4
+R78
 R79
+R2
+R70
+R78
+R79
+R1
+<<<<<<< Updated upstream
+R19
+R2
+w1734997157
+R1
+<<<<<<< Updated upstream
+Z80 8./Fetch/TopLevelFetchStage.vhd
+Z81 F./Fetch/TopLevelFetchStage.vhd
+R2
 R80
 R81
 R1
-R64
+<<<<<<< Updated upstream
+Z82 !s110 1735003556
 !i10b 1
-R66
-R80
-R81
-R0
-<<<<<<< Updated upstream
-w1734911109
+Z83 !s108 1735003556.000000
+Z84 !s90 -reportprogress|300|-2002|./Fetch/TopLevelFetchStage.vhd|
+Z85 !s107 ./Fetch/TopLevelFetchStage.vhd|
+R2
+R68
+!i10b 1
+R70
+R84
+R85
 R1
-R11
-R0
 <<<<<<< Updated upstream
-Z82 8./Fetch/Fetch_tb.vhd
-Z83 F./Fetch/Fetch_tb.vhd
-R1
 R82
+!i10b 1
 R83
-R0
-<<<<<<< Updated upstream
-Z84 !s90 -reportprogress|300|-2002|./Fetch/Fetch_tb.vhd|
-Z85 !s107 ./Fetch/Fetch_tb.vhd|
-R1
 R84
 R85
-R0
-<<<<<<< Updated upstream
-R84
-R84
-R1
+R2
+R68
+!i10b 1
+R70
 R84
 R85
-R0
-<<<<<<< Updated upstream
-w1734921531
 R1
-R11
-R0
 <<<<<<< Updated upstream
-R78
-!i10b 1
-R79
+Z86 w1734911109
+R2
+R14
 R1
-R64
-!i10b 1
-R66
-R0
 <<<<<<< Updated upstream
-R78
-!i10b 1
-R79
-R1
-R64
-!i10b 1
-R66
-R0
-<<<<<<< Updated upstream
-R12
-!i10b 1
-R7
-Z86 !s90 -reportprogress|300|-2002|./Decode/operand_mux.vhd|
-Z87 !s107 ./Decode/operand_mux.vhd|
-R1
-R7
-!i10b 1
-R8
-R86
+Z87 8./Fetch/Fetch_tb.vhd
+Z88 F./Fetch/Fetch_tb.vhd
+R2
 R87
-R0
-<<<<<<< Updated upstream
-R12
-!i10b 1
-R7
-R1
-R7
-!i10b 1
-R8
-R86
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
-Z88 !s90 -reportprogress|300|-2002|./Fetch/PC_Register.vhd|
-Z89 !s107 ./Fetch/PC_Register.vhd|
-R1
-R64
-!i10b 1
-R66
 R88
+R1
+<<<<<<< Updated upstream
+Z89 !s90 -reportprogress|300|-2002|./Fetch/Fetch_tb.vhd|
+Z90 !s107 ./Fetch/Fetch_tb.vhd|
+R2
 R89
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
+R90
 R1
-R64
+<<<<<<< Updated upstream
+R89
+R89
+R2
+R89
+R90
+R1
+<<<<<<< Updated upstream
+Z91 w1734921531
+R2
+R14
+R1
+<<<<<<< Updated upstream
+R82
 !i10b 1
-R66
-R88
-R0
+R83
+R2
+R68
+!i10b 1
+R70
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+R2
+R68
+!i10b 1
+R70
+R1
+<<<<<<< Updated upstream
+R15
+!i10b 1
+R9
+Z92 !s90 -reportprogress|300|-2002|./Decode/operand_mux.vhd|
+Z93 !s107 ./Decode/operand_mux.vhd|
+R2
+R9
+!i10b 1
+R10
+R92
+R93
+R1
+<<<<<<< Updated upstream
+R15
+!i10b 1
+R9
+R2
+R9
+!i10b 1
+R10
+R92
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+Z94 !s90 -reportprogress|300|-2002|./Fetch/PC_Register.vhd|
+Z95 !s107 ./Fetch/PC_Register.vhd|
+R2
+R68
+!i10b 1
+R70
+R94
+R95
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+R2
+R68
+!i10b 1
+R70
+R94
+R1
 <<<<<<< Updated upstream
 w1735003547
-R1
+R2
 w1734999872
-R0
+R1
 <<<<<<< Updated upstream
 !s110 1735003557
 !i10b 1
-R79
-R1
-Z90 !s110 1735002705
+R83
+R2
+Z96 !s110 1735002705
 !i10b 1
-Z91 !s108 1735002705.000000
-R0
-<<<<<<< Updated upstream
-Z92 VU9nBQ1A@hD]m<F129EEW_2
-Z93 !s100 8`Y3?9Ho1TWeB_9P:mH7b0
+Z97 !s108 1735002705.000000
 R1
+<<<<<<< Updated upstream
+VU9nBQ1A@hD]m<F129EEW_2
+!s100 8`Y3?9Ho1TWeB_9P:mH7b0
+R2
 VOzjM[K@dDOILhjjBbR7JC3
 !s100 ZBB[VcVN<KG@mAMd[agVR1
-R0
-<<<<<<< Updated upstream
-R79
 R1
-R91
-R0
 <<<<<<< Updated upstream
-R12
-!i10b 1
-R7
-R1
-R7
-!i10b 1
-R8
-R0
-<<<<<<< Updated upstream
-R12
-!i10b 1
-R7
-R1
-R7
-!i10b 1
-R8
-R0
-<<<<<<< Updated upstream
-R12
-!i10b 1
-R7
-R1
-R7
-!i10b 1
-R8
-R0
-<<<<<<< Updated upstream
-R12
-!i10b 1
-R7
-R1
-R7
-!i10b 1
-R8
-R0
-<<<<<<< Updated upstream
-w1734922471
-R1
-R11
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
-Z94 !s90 -reportprogress|300|-2002|./StackPointer/stack_pointer.vhd|
-Z95 !s107 ./StackPointer/stack_pointer.vhd|
-R1
-R90
-!i10b 1
-R91
-R94
-R95
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
-R1
-R90
-!i10b 1
-R91
-R94
-R0
-<<<<<<< Updated upstream
-w1734829528
-R1
-Z96 w1734832710
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
-Z97 !s90 -reportprogress|300|-2002|./memoryWriteBack/writeBack.vhd|
-Z98 !s107 ./memoryWriteBack/writeBack.vhd|
-R1
-R90
-!i10b 1
-R91
+R83
+R2
 R97
-R98
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
 R1
-R90
-!i10b 1
-R91
-R97
-R0
 <<<<<<< Updated upstream
-w1734380753
+R15
+!i10b 1
+R9
+R2
+R9
+!i10b 1
+R10
 R1
+<<<<<<< Updated upstream
+R15
+!i10b 1
+R9
+R2
+R9
+!i10b 1
+R10
+R1
+<<<<<<< Updated upstream
+R15
+!i10b 1
+R9
+R2
+R9
+!i10b 1
+R10
+R1
+<<<<<<< Updated upstream
+R15
+!i10b 1
+R9
+R2
+R9
+!i10b 1
+R10
+R1
+<<<<<<< Updated upstream
+Z98 w1734922471
+R2
+R14
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+Z99 !s90 -reportprogress|300|-2002|./StackPointer/stack_pointer.vhd|
+Z100 !s107 ./StackPointer/stack_pointer.vhd|
+R2
 R96
-R0
-<<<<<<< Updated upstream
-Z99 8./memoryWriteBack/writeBack_tb.vhd
-Z100 F./memoryWriteBack/writeBack_tb.vhd
-R1
+!i10b 1
+R97
 R99
 R100
-R0
-<<<<<<< Updated upstream
-R78
-!i10b 1
-R79
-Z101 !s90 -reportprogress|300|-2002|./memoryWriteBack/writeBack_tb.vhd|
-Z102 !s107 ./memoryWriteBack/writeBack_tb.vhd|
 R1
-R90
-!i10b 1
-R91
-R101
-R102
-R0
 <<<<<<< Updated upstream
-R78
+R82
 !i10b 1
-R79
-R101
-R102
-R1
-R90
-!i10b 1
-R91
-R101
-R102
-R0
->>>>>>> Stashed changes
-Z103 !s90 -reportprogress|300|-2002|./Fetch/Adder.vhd|
-Z104 !s107 ./Fetch/Adder.vhd|
-!i113 1
-Z105 o-2002
-Z106 tExplicit 1 CvgOpt 0
-R0
-Abehavior
-R67
-R17
-R18
-Z107 DEx4 work 5 adder 0 22 feK=eH:0Ld;YEi1Cj]Pd81
-l14
-L13
-Z108 VOf6V1BgZ6dIFFCWkQ4>I`2
-Z109 !s100 ;`KY3fm?_JMn20Lk9GQYE1
-Z110 OV;C;10.5b;63
-32
+R83
 R2
+R96
 !i10b 1
-R3
+R97
+R99
+R1
+<<<<<<< Updated upstream
+Z101 w1734829528
+R2
+Z102 w1734832710
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+Z103 !s90 -reportprogress|300|-2002|./memoryWriteBack/writeBack.vhd|
+Z104 !s107 ./memoryWriteBack/writeBack.vhd|
+R2
+R96
+!i10b 1
+R97
 R103
 R104
-!i113 1
-R105
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+R2
+R96
+!i10b 1
+R97
+R103
+R1
+<<<<<<< Updated upstream
+Z105 w1734380753
+R2
+R102
+R1
+<<<<<<< Updated upstream
+Z106 8./memoryWriteBack/writeBack_tb.vhd
+Z107 F./memoryWriteBack/writeBack_tb.vhd
+R2
 R106
+R107
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+Z108 !s90 -reportprogress|300|-2002|./memoryWriteBack/writeBack_tb.vhd|
+Z109 !s107 ./memoryWriteBack/writeBack_tb.vhd|
+R2
+R96
+!i10b 1
+R97
+R108
+R109
+R1
+<<<<<<< Updated upstream
+R82
+!i10b 1
+R83
+R108
+R109
+R2
+R96
+!i10b 1
+R97
+R108
+R109
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
-Z111 8./Execute/ALU_unit.vhd
-Z112 F./Execute/ALU_unit.vhd
+Z110 !s90 -reportprogress|300|-2002|./Fetch/Adder.vhd|
+Z111 !s107 ./Fetch/Adder.vhd|
+!i113 1
+Z112 o-2002
+Z113 tExplicit 1 CvgOpt 0
+R1
+Abehavior
+R71
+R20
+R21
+Z114 DEx4 work 5 adder 0 22 feK=eH:0Ld;YEi1Cj]Pd81
+l14
+L13
+Z115 VOf6V1BgZ6dIFFCWkQ4>I`2
+Z116 !s100 ;`KY3fm?_JMn20Lk9GQYE1
+Z117 OV;C;10.5b;63
+32
+R3
+!i10b 1
+R4
+R110
+R111
+!i113 1
+R112
+R113
+>>>>>>> Stashed changes
+R71
+R20
+R21
+R22
+Z118 8./Execute/ALU_unit.vhd
+Z119 F./Execute/ALU_unit.vhd
 l0
 L5
-Z113 VA8>jSWR=0U2EWg0I[g>SA2
-Z114 !s100 VcA5kd:jNOJ2j]A[C]]E^2
-R110
+Z120 VA8>jSWR=0U2EWg0I[g>SA2
+Z121 !s100 VcA5kd:jNOJ2j]A[C]]E^2
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aalu_arch
-R67
-R17
-R18
-Z115 DEx4 work 8 alu_unit 0 22 A8>jSWR=0U2EWg0I[g>SA2
+R71
+R20
+R21
+Z122 DEx4 work 8 alu_unit 0 22 A8>jSWR=0U2EWg0I[g>SA2
 l21
 L20
-Z116 VjDZ6LZV@B<KlXYGA^MORg1
-Z117 !s100 ngn6KP;ONIA8<SKKAJ26]3
-R110
+VjDZ6LZV@B<KlXYGA^MORg1
+!s100 ngn6KP;ONIA8<SKKAJ26]3
+R117
 32
 >>>>>>> Stashed changes
-R7
+R9
 !i10b 1
+R10
+R7
 R8
-R5
-R6
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
-Z118 8./Execute/ALU_unit_tb.vhd
-Z119 F./Execute/ALU_unit_tb.vhd
+R71
+R20
+R21
+R22
+Z123 8./Execute/ALU_unit_tb.vhd
+Z124 F./Execute/ALU_unit_tb.vhd
 l0
 L5
-Z120 V`B7<e<ddHR<ZK9Kf`CHFR3
-Z121 !s100 5_0UIGDFCj^eS4c5VoUn11
-R110
+Z125 V`B7<e<ddHR<ZK9Kf`CHFR3
+Z126 !s100 5_0UIGDFCj^eS4c5VoUn11
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Atestbench
-R115
-R67
-R17
-R18
-Z122 DEx4 work 11 alu_unit_tb 0 22 `B7<e<ddHR<ZK9Kf`CHFR3
+R122
+R71
+R20
+R21
+Z127 DEx4 work 11 alu_unit_tb 0 22 `B7<e<ddHR<ZK9Kf`CHFR3
 l24
 L8
-Z123 V>kKFBnC6eQZdZBO_GjOWh0
-Z124 !s100 1A29WU]e;KSNOze4XSIjN1
-R110
+Z128 V>kKFBnC6eQZdZBO_GjOWh0
+Z129 !s100 1A29WU]e;KSNOze4XSIjN1
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R17
-R18
-R19
-Z125 8./Decode/control_unit.vhd
-Z126 F./Decode/control_unit.vhd
+R20
+R21
+R22
+Z130 8./Decode/control_unit.vhd
+Z131 F./Decode/control_unit.vhd
 l0
 L4
-Z127 V:4OP<UQP7LfUg_@n]OB:I3
-Z128 !s100 Rz3gDT@cZmH2f[MDb?B;l3
-R110
+Z132 V:4OP<UQP7LfUg_@n]OB:I3
+Z133 !s100 Rz3gDT@cZmH2f[MDb?B;l3
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Acontrol_arch
-R17
-R18
-Z129 DEx4 work 12 control_unit 0 22 :4OP<UQP7LfUg_@n]OB:I3
+R20
+R21
+Z134 DEx4 work 12 control_unit 0 22 :4OP<UQP7LfUg_@n]OB:I3
 l32
 L31
-Z130 V5h7GbiY6khnSe9CWW76fI3
-Z131 !s100 iIIH[7[E3h5ig@z5zD>8c3
-R110
+Z135 V5h7GbiY6khnSe9CWW76fI3
+Z136 !s100 iIIH[7[E3h5ig@z5zD>8c3
+R117
 32
-R7
+R9
 !i10b 1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 l0
 L5
 V=_^eaSQnTLPW=^bnWOg_g2
 !s100 :<44Cg2Yn6a67C8EaPUOk2
-R110
+R117
 32
-R7
+R9
 !i10b 1
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Adecode_arch
-R17
-R18
+R20
+R21
 DEx4 work 12 decode_stage 0 22 =_^eaSQnTLPW=^bnWOg_g2
 l140
 L37
 VJN;FjOo;F64Sjj`PbDChU1
 !s100 ;QjnFY0z?QFNcR4jUB@lD0
-R110
+R117
 32
-R7
+R9
 !i10b 1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
-Z132 8./Execute/EX_MEM_reg.vhd
-Z133 F./Execute/EX_MEM_reg.vhd
+R71
+R20
+R21
+R22
+Z137 8./Execute/EX_MEM_reg.vhd
+Z138 F./Execute/EX_MEM_reg.vhd
 l0
 L5
-Z134 VVcJI6NL0_ef:F[V@4E@933
-Z135 !s100 BhzfOX0OmNP9g>kIMWB]11
-R110
+Z139 VVcJI6NL0_ef:F[V@4E@933
+Z140 !s100 BhzfOX0OmNP9g>kIMWB]11
+R117
 32
-R2
-!i10b 1
 R3
+!i10b 1
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aex_mem_reg_arch
-R67
-R17
-R18
-Z136 DEx4 work 10 ex_mem_reg 0 22 VcJI6NL0_ef:F[V@4E@933
+R71
+R20
+R21
+Z141 DEx4 work 10 ex_mem_reg 0 22 VcJI6NL0_ef:F[V@4E@933
 l27
 L21
-Z137 VbcQ]3[F;N2J]EP7YAUe_U3
-Z138 !s100 k1d4enO6P3gIj1ibB]kS@0
-R110
+Z142 VbcQ]3[F;N2J]EP7YAUe_U3
+Z143 !s100 k1d4enO6P3gIj1ibB]kS@0
+R117
 32
-R2
-!i10b 1
 R3
+!i10b 1
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
-Z139 VPIg=TW:hI8YhGgUiWGIIO0
-Z140 !s100 0`[4Jl=ZMhzzY82CPZ_DD3
-R110
+Z144 VPIg=TW:hI8YhGgUiWGIIO0
+Z145 !s100 0`[4Jl=ZMhzzY82CPZ_DD3
+R117
 32
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aexception_arch
-R67
-R17
-R18
-Z141 DEx4 work 14 exception_unit 0 22 PIg=TW:hI8YhGgUiWGIIO0
+R71
+R20
+R21
+Z146 DEx4 work 14 exception_unit 0 22 PIg=TW:hI8YhGgUiWGIIO0
 l18
 L14
-Z142 VkK`EUaOCE;P<F`KiQ:KPS2
-Z143 !s100 :ZlmOmz11a3f_UG9:A]:C1
-R110
+Z147 VkK`EUaOCE;P<F`KiQ:KPS2
+Z148 !s100 :ZlmOmz11a3f_UG9:A]:C1
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 l0
 L6
-Z144 Vc=GcQIRV?F@_hBCV4@n:F0
-Z145 !s100 :K3<6;n[NCU_dN:L8a6j=0
-R110
+Z149 Vc=GcQIRV?F@_hBCV4@n:F0
+Z150 !s100 :K3<6;n[NCU_dN:L8a6j=0
+R117
 32
-R2
+R3
 !i10b 1
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aregister_arch
-R67
-R17
-R18
-Z146 DEx4 work 16 execute_register 0 22 c=GcQIRV?F@_hBCV4@n:F0
+R71
+R20
+R21
+Z151 DEx4 work 16 execute_register 0 22 c=GcQIRV?F@_hBCV4@n:F0
 l20
 L19
-Z147 Vi9S6dU1TL]LS?IEd6lB6C2
-Z148 !s100 2_SDW7j<^aVS4KoPeGMNn0
-R110
+Z152 Vi9S6dU1TL]LS?IEd6lB6C2
+Z153 !s100 2_SDW7j<^aVS4KoPeGMNn0
+R117
 32
-R2
+R3
 !i10b 1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
-Z149 VH5:oI0:;lE>VX:;aUhl8[2
-Z150 !s100 ]MX3MRSBkQHN3DdQ2bkV93
-R110
+Z154 VH5:oI0:;lE>VX:;aUhl8[2
+Z155 !s100 ]MX3MRSBkQHN3DdQ2bkV93
+R117
 32
-R2
-!i10b 1
 R3
-R0
+!i10b 1
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aexecute_arch
-R67
-R17
-R18
-Z151 DEx4 work 13 execute_stage 0 22 H5:oI0:;lE>VX:;aUhl8[2
+R71
+R20
+R21
+Z156 DEx4 work 13 execute_stage 0 22 H5:oI0:;lE>VX:;aUhl8[2
 l116
 L35
 >>>>>>> Stashed changes
-R110
+R117
 32
-R2
-!i10b 1
 R3
-R0
+!i10b 1
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 l0
 L5
-Z152 VBIT5Y=JbWV5Ck5;SHLJ0U3
-Z153 !s100 Kb<mamlbQJEgV9a<z?mEz0
-R110
+Z157 VBIT5Y=JbWV5Ck5;SHLJ0U3
+Z158 !s100 Kb<mamlbQJEgV9a<z?mEz0
+R117
 32
-R2
-!i10b 1
 R3
-R0
+!i10b 1
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavior
-R67
-R17
-R18
-Z154 DEx4 work 16 execute_stage_tb 0 22 BIT5Y=JbWV5Ck5;SHLJ0U3
+R71
+R20
+R21
+Z159 DEx4 work 16 execute_stage_tb 0 22 BIT5Y=JbWV5Ck5;SHLJ0U3
 l68
 L8
-Z155 VN6eY91gFiJJ9a0DSk64hn0
-Z156 !s100 Ljai=QIl1JZ65UFHME_==2
-R110
+Z160 VN6eY91gFiJJ9a0DSk64hn0
+Z161 !s100 Ljai=QIl1JZ65UFHME_==2
+R117
 32
-R2
-!i10b 1
 R3
+!i10b 1
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 l0
 L4
-Z157 V?DTnX3EENBZjaX2VYmdJO2
-Z158 !s100 BRzTcOo:M2Xk`8:@B50fd1
-R110
+Z162 V?DTnX3EENBZjaX2VYmdJO2
+Z163 !s100 BRzTcOo:M2Xk`8:@B50fd1
+R117
 32
-R2
-!i10b 1
 R3
-R0
+!i10b 1
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R17
-R18
-Z159 DEx4 work 14 flags_register 0 22 ?DTnX3EENBZjaX2VYmdJO2
+R20
+R21
+Z164 DEx4 work 14 flags_register 0 22 ?DTnX3EENBZjaX2VYmdJO2
 l27
 L17
-Z160 VdXU4`D64nWQO:ezKjB_0B3
-Z161 !s100 ckaR0893SF;5Y=29V7_hW1
-R110
+Z165 VdXU4`D64nWQO:ezKjB_0B3
+Z166 !s100 ckaR0893SF;5Y=29V7_hW1
+R117
 32
-R2
-!i10b 1
 R3
+!i10b 1
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 l0
 L5
-Z162 Vjd;SC_R8C<JHPhI9Cn;530
-Z163 !s100 e[zDL=aGejZ43ON7V6c7R2
-R110
+Z167 Vjd;SC_R8C<JHPhI9Cn;530
+Z168 !s100 e[zDL=aGejZ43ON7V6c7R2
+R117
 32
-R2
-!i10b 1
 R3
-R0
+!i10b 1
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R67
-R17
-R18
-Z164 DEx4 work 17 flags_register_tb 0 22 jd;SC_R8C<JHPhI9Cn;530
+R71
+R20
+R21
+Z169 DEx4 work 17 flags_register_tb 0 22 jd;SC_R8C<JHPhI9Cn;530
 l40
 L8
-Z165 VRfAi>b]jXdmf`kCcXJaIC1
-Z166 !s100 R@G7l]TmmZAbUlX]6lBAf1
-R110
+Z170 VRfAi>b]jXdmf`kCcXJaIC1
+Z171 !s100 R@G7l]TmmZAbUlX]6lBAf1
+R117
 32
-R2
-!i10b 1
 R3
+!i10b 1
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
-Z167 V=7n28Ka_l7VmzfCA2zYio3
-Z168 !s100 e@6j_]UA:fdoaEZU8U8`C0
-R110
+Z172 V=7n28Ka_l7VmzfCA2zYio3
+Z173 !s100 e@6j_]UA:fdoaEZU8U8`C0
+R117
 32
-R2
-!i10b 1
 R3
-R0
+!i10b 1
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aforward_arch
-R67
-R17
-R18
-Z169 DEx4 work 12 forward_unit 0 22 =7n28Ka_l7VmzfCA2zYio3
+R71
+R20
+R21
+Z174 DEx4 work 12 forward_unit 0 22 =7n28Ka_l7VmzfCA2zYio3
 l19
 L18
-Z170 Vlezc>X=K=k4TbPT6cm6Wf2
-Z171 !s100 SEChJXHo9m=W8nHL`0:631
-R110
+Z175 Vlezc>X=K=k4TbPT6cm6Wf2
+Z176 !s100 SEChJXHo9m=W8nHL`0:631
+R117
 32
-R2
-!i10b 1
 R3
+!i10b 1
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L6
-Z172 VS?GYNnf7GR=KY@9EOdoYX3
-Z173 !s100 eRQ52A@jAVMM5U4GNZ<082
-R110
+Z177 VS?GYNnf7GR=KY@9EOdoYX3
+Z178 !s100 eRQ52A@jAVMM5U4GNZ<082
+R117
 32
-R7
+R9
 !i10b 1
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aid_ex_register_architecture
-R67
-R17
-R18
-Z174 DEx4 work 14 id_ex_register 0 22 S?GYNnf7GR=KY@9EOdoYX3
+R71
+R20
+R21
+Z179 DEx4 work 14 id_ex_register 0 22 S?GYNnf7GR=KY@9EOdoYX3
 l37
 L28
-Z175 Vd@O@WifT5c3[m9[CA;89k0
-Z176 !s100 kdDI@3:5MeYUGckH;KSH52
-R110
+Z180 Vd@O@WifT5c3[m9[CA;89k0
+Z181 !s100 kdDI@3:5MeYUGckH;KSH52
+R117
 32
-R7
+R9
 !i10b 1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
-Z177 VXRBEoW6^Mn3@g1VS?d8Sj1
-Z178 !s100 ^m:5^eQT4nLk4Li3bBWhL3
-R110
+Z182 VXRBEoW6^Mn3@g1VS?d8Sj1
+Z183 !s100 ^m:5^eQT4nLk4Li3bBWhL3
+R117
 32
 !s110 1735002704
 !i10b 1
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aif_id_reg_architecture
-R67
-R17
-R18
-Z179 DEx4 work 9 if_id_reg 0 22 XRBEoW6^Mn3@g1VS?d8Sj1
+R71
+R20
+R21
+Z184 DEx4 work 9 if_id_reg 0 22 XRBEoW6^Mn3@g1VS?d8Sj1
 l18
 L15
-Z180 V;5SVg[2=4PckeCdzEP9T50
-Z181 !s100 mLbE_;JHMPiF2oC9T:CbL2
-R110
+Z185 V;5SVg[2=4PckeCdzEP9T50
+Z186 !s100 mLbE_;JHMPiF2oC9T:CbL2
+R117
 32
-R64
+R68
 !i10b 1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 l0
 L8
-Z182 V9@1meVdGMA3MoAHOSiF0D2
-Z183 !s100 Lzo@IdM7mNMo8zTXVK@RZ1
-R110
+Z187 V9@1meVdGMA3MoAHOSiF0D2
+Z188 !s100 Lzo@IdM7mNMo8zTXVK@RZ1
+R117
 32
-R64
+R68
 !i10b 1
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavior
-R67
+R71
 >>>>>>> Stashed changes
-R17
-R18
-Z184 DEx4 work 18 instruction_memory 0 22 9@1meVdGMA3MoAHOSiF0D2
+R20
+R21
+Z189 DEx4 work 18 instruction_memory 0 22 9@1meVdGMA3MoAHOSiF0D2
 l29
 L24
-Z185 V_2J^f=;D]TPm^jLJK8OgQ0
-Z186 !s100 `=2c]zZi;]3AQah0>Ff2B3
-R110
+V_2J^f=;D]TPm^jLJK8OgQ0
+!s100 `=2c]zZi;]3AQah0>Ff2B3
+R117
 32
-R64
+R68
 !i10b 1
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
-Z187 VdeRT0c2hi1eY68aAXI<GL3
-Z188 !s100 glah51]A4noPdYQg@TgEM1
-R110
+Z190 VdeRT0c2hi1eY68aAXI<GL3
+Z191 !s100 glah51]A4noPdYQg@TgEM1
+R117
 32
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavior
-R67
-R17
-R18
-Z189 DEx4 work 17 instruction_stage 0 22 deRT0c2hi1eY68aAXI<GL3
+R71
+R20
+R21
+Z192 DEx4 work 17 instruction_stage 0 22 deRT0c2hi1eY68aAXI<GL3
 l56
 L26
 VeZk@eBR1lTgm[PENlT3n21
 !s100 AdndSdDeSE^ROU_i1dnF`1
-R110
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
-Z190 V6Kzl74]7n<nL8h?nH]=ml3
-Z191 !s100 0a?1jSdV`d;JkaCBH9oLg2
-R110
+Z193 V6Kzl74]7n<nL8h?nH]=ml3
+Z194 !s100 0a?1jSdV`d;JkaCBH9oLg2
+R117
 32
-R64
+R68
 !i10b 1
-R3
-R0
+R4
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavior
-R67
-R17
-R18
-Z192 DEx4 work 20 instruction_stage_tb 0 22 6Kzl74]7n<nL8h?nH]=ml3
+R71
+R20
+R21
+Z195 DEx4 work 20 instruction_stage_tb 0 22 6Kzl74]7n<nL8h?nH]=ml3
 l34
 L8
-Z193 Vg4V0;kRz2dce1Afb_Rfg21
-Z194 !s100 OP^5feDmHzR>mCnVH23dI0
-R110
+Z196 Vg4V0;kRz2dce1Afb_Rfg21
+Z197 !s100 OP^5feDmHzR>mCnVH23dI0
+R117
 32
-R64
+R68
 !i10b 1
-R3
+R4
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
-Z195 8./memoryWriteBack/memory.vhd
-Z196 F./memoryWriteBack/memory.vhd
+R71
+R20
+R21
+R22
+Z198 8./memoryWriteBack/memory.vhd
+Z199 F./memoryWriteBack/memory.vhd
 l0
 L5
-Z197 VRIPe7d:El:okSPg:[S?:W2
-Z198 !s100 >SH6TkI^PKYfn<AZ8G;LQ3
-R110
+Z200 VRIPe7d:El:okSPg:[S?:W2
+Z201 !s100 >SH6TkI^PKYfn<AZ8G;LQ3
+R117
 32
 >>>>>>> Stashed changes
-Z199 !s90 -reportprogress|300|-2002|./memoryWriteBack/memory.vhd|
-Z200 !s107 ./memoryWriteBack/memory.vhd|
+Z202 !s90 -reportprogress|300|-2002|./memoryWriteBack/memory.vhd|
+Z203 !s107 ./memoryWriteBack/memory.vhd|
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R67
-R17
-R18
-Z201 DEx4 work 6 memory 0 22 RIPe7d:El:okSPg:[S?:W2
+R71
+R20
+R21
+Z204 DEx4 work 6 memory 0 22 RIPe7d:El:okSPg:[S?:W2
 l50
 L36
-Z202 Vb9EU5Qiic=diZd9M_Z>CI2
-Z203 !s100 NM=kKinQh=H=nFka1l:GT3
-R110
+Z205 Vb9EU5Qiic=diZd9M_Z>CI2
+Z206 !s100 NM=kKinQh=H=nFka1l:GT3
+R117
 32
 >>>>>>> Stashed changes
-R199
-R200
+R202
+R203
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Aoperand_mux_arch
-R17
-R18
-Z204 DEx4 work 11 operand_mux 0 22 oST[_8F01[J<:;GVI32zG0
+R20
+R21
+Z207 DEx4 work 11 operand_mux 0 22 oST[_8F01[J<:;GVI32zG0
 l14
 L13
-Z205 VU`NJzWF<h6_Z9cRaH7o@I0
-Z206 !s100 bfPVRX0KRYTkDd7zG6^=I3
-R110
+Z208 VU`NJzWF<h6_Z9cRaH7o@I0
+Z209 !s100 bfPVRX0KRYTkDd7zG6^=I3
+R117
 32
 >>>>>>> Stashed changes
-R87
+R93
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavior
-R17
-R18
-Z207 DEx4 work 11 pc_register 0 22 5UBZa@z9^Lbd0<>NLMoiI1
+R20
+R21
+Z210 DEx4 work 11 pc_register 0 22 5UBZa@z9^Lbd0<>NLMoiI1
 l26
 L13
-Z208 V^BC3XXH4ZjhGiTAz>1fcW2
-Z209 !s100 @OJV2RnzkRm<@2o>CJed=1
-R110
+Z211 V^BC3XXH4ZjhGiTAz>1fcW2
+Z212 !s100 @OJV2RnzkRm<@2o>CJed=1
+R117
 32
 >>>>>>> Stashed changes
-R89
+R95
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R17
-R18
-R19
-Z210 8./pipleLine.vhd
-Z211 F./pipleLine.vhd
+R20
+R21
+R22
+Z213 8./pipleLine.vhd
+Z214 F./pipleLine.vhd
 l0
 L4
-Z212 VAY1X^?jC9L:0I_f@LGSaY0
-Z213 !s100 Uzi=@548f<K<`LY@5B4XE0
-R110
+Z215 VAY1X^?jC9L:0I_f@LGSaY0
+Z216 !s100 Uzi=@548f<K<`LY@5B4XE0
+R117
 32
 >>>>>>> Stashed changes
-Z214 !s90 -reportprogress|300|-2002|./pipleLine.vhd|
-Z215 !s107 ./pipleLine.vhd|
+Z217 !s90 -reportprogress|300|-2002|./pipleLine.vhd|
+Z218 !s107 ./pipleLine.vhd|
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R17
-R18
-Z216 DEx4 work 18 pipeline_processor 0 22 AY1X^?jC9L:0I_f@LGSaY0
+R20
+R21
+Z219 DEx4 work 18 pipeline_processor 0 22 AY1X^?jC9L:0I_f@LGSaY0
 l219
 L13
 >>>>>>> Stashed changes
-R110
+R117
 32
-R90
+R96
 !i10b 1
-R0
->>>>>>> Stashed changes
-R214
-R215
-!i113 1
-R105
-R106
-R0
->>>>>>> Stashed changes
-Z217 !s90 -reportprogress|300|-2002|./Decode/register_file.vhd|
-Z218 !s107 ./Decode/register_file.vhd|
-!i113 1
-R105
-R106
-R0
-Aregister_file_arch
-R67
-R17
-R18
-Z219 DEx4 work 13 register_file 0 22 lAM?58aFDRVHbSkef]2lS3
-l22
-L19
-Z220 VWR3CRa=FP^O9HVdbUI1;o2
-Z221 !s100 fA9hNRUQXkZFKK<hg5`:L3
-R110
-32
+R1
 >>>>>>> Stashed changes
 R217
 R218
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
+>>>>>>> Stashed changes
+Z220 !s90 -reportprogress|300|-2002|./Decode/register_file.vhd|
+Z221 !s107 ./Decode/register_file.vhd|
+!i113 1
+R112
+R113
+R1
+Aregister_file_arch
+R71
+R20
+R21
+DEx4 work 13 register_file 0 22 lAM?58aFDRVHbSkef]2lS3
+l22
+L19
+VWR3CRa=FP^O9HVdbUI1;o2
+!s100 fA9hNRUQXkZFKK<hg5`:L3
+R117
+32
+>>>>>>> Stashed changes
+R220
+R221
+!i113 1
+R112
+R113
+R1
 >>>>>>> Stashed changes
 Z222 !s90 -reportprogress|300|-2002|./Decode/register_file_tb.vhd|
 Z223 !s107 ./Decode/register_file_tb.vhd|
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavior
-R67
-R17
-R18
+R71
+R20
+R21
 Z224 DEx4 work 16 register_file_tb 0 22 A_1JjnXTg:4nm>2j?OAea0
 l37
 L8
 Z225 VK0^zZ1HNCI?;8:P3?f`IK2
 Z226 !s100 bRL_7K;N=_Q5e55;zXSIh3
-R110
+R117
 32
 >>>>>>> Stashed changes
 R222
 R223
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 Z227 8./StackPointer/stack_pointer.vhd
 Z228 F./StackPointer/stack_pointer.vhd
 l0
 L5
 Z229 VgA2b^;J364cRVllE6z7h11
 Z230 !s100 CSb59bDk87mi?RRK:acJD0
-R110
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R67
-R17
-R18
+R71
+R20
+R21
 Z231 DEx4 work 13 stack_pointer 0 22 gA2b^;J364cRVllE6z7h11
 l19
 L16
 Z232 VSnLOU4[GdGWWl6?=lQXDC3
 Z233 !s100 jFNI]aebl;=3H[0VEj[@<3
-R110
+R117
 32
 >>>>>>> Stashed changes
-R95
+R100
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 Z234 8./memoryWriteBack/writeBack.vhd
 Z235 F./memoryWriteBack/writeBack.vhd
 l0
 L6
 Z236 V6KzDKWBo?hEaDa^Al<V]U1
 Z237 !s100 @Q;<C[;d>5TzTSnS=PoBX2
-R110
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R67
-R17
-R18
+R71
+R20
+R21
 Z238 DEx4 work 2 wb 0 22 6KzDKWBo?hEaDa^Al<V]U1
 l28
 L26
 Z239 V>Jz?MogQGK0T9<fT8X?UK2
 Z240 !s100 CUz?i>M]=;KEPACRPL:F12
-R110
+R117
 32
 >>>>>>> Stashed changes
-R98
+R104
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 >>>>>>> Stashed changes
-R67
-R17
-R18
-R19
+R71
+R20
+R21
+R22
 >>>>>>> Stashed changes
 l0
 L5
 Z241 V3nlRHR^5^]8dNb0K55cUZ0
 Z242 !s100 0KcKOkIZ6nFiG8h4UL]?Q2
-R110
+R117
 32
-R0
+R1
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
 Abehavioral
-R67
-R17
-R18
+R71
+R20
+R21
 Z243 DEx4 work 5 wb_tb 0 22 3nlRHR^5^]8dNb0K55cUZ0
 l41
 L8
 Z244 VR:Q=Hg8dU=^[i2R2X5XAX3
 Z245 !s100 OSha5z4]na3cD@PzJC6MW1
-R110
+R117
 32
 >>>>>>> Stashed changes
 !i113 1
-R105
-R106
-R0
+R112
+R113
+R1
+T_opt
+!s110 1735093858
+VajjRN=9FXXDjh[`QLcAzK1
+04 18 10 work pipeline_processor behavioral 1
+=1-d8f3bcc0f7b9-676b6e62-8-4678
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+R1
 Eadder
-Z246 w1734832709
-R67
-R17
-R18
-Z247 dC:/omar/faculty/third year/first term/Comp Arch/Project/five-stage-pipelined-processor
-Z248 8./Fetch/Adder.vhd
-Z249 F./Fetch/Adder.vhd
+Z246 w1734657375
+R71
+R20
+R21
+R22
+Z247 8./Fetch/Adder.vhd
+Z248 F./Fetch/Adder.vhd
 l0
 L5
 VfeK=eH:0Ld;YEi1Cj]Pd81
 !s100 IHWI8[Pc:ed]=XhH7[eUf3
-R110
+R117
 32
-Z250 !s110 1735093333
+Z249 !s110 1735097154
 !i10b 1
-Z251 !s108 1735093332.000000
-R103
-R104
+Z250 !s108 1735097154.000000
+R110
+R111
 !i113 1
-R105
-R106
+R112
+R113
 Abehavior
-R67
-R17
-R18
-R107
+R71
+R20
+R21
+R114
 l14
 L13
-R108
-R109
-R110
-32
-R250
-!i10b 1
-R251
-R103
-R104
-!i113 1
-R105
-R106
-Ealu_unit
-Z252 w1735003994
-R67
-R17
-R18
-R247
-R111
-R112
-l0
-L5
-R113
-R114
-R110
-32
-Z253 !s110 1735093331
-!i10b 1
-Z254 !s108 1735093331.000000
-R5
-R6
-!i113 1
-R105
-R106
-Aalu_arch
-R67
-R17
-R18
 R115
-l21
-L20
 R116
 R117
-R110
 32
-R253
+R249
 !i10b 1
-R254
-R5
-R6
+R250
+R110
+R111
 !i113 1
-R105
-R106
-Ealu_unit_tb
-R252
-R67
-R17
-R18
-R247
+R112
+R113
+Ealu_unit
+Z251 w1735096446
+R71
+R20
+R21
+R22
 R118
 R119
 l0
 L5
 R120
 R121
-R110
+R117
 32
-R253
+R249
 !i10b 1
-R254
-R9
-R10
+R250
+R7
+R8
 !i113 1
-R105
-R106
-Atestbench
-R115
-R67
-R17
-R18
-R122
-l24
-L8
-R123
-R124
-R110
-32
-R253
-!i10b 1
-R254
-R9
-R10
-!i113 1
-R105
-R106
-Econtrol_unit
-R11
-R17
-R18
-R247
-R125
-R126
-l0
-L4
-R127
-R128
-R110
-32
-R253
-!i10b 1
-R254
-R13
-R14
-!i113 1
-R105
-R106
-Acontrol_arch
-R17
-R18
-R129
-l32
-L31
-R130
-R131
-R110
-32
-R253
-!i10b 1
-R254
-R13
-R14
-!i113 1
-R105
-R106
-Edecode_stage
-Z255 w1735093261
-R17
-R18
-R247
+R112
+R113
+Aalu_arch
+R71
 R20
 R21
+R122
+l21
+L20
+V<]YG[V5>[QaAk8:zaFPek1
+!s100 mkYB3hS^c2UNLV[M@WS3G2
+R117
+32
+R249
+!i10b 1
+R250
+R7
+R8
+!i113 1
+R112
+R113
+Ealu_unit_tb
+Z252 w1735093562
+R71
+R20
+R21
+R22
+R123
+R124
 l0
 L5
-V;mB3I][_17_1G2NRNm^JS0
-!s100 VdBY3BMzI86A@Y>NXbUKo1
-R110
+R125
+R126
+R117
 32
-R253
+R249
 !i10b 1
-R254
-R22
-R23
-!i113 1
-R105
-R106
-Adecode_arch
-R17
-R18
-DEx4 work 12 decode_stage 0 22 ;mB3I][_17_1G2NRNm^JS0
-l140
-L37
-VJ^a7jDH[^4Z431<m>h^S>1
-!s100 amPG72N<dNeC?ZMdSUFXe1
-R110
-32
-R253
-!i10b 1
-R254
-R22
-R23
-!i113 1
-R105
-R106
-Eex_mem_reg
+R250
 R11
-R67
-R17
-R18
-R247
+R12
+!i113 1
+R112
+R113
+Atestbench
+R122
+R71
+R20
+R21
+R127
+l24
+L8
+R128
+R129
+R117
+32
+R249
+!i10b 1
+R250
+R11
+R12
+!i113 1
+R112
+R113
+Econtrol_unit
+R13
+R20
+R21
+R22
+R130
+R131
+l0
+L4
 R132
 R133
+R117
+32
+Z253 !s110 1735097153
+!i10b 1
+Z254 !s108 1735097153.000000
+R16
+R17
+!i113 1
+R112
+R113
+Acontrol_arch
+R20
+R21
+R134
+l32
+L31
+R135
+R136
+R117
+32
+R253
+!i10b 1
+R254
+R16
+R17
+!i113 1
+R112
+R113
+Edecode_stage
+Z255 w1735095745
+R20
+R21
+R22
+R23
+R24
 l0
 L5
-R134
-R135
-R110
+VDXaa1S:RJOJCKAWfP_MdT3
+!s100 7R2f[>DEm=9TC4m^9deMK0
+R117
 32
-Z256 !s110 1735093332
+R253
 !i10b 1
-R251
-R24
+R254
 R25
+R26
 !i113 1
-R105
-R106
-Aex_mem_reg_arch
-R67
-R17
-R18
-R136
-l27
-L21
+R112
+R113
+Adecode_arch
+R20
+R21
+DEx4 work 12 decode_stage 0 22 DXaa1S:RJOJCKAWfP_MdT3
+l142
+L38
+V]bPS9SY6XJd]OGbK:d5b30
+!s100 jB8m8;S7;LPWWcElF?[Hm1
+R117
+32
+R253
+!i10b 1
+R254
+R25
+R26
+!i113 1
+R112
+R113
+Eex_mem_reg
+R27
+R71
+R20
+R21
+R22
 R137
 R138
-R110
-32
-R256
-!i10b 1
-R251
-R24
-R25
-!i113 1
-R105
-R106
-Eexception_unit
-R26
-R67
-R17
-R18
-R247
-R27
-R28
 l0
 L5
 R139
 R140
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R254
+R250
+R28
 R29
-R30
 !i113 1
-R105
-R106
-Aexception_arch
-R67
-R17
-R18
+R112
+R113
+Aex_mem_reg_arch
+R71
+R20
+R21
 R141
-l18
-L14
+l27
+L21
 R142
 R143
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R254
+R250
+R28
 R29
+!i113 1
+R112
+R113
+Eexception_unit
+R19
+R71
+R20
+R21
+R22
 R30
-!i113 1
-R105
-R106
-Eexecute_register
-R246
-R67
-R17
-R18
-R247
 R31
-R32
-l0
-L6
-R144
-R145
-R110
-32
-R256
-!i10b 1
-R251
-R33
-R34
-!i113 1
-R105
-R106
-Aregister_arch
-R67
-R17
-R18
-R146
-l20
-L19
-R147
-R148
-R110
-32
-R256
-!i10b 1
-R251
-R33
-R34
-!i113 1
-R105
-R106
-Eexecute_stage
-Z257 w1735006948
-R67
-R17
-R18
-R247
-R35
-R36
 l0
 L5
+R144
+R145
+R117
+32
+R249
+!i10b 1
+R250
+R32
+R33
+!i113 1
+R112
+R113
+Aexception_arch
+R71
+R20
+R21
+R146
+l18
+L14
+R147
+R148
+R117
+32
+R249
+!i10b 1
+R250
+R32
+R33
+!i113 1
+R112
+R113
+Eexecute_register
+R5
+R71
+R20
+R21
+R22
+R34
+R35
+l0
+L6
 R149
 R150
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
+R250
+R36
 R37
-R38
 !i113 1
-R105
-R106
-Aexecute_arch
-R67
-R17
-R18
+R112
+R113
+Aregister_arch
+R71
+R20
+R21
 R151
+l20
+L19
+R152
+R153
+R117
+32
+R249
+!i10b 1
+R250
+R36
+R37
+!i113 1
+R112
+R113
+Eexecute_stage
+R252
+R71
+R20
+R21
+R22
+R38
+R39
+l0
+L5
+R154
+R155
+R117
+32
+R249
+!i10b 1
+R250
+R40
+R41
+!i113 1
+R112
+R113
+Aexecute_arch
+R71
+R20
+R21
+R156
 l116
 L35
 VV]ecan7UlalE_ndc2`48o0
 !s100 N`5d:[EOY79Ejk<agUT1G1
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
-R37
-R38
-!i113 1
-R105
-R106
-Eexecute_stage_tb
-R246
-R67
-R17
-R18
-R247
-R39
+R250
 R40
+R41
+!i113 1
+R112
+R113
+Eexecute_stage_tb
+R5
+R71
+R20
+R21
+R22
+R42
+R43
 l0
 L5
-R152
-R153
-R110
-32
-R256
-!i10b 1
-R251
-R41
-R42
-!i113 1
-R105
-R106
-Abehavior
-R67
-R17
-R18
-R154
-l68
-L8
-R155
-R156
-R110
-32
-R256
-!i10b 1
-R251
-R41
-R42
-!i113 1
-R105
-R106
-Eflags_register
-R11
-R17
-R18
-R247
-R43
-R44
-l0
-L4
 R157
 R158
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
+R250
+R44
 R45
-R46
 !i113 1
-R105
-R106
-Abehavioral
-R17
-R18
+R112
+R113
+Abehavior
+R71
+R20
+R21
 R159
-l27
-L17
+l68
+L8
 R160
 R161
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
+R250
+R44
 R45
-R46
 !i113 1
-R105
-R106
-Eflags_register_tb
-R246
-R67
-R17
-R18
-R247
+R112
+R113
+Eflags_register
+R46
+R20
+R21
+R22
 R47
 R48
 l0
-L5
+L4
 R162
 R163
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
+R250
 R49
 R50
 !i113 1
-R105
-R106
+R112
+R113
 Abehavioral
-R67
-R17
-R18
+R20
+R21
 R164
-l40
-L8
+l27
+L17
 R165
 R166
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
+R250
 R49
 R50
 !i113 1
-R105
-R106
-Eforward_unit
+R112
+R113
+Eflags_register_tb
+R5
+R71
+R20
+R21
+R22
 R51
-R67
-R17
-R18
-R247
 R52
-R53
 l0
 L5
 R167
 R168
-R110
+R117
 32
-R256
+R249
 !i10b 1
-R251
+R250
+R53
 R54
-R55
 !i113 1
-R105
-R106
-Aforward_arch
-R67
-R17
-R18
+R112
+R113
+Abehavioral
+R71
+R20
+R21
 R169
-l19
-L18
+l40
+L8
 R170
 R171
-R110
+R117
+32
+R249
+!i10b 1
+R250
+R53
+R54
+!i113 1
+R112
+R113
+Eforward_unit
+R55
+R71
+R20
+R21
+R22
+R56
+R57
+l0
+L5
+R172
+R173
+R117
+32
+R249
+!i10b 1
+R250
+R58
+R59
+!i113 1
+R112
+R113
+Aforward_arch
+R71
+R20
+R21
+R174
+l19
+L18
+R175
+R176
+R117
+32
+R249
+!i10b 1
+R250
+R58
+R59
+!i113 1
+R112
+R113
+Eid_ex_register
+R19
+R71
+R20
+R21
+R22
+R60
+R61
+l0
+L6
+R177
+R178
+R117
+32
+R253
+!i10b 1
+R254
+R62
+R63
+!i113 1
+R112
+R113
+Aid_ex_register_architecture
+R71
+R20
+R21
+R179
+l37
+L28
+R180
+R181
+R117
+32
+R253
+!i10b 1
+R254
+R62
+R63
+!i113 1
+R112
+R113
+Eif_id_reg
+R64
+R71
+R20
+R21
+R22
+R65
+R66
+l0
+L5
+R182
+R183
+R117
+32
+Z256 !s110 1735097155
+!i10b 1
+Z257 !s108 1735097155.000000
+R67
+R68
+!i113 1
+R112
+R113
+Aif_id_reg_architecture
+R71
+R20
+R21
+R184
+l18
+L15
+R185
+R186
+R117
 32
 R256
 !i10b 1
-R251
-R54
-R55
-!i113 1
-R105
-R106
-Eid_ex_register
-R56
-R67
-R17
-R18
-R247
-R57
-R58
-l0
-L6
-R172
-R173
-R110
-32
-R253
-!i10b 1
-R254
-R59
-R60
-!i113 1
-R105
-R106
-Aid_ex_register_architecture
-R67
-R17
-R18
-R174
-l37
-L28
-R175
-R176
-R110
-32
-R253
-!i10b 1
-R254
-R59
-R60
-!i113 1
-R105
-R106
-Eif_id_reg
-R11
-R67
-R17
-R18
-R247
-R61
-R62
-l0
-L5
-R177
-R178
-R110
-32
-R250
-!i10b 1
-Z258 !s108 1735093333.000000
-R63
-R64
-!i113 1
-R105
-R106
-Aif_id_reg_architecture
-R67
-R17
-R18
-R179
-l18
-L15
-R180
-R181
-R110
-32
-R250
-!i10b 1
-R258
-R63
-R64
-!i113 1
-R105
-R106
-Einstruction_memory
-R73
+R257
 R67
 R68
-R69
-R70
-R17
-R18
-R247
+!i113 1
+R112
+R113
+Einstruction_memory
+Z258 w1735093833
 R71
 R72
+R73
+R74
+R20
+R21
+R22
+R75
+R76
 l0
 L8
-R182
-R183
-R110
-32
-R250
-!i10b 1
-R258
-R74
-R75
-!i113 1
-R105
-R106
-Abehavior
-R67
-R68
-R69
-R70
-R17
-R18
-R184
-l29
-L24
-R185
-R186
-R110
-32
-R250
-!i10b 1
-R258
-R74
-R75
-!i113 1
-R105
-R106
-Einstruction_stage
-Z259 w1735091821
-R67
-R17
-R18
-R247
-R76
-R77
-l0
-L5
 R187
 R188
-R110
+R117
 32
-Z260 !s110 1735093334
+R256
 !i10b 1
-Z261 !s108 1735093334.000000
-R80
-R81
+R257
+R78
+R79
 !i113 1
-R105
-R106
+R112
+R113
 Abehavior
-R67
-R17
-R18
+R71
+R72
+R73
+R74
+R20
+R21
 R189
-l57
-L26
-V_bOLZbnS<TkJXBHT=c3?X0
-!s100 bJSFN`oG:hW^bX8dbVSl?3
-R110
+l29
+L24
+VC_Rb;M>de6lU07YRL=9iK1
+!s100 dnm1iSLOjHC71z<z[49Z[3
+R117
 32
-R260
+R256
 !i10b 1
-R261
+R257
+R78
+R79
+!i113 1
+R112
+R113
+Einstruction_stage
+Z259 w1735095558
+R71
+R20
+R21
+R22
 R80
 R81
-!i113 1
-R105
-R106
-Einstruction_stage_tb
-R11
-R67
-R17
-R18
-R247
-R82
-R83
 l0
 L5
 R190
 R191
-R110
+R117
 32
-R250
+R256
 !i10b 1
-R258
+R257
 R84
 R85
 !i113 1
-R105
-R106
+R112
+R113
 Abehavior
-R67
-R17
-R18
+R71
+R20
+R21
 R192
-l34
-L8
-R193
-R194
-R110
+l57
+L26
+VndePhI0CgMG:9VdHadD;m3
+!s100 5AG6GTS;WNdY07^TSfMl=3
+R117
 32
-R250
+R256
 !i10b 1
-R258
+R257
 R84
 R85
 !i113 1
-R105
-R106
-Ememory
-R11
-R67
-R17
-R18
-R247
-R195
-R196
+R112
+R113
+Einstruction_stage_tb
+R86
+R71
+R20
+R21
+R22
+R87
+R88
 l0
 L5
-R197
-R198
-R110
+R193
+R194
+R117
 32
-R260
+R256
 !i10b 1
-R261
-R199
-R200
+R257
+R89
+R90
 !i113 1
-R105
-R106
-Abehavioral
-R67
-R17
-R18
+R112
+R113
+Abehavior
+R71
+R20
+R21
+R195
+l34
+L8
+R196
+R197
+R117
+32
+R256
+!i10b 1
+R257
+R89
+R90
+!i113 1
+R112
+R113
+Ememory
+R91
+R71
+R20
+R21
+R22
+R198
+R199
+l0
+L5
+R200
 R201
-l50
-L36
+R117
+32
+R256
+!i10b 1
+R257
 R202
 R203
-R110
-32
-R260
-!i10b 1
-R261
-R199
-R200
 !i113 1
-R105
-R106
+R112
+R113
+Abehavioral
+R71
+R20
+R21
+R204
+l50
+L36
+R205
+R206
+R117
+32
+R256
+!i10b 1
+R257
+R202
+R203
+!i113 1
+R112
+R113
 Emy_dff
 R246
-R17
-R18
-R247
-Z262 8./Fetch/DFF.vhd
-Z263 F./Fetch/DFF.vhd
+R20
+R21
+R22
+Z260 8./Fetch/DFF.vhd
+Z261 F./Fetch/DFF.vhd
 l0
 L4
 VBe[C>Da6?Y6I2zUceLk373
 !s100 _kniBUTK^>LlDbeD>WD@X0
-R110
+R117
 32
-R250
+R256
 !i10b 1
-R258
-Z264 !s90 -reportprogress|300|-2002|./Fetch/DFF.vhd|
-Z265 !s107 ./Fetch/DFF.vhd|
+R250
+Z262 !s90 -reportprogress|300|-2002|./Fetch/DFF.vhd|
+Z263 !s107 ./Fetch/DFF.vhd|
 !i113 1
-R105
-R106
+R112
+R113
 Aa_my_dff
-R17
-R18
+R20
+R21
 DEx4 work 6 my_dff 0 22 Be[C>Da6?Y6I2zUceLk373
 l15
 L14
 V0WCXN81XbmQoe]KehooaP0
 !s100 FVCLYKYl_Ln5G7o@]89dd0
-R110
+R117
 32
-R250
+R256
 !i10b 1
-R258
-R264
-R265
+R250
+R262
+R263
 !i113 1
-R105
-R106
+R112
+R113
 Eoperand_mux
-R246
-R17
-R18
-R247
-Z266 8./Decode/operand_mux.vhd
-Z267 F./Decode/operand_mux.vhd
+Z264 w1734380725
+R20
+R21
+R22
+Z265 8./Decode/operand_mux.vhd
+Z266 F./Decode/operand_mux.vhd
 l0
 L4
 VoST[_8F01[J<:;GVI32zG0
 !s100 W^go3VF<7=6Y6No3FM__l3
-R110
+R117
 32
-R253
+R249
 !i10b 1
-R254
-R86
-R87
+R250
+R92
+R93
 !i113 1
-R105
-R106
+R112
+R113
 Aoperand_mux_arch
-R17
-R18
-R204
+R20
+R21
+R207
 l14
 L13
-R205
-R206
-R110
+R208
+R209
+R117
 32
-R253
+R249
 !i10b 1
-R254
-R86
-R87
+R250
+R92
+R93
 !i113 1
-R105
-R106
+R112
+R113
 Epc_register
 R246
-R17
-R18
-R247
-Z268 8./Fetch/PC_Register.vhd
-Z269 F./Fetch/PC_Register.vhd
+R20
+R21
+R22
+Z267 8./Fetch/PC_Register.vhd
+Z268 F./Fetch/PC_Register.vhd
 l0
 L4
 V5UBZa@z9^Lbd0<>NLMoiI1
 !s100 1CkZ@mNHlJ5^QYKIDV43Q0
-R110
+R117
 32
-R260
+R256
 !i10b 1
-R258
-R88
-R89
+R257
+R94
+R95
 !i113 1
-R105
-R106
+R112
+R113
 Abehavior
-R17
-R18
-R207
+R20
+R21
+R210
 l26
 L13
-R208
-R209
-R110
-32
-R260
-!i10b 1
-R258
-R88
-R89
-!i113 1
-R105
-R106
-Epipeline_processor
-Z270 w1735093321
-R17
-R18
-R247
-R210
 R211
+R212
+R117
+32
+R256
+!i10b 1
+R257
+R94
+R95
+!i113 1
+R112
+R113
+Epipeline_processor
+Z269 w1735095771
+R20
+R21
+R22
+R213
+R214
 l0
 L4
-R212
-R213
-R110
-32
-Z271 !s110 1735093335
-!i10b 1
-Z272 !s108 1735093335.000000
-R214
 R215
-!i113 1
-R105
-R106
-Abehavioral
-R17
-R18
 R216
-l220
-L13
-Vc2UaMlO@D[DeeW8VE81P]2
-!s100 7Qm0mGR0;iPkYe]cj5XJ33
-R110
+R117
 32
-R271
+Z270 !s110 1735097156
 !i10b 1
-R272
-R214
-R215
+Z271 !s108 1735097156.000000
+R217
+R218
 !i113 1
-R105
-R106
+R112
+R113
+Abehavioral
+R20
+R21
+R219
+l221
+L13
+Z272 Vi0WTCil=d5B8S:1[nnRYc3
+Z273 !s100 `JOm^c[OLXR]UW3aHWNUM0
+R117
+32
+R270
+!i10b 1
+R271
+R217
+R218
+!i113 1
+R112
+R113
 Eregister_file
-R246
-R67
-R17
-R18
-R247
-Z273 8./Decode/register_file.vhd
-Z274 F./Decode/register_file.vhd
+Z274 w1735095814
+R71
+R20
+R21
+R22
+Z275 8./Decode/register_file.vhd
+Z276 F./Decode/register_file.vhd
 l0
 L5
-VlAM?58aFDRVHbSkef]2lS3
-!s100 UnakZKIhPhJobifEkFcA53
-R110
+VDK2^nJnB3jB]F:?S1:<V32
+!s100 5neFCD;RhYUOZ0UXEblW]0
+R117
 32
-R253
+R249
 !i10b 1
-R254
-R217
-R218
-!i113 1
-R105
-R106
-Aregister_file_arch
-R67
-R17
-R18
-R219
-l22
-L19
+R250
 R220
 R221
-R110
-32
-R253
-!i10b 1
-R254
-R217
-R218
 !i113 1
-R105
-R106
+R112
+R113
+Aregister_file_arch
+R71
+R20
+R21
+DEx4 work 13 register_file 0 22 DK2^nJnB3jB]F:?S1:<V32
+l23
+L20
+VGU?c<mZNJKiB<RB`iOVi10
+!s100 eObd^E==SmI1gHDflikc^0
+R117
+32
+R249
+!i10b 1
+R250
+R220
+R221
+!i113 1
+R112
+R113
 Eregister_file_tb
-R246
-R67
-R17
-R18
-R247
-Z275 8./Decode/register_file_tb.vhd
-Z276 F./Decode/register_file_tb.vhd
+R264
+R71
+R20
+R21
+R22
+Z277 8./Decode/register_file_tb.vhd
+Z278 F./Decode/register_file_tb.vhd
 l0
 L5
 VA_1JjnXTg:4nm>2j?OAea0
 !s100 8_g`Z@KoD=bzbaV3d_]Y52
-R110
+R117
 32
-R253
+R249
 !i10b 1
-R254
+R250
 R222
 R223
 !i113 1
-R105
-R106
+R112
+R113
 Abehavior
-R67
-R17
-R18
+R71
+R20
+R21
 R224
 l37
 L8
 R225
 R226
-R110
+R117
 32
-R253
+R249
 !i10b 1
-R254
+R250
 R222
 R223
 !i113 1
-R105
-R106
+R112
+R113
 Estack_pointer
-R11
-R67
-R17
-R18
-R247
+R98
+R71
+R20
+R21
+R22
 R227
 R228
 l0
 L5
 R229
 R230
-R110
+R117
 32
-R271
+R270
 !i10b 1
-R272
-R94
-R95
+R271
+R99
+R100
 !i113 1
-R105
-R106
+R112
+R113
 Abehavioral
-R67
-R17
-R18
+R71
+R20
+R21
 R231
 l19
 L16
 R232
 R233
-R110
+R117
 32
-R271
+R270
 !i10b 1
-R272
-R94
-R95
+R271
+R99
+R100
 !i113 1
-R105
-R106
+R112
+R113
 Ewb
-R96
-R67
-R17
-R18
-R247
+R101
+R71
+R20
+R21
+R22
 R234
 R235
 l0
 L6
 R236
 R237
-R110
+R117
 32
-R260
+R256
 !i10b 1
-R261
-R97
-R98
+R257
+R103
+R104
 !i113 1
-R105
-R106
+R112
+R113
 Abehavioral
-R67
-R17
-R18
+R71
+R20
+R21
 R238
 l28
 L26
 R239
 R240
-R110
+R117
 32
-R260
+R256
 !i10b 1
-R261
-R97
-R98
+R257
+R103
+R104
 !i113 1
-R105
-R106
+R112
+R113
 Ewb_tb
-R96
-R67
-R17
-R18
-R247
-R99
-R100
+R105
+R71
+R20
+R21
+R22
+R106
+R107
 l0
 L5
 R241
 R242
-R110
+R117
 32
-R260
+R256
 !i10b 1
-R261
-R101
-R102
+R257
+R108
+R109
 !i113 1
-R105
-R106
+R112
+R113
 Abehavioral
-R67
-R17
-R18
+R71
+R20
+R21
 R243
 l41
 L8
 R244
 R245
-R110
+R117
 32
-R271
+R256
 !i10b 1
-R261
-R101
-R102
+R257
+R108
+R109
 !i113 1
-R105
-R106
+R112
+R113
