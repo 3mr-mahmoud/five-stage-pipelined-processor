@@ -71,15 +71,14 @@ BEGIN
     END PROCESS;
 
     -- ALU source control signals
-    alu_src_14 <= alu_src AND fetched_instruction(14);
-    alu_src_15 <= alu_src AND fetched_instruction(15);
+    alu_src_14 <= (NOT alu_src) AND fetched_instruction(14);
+    alu_src_15 <= (NOt alu_src) AND fetched_instruction(15);
 
     -- PC enable logic
-    PC_enable <= (NOT (NOT alu_src AND fetched_instruction(14) AND fetched_instruction(15))) OR from_ports;
+    PC_enable <= (NOT ((NOT alu_src) AND fetched_instruction(14) AND fetched_instruction(15))) OR from_ports;
 
     -- MUX Chain Logic
-    mux1_sel <= (alu_src_15 AND (NOT alu_src)) &
-        (alu_src_14 AND (NOT alu_src));
+    mux1_sel <= alu_src_15 & alu_src_14;
     mux1_out <= PC_plus_one WHEN mux1_sel = "00" ELSE
         IM_7 WHEN mux1_sel = "10" ELSE
         IM_6 WHEN mux1_sel = "01" ELSE
