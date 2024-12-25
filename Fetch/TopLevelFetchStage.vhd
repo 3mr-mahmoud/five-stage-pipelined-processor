@@ -33,6 +33,7 @@ ARCHITECTURE behavior OF Instruction_Stage IS
     SIGNAL alu_src_14, alu_src_15 : STD_LOGIC;
     SIGNAL PC_plus_one : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL fetched_instruction : STD_LOGIC_VECTOR(15 DOWNTO 0); -- Internal signal for fetched instruction
+    SIGNAL mux1_sel : STD_LOGIC_VECTOR(1 DOWNTO 0) := "00";
     -- signal if_id_reset : std_logic := '0';
 
     COMPONENT Instruction_Memory
@@ -77,9 +78,11 @@ BEGIN
     PC_enable <= (NOT (NOT alu_src AND fetched_instruction(14) AND fetched_instruction(15))) OR from_ports;
 
     -- MUX Chain Logic
-    mux1_out <= PC_plus_one WHEN reset = '0' AND alu_src_15 = '0' AND alu_src_14 = '0' ELSE
-        IM_7 WHEN alu_src_15 = '1' ELSE
-        IM_6 WHEN alu_src_14 = '1' ELSE
+    mux1_sel <= (alu_src_15 AND (NOT alu_src)) &
+        (alu_src_14 AND (NOT alu_src));
+    mux1_out <= PC_plus_one WHEN mux1_sel = "00" ELSE
+        IM_7 WHEN mux1_sel = "10" ELSE
+        IM_6 WHEN mux1_sel = "01" ELSE
         PC_plus_one;
 
     mux2_out <= Src2 WHEN Call_Signal = '1' ELSE

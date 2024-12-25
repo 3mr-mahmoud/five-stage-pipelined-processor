@@ -11,8 +11,10 @@ ARCHITECTURE testbench OF ALU_unit_tb IS
     constant WIDTH : integer := 16;
 
     -- Signals for ALU inputs
+    signal reset : std_logic := '0';
     signal enable : std_logic := '0';
     signal ALU_func : std_logic_vector(2 downto 0) := (others => '0');
+    signal branch_code : std_logic_vector(1 downto 0) := (others => '0');
     signal A, B : std_logic_vector(WIDTH-1 downto 0) := (others => '0');
 
     -- Signals for ALU outputs
@@ -27,8 +29,10 @@ BEGIN
             WIDTH => WIDTH
         )
         PORT MAP (
+            reset => reset,
             enable => enable,
             ALU_func => ALU_func,
+            branch_code => branch_code,
             A => A,
             B => B,
             ALU_output => ALU_output,

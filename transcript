@@ -1,30 +1,31 @@
+# ERROR: No extended dataflow license exists
 # do doFile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:47 on Dec 24,2024
+# Start time: 03:09:02 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture control_arch of control_unit
-# End time: 02:55:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:02 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:47 on Dec 24,2024
+# Start time: 03:09:02 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decode_stage
 # -- Compiling architecture decode_arch of decode_stage
-# End time: 02:55:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:02 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:47 on Dec 24,2024
+# Start time: 03:09:02 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -32,20 +33,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX_REGISTER
 # -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 02:55:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:47 on Dec 24,2024
+# Start time: 03:09:03 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity operand_mux
 # -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 02:55:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:47 on Dec 24,2024
+# Start time: 03:09:03 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -53,10 +54,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture register_file_arch of register_file
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:03 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -64,10 +65,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file_tb
 # -- Compiling architecture behavior of register_file_tb
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:03 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -75,10 +76,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_unit
 # -- Compiling architecture ALU_arch of ALU_unit
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:03 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -87,10 +88,10 @@
 # -- Compiling entity ALU_unit_tb
 # -- Compiling architecture testbench of ALU_unit_tb
 # -- Loading entity ALU_unit
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:03 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -98,10 +99,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity exception_unit
 # -- Compiling architecture exception_arch of exception_unit
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:03 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -109,10 +110,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_register
 # -- Compiling architecture register_arch of execute_register
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -120,10 +121,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage
 # -- Compiling architecture execute_arch of execute_stage
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -131,10 +132,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage_tb
 # -- Compiling architecture behavior of execute_stage_tb
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -142,20 +143,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM_reg
 # -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flags_register
 # -- Compiling architecture Behavioral of flags_register
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -163,10 +164,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flags_register_tb
 # -- Compiling architecture Behavioral of flags_register_tb
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -174,10 +175,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity forward_unit
 # -- Compiling architecture forward_arch of forward_unit
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:04 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -185,20 +186,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
 # -- Compiling architecture behavior of Adder
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:04 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:05 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity my_DFF
 # -- Compiling architecture a_my_DFF of my_DFF
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:05 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:05 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -206,10 +207,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage_TB
 # -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 02:55:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:05 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:48 on Dec 24,2024
+# Start time: 03:09:05 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -217,10 +218,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID_reg
 # -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:09:05 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:49 on Dec 24,2024
+# Start time: 03:09:05 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -231,20 +232,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Memory
 # -- Compiling architecture behavior of Instruction_Memory
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:05 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:49 on Dec 24,2024
+# Start time: 03:09:05 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PC_Register
 # -- Compiling architecture behavior of PC_Register
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:06 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:49 on Dec 24,2024
+# Start time: 03:09:06 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -252,10 +253,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage
 # -- Compiling architecture behavior of Instruction_Stage
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:06 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:49 on Dec 24,2024
+# Start time: 03:09:06 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -263,10 +264,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture Behavioral of memory
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:06 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:49 on Dec 24,2024
+# Start time: 03:09:06 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -274,10 +275,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity WB
 # -- Compiling architecture Behavioral of WB
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:06 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:49 on Dec 24,2024
+# Start time: 03:09:06 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -285,10 +286,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity WB_tb
 # -- Compiling architecture Behavioral of WB_tb
-# End time: 02:55:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:07 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:50 on Dec 24,2024
+# Start time: 03:09:07 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -296,20 +297,20 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity stack_pointer
 # -- Compiling architecture Behavioral of stack_pointer
-# End time: 02:55:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:07 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:55:50 on Dec 24,2024
+# Start time: 03:09:07 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./pipleLine.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pipeline_processor
 # -- Compiling architecture Behavioral of pipeline_processor
-# End time: 02:55:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:09:07 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim pipeline_processor 
-# Start time: 02:55:50 on Dec 24,2024
+# Start time: 03:09:07 on Dec 25,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -338,49 +339,16 @@
 # Loading work.wb(behavioral)
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: M-A  Hostname: DESKTOP-VJKBF6R  ProcessID: 10612
-#           Attempting to use alternate WLF file "./wlftikdews".
+#           Attempting to use alternate WLF file "./wlfte01kn9".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftikdews
+#           Using alternate file: ./wlfte01kn9
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+step -current
+# ** Error: (vsim-12081) The specified scope, sim:/pipeline_processor, is not a process or thread.
+# 
 run
 run
 run
@@ -390,27 +358,27 @@ do doFile.do
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture control_arch of control_unit
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decode_stage
 # -- Compiling architecture decode_arch of decode_stage
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -418,20 +386,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX_REGISTER
 # -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity operand_mux
 # -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -439,10 +407,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture register_file_arch of register_file
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -450,10 +418,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file_tb
 # -- Compiling architecture behavior of register_file_tb
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -461,10 +429,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_unit
 # -- Compiling architecture ALU_arch of ALU_unit
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:39 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -473,10 +441,10 @@ do doFile.do
 # -- Compiling entity ALU_unit_tb
 # -- Compiling architecture testbench of ALU_unit_tb
 # -- Loading entity ALU_unit
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -484,10 +452,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity exception_unit
 # -- Compiling architecture exception_arch of exception_unit
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -495,10 +463,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_register
 # -- Compiling architecture register_arch of execute_register
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -506,10 +474,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage
 # -- Compiling architecture execute_arch of execute_stage
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:32 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -517,10 +485,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage_tb
 # -- Compiling architecture behavior of execute_stage_tb
-# End time: 03:05:32 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -528,20 +496,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM_reg
 # -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flags_register
 # -- Compiling architecture Behavioral of flags_register
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:40 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -549,10 +517,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flags_register_tb
 # -- Compiling architecture Behavioral of flags_register_tb
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:40 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:41 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -560,10 +528,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity forward_unit
 # -- Compiling architecture forward_arch of forward_unit
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:41 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:41 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -571,20 +539,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
 # -- Compiling architecture behavior of Adder
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:41 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:41 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity my_DFF
 # -- Compiling architecture a_my_DFF of my_DFF
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:41 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:41 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -592,10 +560,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage_TB
 # -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:41 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:41 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -603,10 +571,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID_reg
 # -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:41 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:41 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -617,20 +585,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Memory
 # -- Compiling architecture behavior of Instruction_Memory
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:41 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:42 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PC_Register
 # -- Compiling architecture behavior of PC_Register
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:20:42 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
+# Start time: 03:20:42 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -638,518 +606,48 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage
 # -- Compiling architecture behavior of Instruction_Stage
-# End time: 03:05:33 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:33 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory
-# -- Compiling architecture Behavioral of memory
-# End time: 03:05:34 on Dec 24,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:34 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB
-# -- Compiling architecture Behavioral of WB
-# End time: 03:05:34 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:34 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB_tb
-# -- Compiling architecture Behavioral of WB_tb
-# End time: 03:05:34 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:34 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity stack_pointer
-# -- Compiling architecture Behavioral of stack_pointer
-# End time: 03:05:34 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:05:34 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./pipleLine.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity pipeline_processor
-# -- Compiling architecture Behavioral of pipeline_processor
-# End time: 03:05:34 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 03:05:37 on Dec 24,2024, Elapsed time: 0:09:47
-# Errors: 0, Warnings: 4
-# vsim pipeline_processor 
-# Start time: 03:05:37 on Dec 24,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline_processor(behavioral)
-# Loading ieee.numeric_std(body)
-# Loading work.instruction_stage(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.instruction_memory(behavior)
-# Loading work.if_id_reg(if_id_reg_architecture)
-# Loading work.stack_pointer(behavioral)
-# Loading work.decode_stage(decode_arch)
-# Loading work.control_unit(control_arch)
-# Loading work.operand_mux(operand_mux_arch)
-# Loading work.register_file(register_file_arch)
-# Loading work.id_ex_register(id_ex_register_architecture)
-# Loading work.execute_stage(execute_arch)
-# Loading work.forward_unit(forward_arch)
-# Loading work.alu_unit(alu_arch)
-# Loading work.flags_register(behavioral)
-# Loading work.exception_unit(exception_arch)
-# Loading work.execute_register(register_arch)
-# Loading work.ex_mem_reg(ex_mem_reg_arch)
-# Loading work.memory(behavioral)
-# Loading work.wb(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: M-A  Hostname: DESKTOP-VJKBF6R  ProcessID: 10612
-#           Attempting to use alternate WLF file "./wlftb0h9kc".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftb0h9kc
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 500 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 1600 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 2700 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 3800 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 4900 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 6 ns  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-do doFile.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity control_unit
-# -- Compiling architecture control_arch of control_unit
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decode_stage
-# -- Compiling architecture decode_arch of decode_stage
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ID_EX_REGISTER
-# -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity operand_mux
-# -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file
-# -- Compiling architecture register_file_arch of register_file
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity register_file_tb
-# -- Compiling architecture behavior of register_file_tb
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU_unit
-# -- Compiling architecture ALU_arch of ALU_unit
-# End time: 03:09:37 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:37 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity ALU_unit_tb
-# -- Compiling architecture testbench of ALU_unit_tb
-# -- Loading entity ALU_unit
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity exception_unit
-# -- Compiling architecture exception_arch of exception_unit
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity execute_register
-# -- Compiling architecture register_arch of execute_register
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity execute_stage
-# -- Compiling architecture execute_arch of execute_stage
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity execute_stage_tb
-# -- Compiling architecture behavior of execute_stage_tb
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity EX_MEM_reg
-# -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity flags_register
-# -- Compiling architecture Behavioral of flags_register
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity flags_register_tb
-# -- Compiling architecture Behavioral of flags_register_tb
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity forward_unit
-# -- Compiling architecture forward_arch of forward_unit
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Adder
-# -- Compiling architecture behavior of Adder
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity my_DFF
-# -- Compiling architecture a_my_DFF of my_DFF
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Instruction_Stage_TB
-# -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity IF_ID_reg
-# -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 03:09:38 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:38 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Instruction_Memory
-# -- Compiling architecture behavior of Instruction_Memory
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity PC_Register
-# -- Compiling architecture behavior of PC_Register
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity Instruction_Stage
-# -- Compiling architecture behavior of Instruction_Stage
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory
-# -- Compiling architecture Behavioral of memory
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB
-# -- Compiling architecture Behavioral of WB
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB_tb
-# -- Compiling architecture Behavioral of WB_tb
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity stack_pointer
-# -- Compiling architecture Behavioral of stack_pointer
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:09:39 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./pipleLine.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity pipeline_processor
-# -- Compiling architecture Behavioral of pipeline_processor
-# ** Error: ./pipleLine.vhd(399): Illegal sequential statement.
-# ** Error: ./pipleLine.vhd(403): VHDL Compiler exiting
-# End time: 03:09:39 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1581) No feasible entries for infix operator 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1581) No feasible entries for infix operator 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in left operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in right operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(84): (vcom-1136) Unknown identifier "mux_sel".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(84): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(137): VHDL Compiler exiting
+# End time: 03:20:42 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
 # ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./doFile.do line 45
+# Error in macro ./doFile.do line 34
 # C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
-# "vcom -2002 ./pipleLine.vhd"
+# "vcom -2002 ./Fetch/TopLevelFetchStage.vhd"
 do doFile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture control_arch of control_unit
-# End time: 03:10:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decode_stage
 # -- Compiling architecture decode_arch of decode_stage
-# End time: 03:10:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1157,20 +655,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX_REGISTER
 # -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 03:10:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity operand_mux
 # -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 03:10:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1178,10 +676,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture register_file_arch of register_file
-# End time: 03:10:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1189,10 +687,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file_tb
 # -- Compiling architecture behavior of register_file_tb
-# End time: 03:10:49 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:49 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1200,10 +698,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_unit
 # -- Compiling architecture ALU_arch of ALU_unit
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:33:34 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:34 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1212,10 +710,10 @@ do doFile.do
 # -- Compiling entity ALU_unit_tb
 # -- Compiling architecture testbench of ALU_unit_tb
 # -- Loading entity ALU_unit
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1223,10 +721,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity exception_unit
 # -- Compiling architecture exception_arch of exception_unit
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1234,10 +732,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_register
 # -- Compiling architecture register_arch of execute_register
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1245,10 +743,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage
 # -- Compiling architecture execute_arch of execute_stage
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1256,10 +754,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage_tb
 # -- Compiling architecture behavior of execute_stage_tb
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1267,20 +765,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM_reg
 # -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flags_register
 # -- Compiling architecture Behavioral of flags_register
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1288,10 +786,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flags_register_tb
 # -- Compiling architecture Behavioral of flags_register_tb
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:50 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1299,10 +797,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity forward_unit
 # -- Compiling architecture forward_arch of forward_unit
-# End time: 03:10:50 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:35 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:35 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1310,20 +808,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
 # -- Compiling architecture behavior of Adder
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:36 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity my_DFF
 # -- Compiling architecture a_my_DFF of my_DFF
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1331,10 +829,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage_TB
 # -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1342,10 +840,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID_reg
 # -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1356,20 +854,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Memory
 # -- Compiling architecture behavior of Instruction_Memory
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PC_Register
 # -- Compiling architecture behavior of PC_Register
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:33:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
+# Start time: 03:33:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1377,145 +875,48 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage
 # -- Compiling architecture behavior of Instruction_Stage
-# End time: 03:10:51 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:51 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory
-# -- Compiling architecture Behavioral of memory
-# End time: 03:10:52 on Dec 24,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:52 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB
-# -- Compiling architecture Behavioral of WB
-# End time: 03:10:52 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:52 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB_tb
-# -- Compiling architecture Behavioral of WB_tb
-# End time: 03:10:52 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:52 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity stack_pointer
-# -- Compiling architecture Behavioral of stack_pointer
-# End time: 03:10:52 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:10:52 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./pipleLine.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity pipeline_processor
-# -- Compiling architecture Behavioral of pipeline_processor
-# End time: 03:10:52 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 03:10:53 on Dec 24,2024, Elapsed time: 0:05:16
-# Errors: 5, Warnings: 10
-# vsim pipeline_processor 
-# Start time: 03:10:53 on Dec 24,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline_processor(behavioral)
-# Loading ieee.numeric_std(body)
-# Loading work.instruction_stage(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.instruction_memory(behavior)
-# Loading work.if_id_reg(if_id_reg_architecture)
-# Loading work.stack_pointer(behavioral)
-# Loading work.decode_stage(decode_arch)
-# Loading work.control_unit(control_arch)
-# Loading work.operand_mux(operand_mux_arch)
-# Loading work.register_file(register_file_arch)
-# Loading work.id_ex_register(id_ex_register_architecture)
-# Loading work.execute_stage(execute_arch)
-# Loading work.forward_unit(forward_arch)
-# Loading work.alu_unit(alu_arch)
-# Loading work.flags_register(behavioral)
-# Loading work.exception_unit(exception_arch)
-# Loading work.execute_register(register_arch)
-# Loading work.ex_mem_reg(ex_mem_reg_arch)
-# Loading work.memory(behavioral)
-# Loading work.wb(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: M-A  Hostname: DESKTOP-VJKBF6R  ProcessID: 10612
-#           Attempting to use alternate WLF file "./wlftcahyhd".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftcahyhd
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 500 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 1700 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1581) No feasible entries for infix operator 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1581) No feasible entries for infix operator 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in left operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in right operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(84): (vcom-1136) Unknown identifier "mux_sel".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(84): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(137): VHDL Compiler exiting
+# End time: 03:33:37 on Dec 25,2024, Elapsed time: 0:00:01
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./doFile.do line 34
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2002 ./Fetch/TopLevelFetchStage.vhd"
 do doFile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture control_arch of control_unit
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:48 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decode_stage
 # -- Compiling architecture decode_arch of decode_stage
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:48 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1523,20 +924,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX_REGISTER
 # -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:48 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity operand_mux
 # -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:48 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1544,10 +945,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture register_file_arch of register_file
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:48 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1555,10 +956,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file_tb
 # -- Compiling architecture behavior of register_file_tb
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:48 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:48 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1566,10 +967,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_unit
 # -- Compiling architecture ALU_arch of ALU_unit
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1578,10 +979,10 @@ do doFile.do
 # -- Compiling entity ALU_unit_tb
 # -- Compiling architecture testbench of ALU_unit_tb
 # -- Loading entity ALU_unit
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1589,10 +990,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity exception_unit
 # -- Compiling architecture exception_arch of exception_unit
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1600,10 +1001,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_register
 # -- Compiling architecture register_arch of execute_register
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1611,10 +1012,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage
 # -- Compiling architecture execute_arch of execute_stage
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1622,10 +1023,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage_tb
 # -- Compiling architecture behavior of execute_stage_tb
-# End time: 03:23:21 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:21 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1633,20 +1034,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM_reg
 # -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flags_register
 # -- Compiling architecture Behavioral of flags_register
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:49 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1654,10 +1055,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flags_register_tb
 # -- Compiling architecture Behavioral of flags_register_tb
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:49 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:50 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1665,10 +1066,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity forward_unit
 # -- Compiling architecture forward_arch of forward_unit
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:50 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:50 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1676,20 +1077,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
 # -- Compiling architecture behavior of Adder
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:50 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:50 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity my_DFF
 # -- Compiling architecture a_my_DFF of my_DFF
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:50 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:50 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1697,10 +1098,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage_TB
 # -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:50 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:50 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1708,10 +1109,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID_reg
 # -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:50 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:50 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1722,20 +1123,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Memory
 # -- Compiling architecture behavior of Instruction_Memory
-# End time: 03:23:22 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:34:50 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:22 on Dec 24,2024
+# Start time: 03:34:51 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PC_Register
 # -- Compiling architecture behavior of PC_Register
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:34:51 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:23 on Dec 24,2024
+# Start time: 03:34:51 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1743,142 +1144,48 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage
 # -- Compiling architecture behavior of Instruction_Stage
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:23 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory
-# -- Compiling architecture Behavioral of memory
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:23 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB
-# -- Compiling architecture Behavioral of WB
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:23 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB_tb
-# -- Compiling architecture Behavioral of WB_tb
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:23 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity stack_pointer
-# -- Compiling architecture Behavioral of stack_pointer
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:23:23 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./pipleLine.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity pipeline_processor
-# -- Compiling architecture Behavioral of pipeline_processor
-# End time: 03:23:23 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 03:23:26 on Dec 24,2024, Elapsed time: 0:12:33
-# Errors: 0, Warnings: 6
-# vsim pipeline_processor 
-# Start time: 03:23:26 on Dec 24,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline_processor(behavioral)
-# Loading ieee.numeric_std(body)
-# Loading work.instruction_stage(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.instruction_memory(behavior)
-# Loading work.if_id_reg(if_id_reg_architecture)
-# Loading work.stack_pointer(behavioral)
-# Loading work.decode_stage(decode_arch)
-# Loading work.control_unit(control_arch)
-# Loading work.operand_mux(operand_mux_arch)
-# Loading work.register_file(register_file_arch)
-# Loading work.id_ex_register(id_ex_register_architecture)
-# Loading work.execute_stage(execute_arch)
-# Loading work.forward_unit(forward_arch)
-# Loading work.alu_unit(alu_arch)
-# Loading work.flags_register(behavioral)
-# Loading work.exception_unit(exception_arch)
-# Loading work.execute_register(register_arch)
-# Loading work.ex_mem_reg(ex_mem_reg_arch)
-# Loading work.memory(behavioral)
-# Loading work.wb(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: M-A  Hostname: DESKTOP-VJKBF6R  ProcessID: 10612
-#           Attempting to use alternate WLF file "./wlfttjrhkd".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttjrhkd
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 500 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 1700 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1581) No feasible entries for infix operator 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): (vcom-1581) No feasible entries for infix operator 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in left operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1590) Bad expression in right operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(85): (vcom-1136) Unknown identifier "mux_sel".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(85): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(138): VHDL Compiler exiting
+# End time: 03:34:51 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./doFile.do line 34
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2002 ./Fetch/TopLevelFetchStage.vhd"
 do doFile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture control_arch of control_unit
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decode_stage
 # -- Compiling architecture decode_arch of decode_stage
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1886,20 +1193,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX_REGISTER
 # -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity operand_mux
 # -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1907,10 +1214,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture register_file_arch of register_file
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:36 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:36 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1918,10 +1225,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file_tb
 # -- Compiling architecture behavior of register_file_tb
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1929,10 +1236,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_unit
 # -- Compiling architecture ALU_arch of ALU_unit
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1941,10 +1248,10 @@ do doFile.do
 # -- Compiling entity ALU_unit_tb
 # -- Compiling architecture testbench of ALU_unit_tb
 # -- Loading entity ALU_unit
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1952,10 +1259,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity exception_unit
 # -- Compiling architecture exception_arch of exception_unit
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1963,10 +1270,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_register
 # -- Compiling architecture register_arch of execute_register
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1974,10 +1281,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage
 # -- Compiling architecture execute_arch of execute_stage
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1985,10 +1292,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage_tb
 # -- Compiling architecture behavior of execute_stage_tb
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:47 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -1996,20 +1303,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM_reg
 # -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 03:24:47 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flags_register
 # -- Compiling architecture Behavioral of flags_register
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2017,10 +1324,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flags_register_tb
 # -- Compiling architecture Behavioral of flags_register_tb
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:37 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:37 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2028,10 +1335,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity forward_unit
 # -- Compiling architecture forward_arch of forward_unit
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:38 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:38 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2039,20 +1346,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
 # -- Compiling architecture behavior of Adder
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:38 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:38 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity my_DFF
 # -- Compiling architecture a_my_DFF of my_DFF
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:38 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:38 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2060,10 +1367,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage_TB
 # -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:38 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:38 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2071,10 +1378,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID_reg
 # -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:38 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:38 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2085,20 +1392,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Memory
 # -- Compiling architecture behavior of Instruction_Memory
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:38 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:38 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PC_Register
 # -- Compiling architecture behavior of PC_Register
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:39 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
+# Start time: 03:35:39 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2106,138 +1413,50 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage
 # -- Compiling architecture behavior of Instruction_Stage
-# End time: 03:24:48 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:48 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory
-# -- Compiling architecture Behavioral of memory
-# End time: 03:24:49 on Dec 24,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:49 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB
-# -- Compiling architecture Behavioral of WB
-# End time: 03:24:49 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:49 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity WB_tb
-# -- Compiling architecture Behavioral of WB_tb
-# End time: 03:24:49 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:49 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity stack_pointer
-# -- Compiling architecture Behavioral of stack_pointer
-# End time: 03:24:49 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:24:49 on Dec 24,2024
-# vcom -reportprogress 300 -2002 ./pipleLine.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity pipeline_processor
-# -- Compiling architecture Behavioral of pipeline_processor
-# End time: 03:24:49 on Dec 24,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 03:24:50 on Dec 24,2024, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 6
-# vsim pipeline_processor 
-# Start time: 03:24:50 on Dec 24,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline_processor(behavioral)
-# Loading ieee.numeric_std(body)
-# Loading work.instruction_stage(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.instruction_memory(behavior)
-# Loading work.if_id_reg(if_id_reg_architecture)
-# Loading work.stack_pointer(behavioral)
-# Loading work.decode_stage(decode_arch)
-# Loading work.control_unit(control_arch)
-# Loading work.operand_mux(operand_mux_arch)
-# Loading work.register_file(register_file_arch)
-# Loading work.id_ex_register(id_ex_register_architecture)
-# Loading work.execute_stage(execute_arch)
-# Loading work.forward_unit(forward_arch)
-# Loading work.alu_unit(alu_arch)
-# Loading work.flags_register(behavioral)
-# Loading work.exception_unit(exception_arch)
-# Loading work.execute_register(register_arch)
-# Loading work.ex_mem_reg(ex_mem_reg_arch)
-# Loading work.memory(behavioral)
-# Loading work.wb(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: M-A  Hostname: DESKTOP-VJKBF6R  ProcessID: 10612
-#           Attempting to use alternate WLF file "./wlftdtgde0".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftdtgde0
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 500 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1136) Unknown identifier "to_boolean".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): (vcom-1136) Unknown identifier "to_boolean".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in left operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1590) Bad expression in right operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(85): (vcom-1136) Unknown identifier "mux_sel".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(85): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(138): VHDL Compiler exiting
+# End time: 03:35:39 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./doFile.do line 34
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2002 ./Fetch/TopLevelFetchStage.vhd"
 do doFile.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity control_unit
 # -- Compiling architecture control_arch of control_unit
-# End time: 03:25:54 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity decode_stage
 # -- Compiling architecture decode_arch of decode_stage
-# End time: 03:25:54 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2245,20 +1464,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ID_EX_REGISTER
 # -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
-# End time: 03:25:54 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity operand_mux
 # -- Compiling architecture operand_mux_arch of operand_mux
-# End time: 03:25:54 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2266,10 +1485,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file
 # -- Compiling architecture register_file_arch of register_file
-# End time: 03:25:54 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2277,10 +1496,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity register_file_tb
 # -- Compiling architecture behavior of register_file_tb
-# End time: 03:25:54 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:54 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2288,10 +1507,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU_unit
 # -- Compiling architecture ALU_arch of ALU_unit
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:35:57 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:57 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2300,10 +1519,10 @@ do doFile.do
 # -- Compiling entity ALU_unit_tb
 # -- Compiling architecture testbench of ALU_unit_tb
 # -- Loading entity ALU_unit
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2311,10 +1530,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity exception_unit
 # -- Compiling architecture exception_arch of exception_unit
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2322,10 +1541,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_register
 # -- Compiling architecture register_arch of execute_register
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2333,10 +1552,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage
 # -- Compiling architecture execute_arch of execute_stage
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2344,10 +1563,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity execute_stage_tb
 # -- Compiling architecture behavior of execute_stage_tb
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2355,20 +1574,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity EX_MEM_reg
 # -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity flags_register
 # -- Compiling architecture Behavioral of flags_register
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2376,10 +1595,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity flags_register_tb
 # -- Compiling architecture Behavioral of flags_register_tb
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:58 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:58 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2387,10 +1606,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity forward_unit
 # -- Compiling architecture forward_arch of forward_unit
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:59 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:59 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2398,20 +1617,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Adder
 # -- Compiling architecture behavior of Adder
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:59 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:59 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity my_DFF
 # -- Compiling architecture a_my_DFF of my_DFF
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:59 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:59 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2419,10 +1638,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage_TB
 # -- Compiling architecture behavior of Instruction_Stage_TB
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:59 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:59 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2430,10 +1649,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity IF_ID_reg
 # -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
-# End time: 03:25:55 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:35:59 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:55 on Dec 24,2024
+# Start time: 03:35:59 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2444,20 +1663,20 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Memory
 # -- Compiling architecture behavior of Instruction_Memory
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:35:59 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:35:59 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PC_Register
 # -- Compiling architecture behavior of PC_Register
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:36:00 on Dec 25,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:36:00 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2465,10 +1684,549 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Instruction_Stage
 # -- Compiling architecture behavior of Instruction_Stage
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:00
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1136) Unknown identifier "to_boolean".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): (vcom-1136) Unknown identifier "to_boolean".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in left operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1590) Bad expression in right operand of infix expression '&'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(138): VHDL Compiler exiting
+# End time: 03:36:00 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./doFile.do line 34
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2002 ./Fetch/TopLevelFetchStage.vhd"
+do doFile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:27 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture control_arch of control_unit
+# End time: 03:36:27 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:36:27 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decode_stage
+# -- Compiling architecture decode_arch of decode_stage
+# End time: 03:36:27 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:27 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ID_EX_REGISTER
+# -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
+# End time: 03:36:27 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:27 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity operand_mux
+# -- Compiling architecture operand_mux_arch of operand_mux
+# End time: 03:36:27 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:27 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture register_file_arch of register_file
+# End time: 03:36:27 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:27 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file_tb
+# -- Compiling architecture behavior of register_file_tb
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_unit
+# -- Compiling architecture ALU_arch of ALU_unit
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_unit_tb
+# -- Compiling architecture testbench of ALU_unit_tb
+# -- Loading entity ALU_unit
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity exception_unit
+# -- Compiling architecture exception_arch of exception_unit
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity execute_register
+# -- Compiling architecture register_arch of execute_register
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity execute_stage
+# -- Compiling architecture execute_arch of execute_stage
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity execute_stage_tb
+# -- Compiling architecture behavior of execute_stage_tb
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity EX_MEM_reg
+# -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flags_register
+# -- Compiling architecture Behavioral of flags_register
+# End time: 03:36:28 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:28 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity flags_register_tb
+# -- Compiling architecture Behavioral of flags_register_tb
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity forward_unit
+# -- Compiling architecture forward_arch of forward_unit
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity my_DFF
+# -- Compiling architecture a_my_DFF of my_DFF
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instruction_Stage_TB
+# -- Compiling architecture behavior of Instruction_Stage_TB
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity IF_ID_reg
+# -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instruction_Memory
+# -- Compiling architecture behavior of Instruction_Memory
+# End time: 03:36:29 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:29 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_Register
+# -- Compiling architecture behavior of PC_Register
+# End time: 03:36:30 on Dec 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:36:30 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instruction_Stage
+# -- Compiling architecture behavior of Instruction_Stage
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): (vcom-1136) Unknown identifier "to_boolean".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): (vcom-1136) Unknown identifier "to_boolean".
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1590) Bad expression in right operand of infix expression 'and'.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): Cannot resolve expression type of infix expression.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(81): ** Error: (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC' (operand type is not known).
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): Cannot resolve expression type of infix expression.
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(82): ** Error: (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC' (operand type is not known).
+# ** Error: ./Fetch/TopLevelFetchStage.vhd(138): VHDL Compiler exiting
+# End time: 03:36:30 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+# ** Error: C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./doFile.do line 34
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2002 ./Fetch/TopLevelFetchStage.vhd"
+do doFile.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:51 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture control_arch of control_unit
+# End time: 03:37:51 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:51 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/decode_stage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decode_stage
+# -- Compiling architecture decode_arch of decode_stage
+# End time: 03:37:51 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:51 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/ID_EX_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ID_EX_REGISTER
+# -- Compiling architecture ID_EX_REGISTER_ARCHITECTURE of ID_EX_REGISTER
+# End time: 03:37:51 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:51 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/operand_mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity operand_mux
+# -- Compiling architecture operand_mux_arch of operand_mux
+# End time: 03:37:51 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:51 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture register_file_arch of register_file
+# End time: 03:37:51 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:51 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Decode/register_file_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file_tb
+# -- Compiling architecture behavior of register_file_tb
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/ALU_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_unit
+# -- Compiling architecture ALU_arch of ALU_unit
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/ALU_unit_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU_unit_tb
+# -- Compiling architecture testbench of ALU_unit_tb
+# -- Loading entity ALU_unit
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/exception_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity exception_unit
+# -- Compiling architecture exception_arch of exception_unit
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/execute_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity execute_register
+# -- Compiling architecture register_arch of execute_register
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/execute_stage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity execute_stage
+# -- Compiling architecture execute_arch of execute_stage
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/execute_stage_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity execute_stage_tb
+# -- Compiling architecture behavior of execute_stage_tb
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/EX_MEM_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity EX_MEM_reg
+# -- Compiling architecture EX_MEM_reg_arch of EX_MEM_reg
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/flags_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity flags_register
+# -- Compiling architecture Behavioral of flags_register
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:52 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/flags_register_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity flags_register_tb
+# -- Compiling architecture Behavioral of flags_register_tb
+# End time: 03:37:52 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Execute/forward_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity forward_unit
+# -- Compiling architecture forward_arch of forward_unit
+# End time: 03:37:53 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/Adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture behavior of Adder
+# End time: 03:37:53 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/DFF.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity my_DFF
+# -- Compiling architecture a_my_DFF of my_DFF
+# End time: 03:37:53 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/Fetch_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instruction_Stage_TB
+# -- Compiling architecture behavior of Instruction_Stage_TB
+# End time: 03:37:53 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/IF_ID_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity IF_ID_reg
+# -- Compiling architecture IF_ID_reg_architecture of IF_ID_reg
+# End time: 03:37:53 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/instruction_memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instruction_Memory
+# -- Compiling architecture behavior of Instruction_Memory
+# End time: 03:37:53 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:53 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/PC_Register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_Register
+# -- Compiling architecture behavior of PC_Register
+# End time: 03:37:54 on Dec 25,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:54 on Dec 25,2024
+# vcom -reportprogress 300 -2002 ./Fetch/TopLevelFetchStage.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Instruction_Stage
+# -- Compiling architecture behavior of Instruction_Stage
+# End time: 03:37:54 on Dec 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:37:54 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./memoryWriteBack/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2476,10 +2234,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture Behavioral of memory
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:37:54 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:37:54 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2487,10 +2245,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity WB
 # -- Compiling architecture Behavioral of WB
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:37:54 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:37:54 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./memoryWriteBack/writeBack_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2498,10 +2256,10 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity WB_tb
 # -- Compiling architecture Behavioral of WB_tb
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:37:54 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:37:54 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./StackPointer/stack_pointer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -2509,91 +2267,15 @@ do doFile.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity stack_pointer
 # -- Compiling architecture Behavioral of stack_pointer
-# End time: 03:25:56 on Dec 24,2024, Elapsed time: 0:00:00
+# End time: 03:37:54 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:25:56 on Dec 24,2024
+# Start time: 03:37:55 on Dec 25,2024
 # vcom -reportprogress 300 -2002 ./pipleLine.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity pipeline_processor
 # -- Compiling architecture Behavioral of pipeline_processor
-# End time: 03:25:57 on Dec 24,2024, Elapsed time: 0:00:01
+# End time: 03:37:55 on Dec 25,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 03:25:58 on Dec 24,2024, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 5
-# vsim pipeline_processor 
-# Start time: 03:25:58 on Dec 24,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.pipeline_processor(behavioral)
-# Loading ieee.numeric_std(body)
-# Loading work.instruction_stage(behavior)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.instruction_memory(behavior)
-# Loading work.if_id_reg(if_id_reg_architecture)
-# Loading work.stack_pointer(behavioral)
-# Loading work.decode_stage(decode_arch)
-# Loading work.control_unit(control_arch)
-# Loading work.operand_mux(operand_mux_arch)
-# Loading work.register_file(register_file_arch)
-# Loading work.id_ex_register(id_ex_register_architecture)
-# Loading work.execute_stage(execute_arch)
-# Loading work.forward_unit(forward_arch)
-# Loading work.alu_unit(alu_arch)
-# Loading work.flags_register(behavioral)
-# Loading work.exception_unit(exception_arch)
-# Loading work.execute_register(register_arch)
-# Loading work.ex_mem_reg(ex_mem_reg_arch)
-# Loading work.memory(behavioral)
-# Loading work.wb(behavioral)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: M-A  Hostname: DESKTOP-VJKBF6R  ProcessID: 10612
-#           Attempting to use alternate WLF file "./wlftjvbw72".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjvbw72
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /pipeline_processor/decode_stage_inst/register_file_inst
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 500 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 1700 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 2900 ps  Iteration: 2  Instance: /pipeline_processor/execute_stage_inst/ALU
-run
-run
-run
-run
-run
-run
-run
-# End time: 03:26:57 on Dec 24,2024, Elapsed time: 0:00:59
-# Errors: 0, Warnings: 7
