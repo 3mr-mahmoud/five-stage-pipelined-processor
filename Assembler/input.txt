@@ -1,10 +1,6 @@
 # all numbers in hex format
 # we always start by reset signal
 # this is a commented line
-
-# all numbers in hex format
-# we always start by reset signal
-# this is a commented line
 # you should ignore empty lines
 
 .ORG 0  #this is the reset address
@@ -34,23 +30,63 @@
 
 # INT0
 .ORG 800
-    NOP
-    RTI
+ADD R0,R0,R0    #N=0,Z=1,C=1
+OUT R6
+RTI
 
 # INT2
 .ORG 0A00
-    NOP
-    RTI
+NOP
+OUT R1  
+RTI
 
-#OR   R1,R2,R1    #R1=0026  , C--> no change, N-->0, Z--> 0
 .ORG 200
-IN R1       #add 6 in R1
-IN R2       #add 20 in R2
-LDM R3, FFFC
-LDM R4, F322
-IADD R5,R3,2  #R5 = FFFE, N-->1, Z-->0
-ADD  R4,R1,R4    #R4= F328 , C-->0, N-->1, Z-->0
-SUB  R6,R5,R4    #R6= 0CD6 , C-->0, N-->0,Z-->0  // R6 = R5 - R4
-AND  R6,R7,R6    #R6= 00000000 , C-->no change, N-->0, Z-->1
-MOV  R3, R1    #R3=0006, no change for flags
-ADD  R2,R5,R2    #R2= 001E, C-->1, N-->1, Z-->0
+
+IN R1     #R1=30
+IN R2     #R2=50
+IN R3     #R3=100
+IN R4     #R4=300
+IN R6     #R6=FFFF 
+IN R7     #R7=FFFF   
+PUSH R4   #sp=FFE, M[FFF]=300
+JMP R1 
+INC R7, R7	  # this statement shouldn't be executed,
+ 
+#check flag fowarding
+ 
+.ORG 30
+AND R5,R1,R5   #R5=0 , Z = 1
+INT 0
+JZ  R2      #Jump taken, Z = 0
+INC R7, R7      #this statement shouldn't be executed
+
+#check on flag updated on jump
+.ORG 50
+JZ R3      #Jump Not taken
+
+#check destination forwarding
+NOT R5, R5     #R5=FFFF, Z = 0, C--> not change, N=1
+INC R5, R5     #R5=0, Z=1, C=1, N=0
+IN  R6     #R6=200, flag no change
+JZ  R6     #jump taken, Z = 0
+INC R1, R1
+
+#check on load use
+.ORG 200
+POP R6     #R6=300, SP=FFF
+CALL R6    #SP=FFE, M[FFE] = PC + 1
+INT 2
+INC R6, R6	  #R6=301, this statement shouldn't be executed till call returns, C--> 0, N-->0,Z-->0
+NOP
+NOP
+
+.ORG 300
+Add R6,R3,R6 #R6=400
+Add R1,R1,R2 #R1=80, C->0,N=0, Z=0
+RET
+
+INC R7, R7           #this shouldnot be executed
+
+.ORG 500
+NOP
+NOP

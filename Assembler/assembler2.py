@@ -64,6 +64,8 @@ def assemble_instruction(line):
     instruction = tokens[0]
     operands = tokens[1:]
 
+    print(f"Instruction: {instruction}, Operands: {operands}")
+
     if instruction not in instruction_set:
         raise ValueError(f"Unknown instruction: {instruction}")
 
