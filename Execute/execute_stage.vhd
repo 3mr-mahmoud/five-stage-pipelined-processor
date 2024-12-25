@@ -12,7 +12,7 @@ ENTITY execute_stage IS
         alu_function_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
         branch_code_in : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
         rsrc1_in, rsrc2_in, rdst_in : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-        sp_memory_value_in, rsrc1_data_in, rsrc2_data_in, in_value_in, pc_in: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+        sp_memory_value_in, rsrc1_data_in, rsrc2_data_in, in_value_in, pc_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
         -- Other inputs
         immed_value : IN STD_LOGIC_VECTOR(15 DOWNTO 0); -- 16-bit after current instruction
         EX_MEM_WBReg, MEM_WB_WBReg : IN STD_LOGIC; -- for forwarding
@@ -56,7 +56,7 @@ ARCHITECTURE execute_arch OF execute_stage IS
             sp_memory_value_in, ex_output_in, in_value_in, rsrc2_data_in, pc_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
             -- output signals
             stack_out, mem_read_out, mem_write_out, sp_op_out, wb_reg_out,
-            wb_port_out, wb_pc_out, in_signal_out , push_signal_out : OUT STD_LOGIC;
+            wb_port_out, wb_pc_out, in_signal_out, push_signal_out : OUT STD_LOGIC;
             rdst_out : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
             sp_memory_value_out, ex_output_out, in_value_out, rsrc2_data_out, pc_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
         );
@@ -103,6 +103,7 @@ ARCHITECTURE execute_arch OF execute_stage IS
             ID_EX_Rsrc2 : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
             EX_MEM_WBReg : IN STD_LOGIC;
             MEM_WB_WBReg : IN STD_LOGIC;
+            EX_MEM_IN_signal : IN STD_LOGIC;
             ForwardA : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
             ForwardB : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
         );
@@ -113,6 +114,8 @@ ARCHITECTURE execute_arch OF execute_stage IS
     SIGNAL A, B, alu_out, ex_output, EPC_val : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL Rsrc2_out : STD_LOGIC_VECTOR(15 DOWNTO 0);
     SIGNAL flags_enable : STD_LOGIC := '0';
+    SIGNAL in_signal_temp : STD_LOGIC := '0';
+    SIGNAL in_value_temp : STD_LOGIC_VECTOR(15 DOWNTO 0);
 BEGIN
     forwarding : forward_unit PORT MAP(
         EX_MEM_Rdst => EX_MEM_Rdst,
@@ -121,6 +124,7 @@ BEGIN
         ID_EX_Rsrc2 => rsrc2_in,
         EX_MEM_WBReg => EX_MEM_WBReg,
         MEM_WB_WBReg => MEM_WB_WBReg,
+        EX_MEM_IN_signal => in_signal_temp,
         ForwardA => ForwardA,
         ForwardB => ForwardB
     );
@@ -192,15 +196,17 @@ BEGIN
         wb_reg_out => wb_reg_out,
         wb_port_out => wb_port_out,
         wb_pc_out => wb_pc_out,
-        in_signal_out => in_signal_out,
+        in_signal_out => in_signal_temp,
         push_signal_out => push_signal_out,
         rdst_out => rdst_out,
         sp_memory_value_out => sp_memory_value_out,
         ex_output_out => ex_output_out,
-        in_value_out => in_value_out,
+        in_value_out => in_value_temp,
         rsrc2_data_out => rsrc2_data_out,
         pc_out => pc_out
     );
+    in_signal_out <= in_signal_temp;
+    in_value_out <= in_value_temp;
 
     forwarded_rsrc2 <= Rsrc2_out;
 
@@ -208,12 +214,12 @@ BEGIN
         A <= rsrc1_data_in WHEN "00",
         EX_MEM_ex_output WHEN "01",
         MEM_WB_output WHEN "10",
-        rsrc1_data_in WHEN OTHERS;
+        in_value_temp WHEN OTHERS;
     WITH ForwardB SELECT
         Rsrc2_out <= rsrc2_data_in WHEN "00",
         EX_MEM_ex_output WHEN "01",
         MEM_WB_output WHEN "10",
-        rsrc2_data_in WHEN OTHERS;
+        in_value_temp WHEN OTHERS;
     WITH alu_src_in SELECT
         B <= Rsrc2_out WHEN '0',
         immed_value WHEN OTHERS;
@@ -229,12 +235,12 @@ BEGIN
         B WHEN OTHERS;
     carry <= alu_flags(2) OR carry_in;
     exception_sel <= exception_sel_temp;
-    flags_enable <= alu_enable_in OR carry_in or branch_code_in(1) or branch_code_in(0);
-    process(clk)
-    begin
-        if falling_edge(clk) then
+    flags_enable <= alu_enable_in OR carry_in OR branch_code_in(1) OR branch_code_in(0);
+    PROCESS (clk)
+    BEGIN
+        IF falling_edge(clk) THEN
             branch_decision <= branch_decision_temp;
-        end if;
-    end process;
+        END IF;
+    END PROCESS;
 
 END ARCHITECTURE execute_arch;

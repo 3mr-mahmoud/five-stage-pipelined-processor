@@ -36,7 +36,6 @@ BEGIN
             CASE ALU_func IS
                 WHEN "000" => -- NOT operation
                     result := NOT A;
-                    flags(2) <= '0';
                 WHEN "001" => -- Increment
                     result := STD_LOGIC_VECTOR(unsigned(A) + 1);
                     IF unsigned(A) = 2**WIDTH - 1 THEN
@@ -46,7 +45,6 @@ BEGIN
                     END IF;
                 WHEN "010" => -- AND operation
                     result := A AND B;
-                    flags(2) <= '0';
                 WHEN "011" => -- Addition
                     result := STD_LOGIC_VECTOR(unsigned(A) + unsigned(B));
                     IF unsigned(A) + unsigned(B) > 2 ** WIDTH - 1 THEN
@@ -56,14 +54,13 @@ BEGIN
                     END IF;
                 WHEN "100" => -- Subtraction
                     result := STD_LOGIC_VECTOR(unsigned(A) - unsigned(B));
-                    IF unsigned(A) < unsigned(B) THEN
+                    IF unsigned(A) - unsigned(B) > 2 ** WIDTH - 1 THEN
                         flags(2) <= '1';
                     ELSE
                         flags(2) <= '0';
                     END IF;
                 WHEN OTHERS => -- Default case
                     result := (OTHERS => '0');
-                    flags(2) <= '0';
             END CASE;
             flags(1) <= result(WIDTH - 1);
             IF unsigned(result) = 0 THEN

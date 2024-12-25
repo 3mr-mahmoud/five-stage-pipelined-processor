@@ -1,41 +1,45 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.numeric_std.ALL;
 
-entity forward_unit is
-    port (
-        EX_MEM_Rdst  : in  std_logic_vector(2 downto 0);
-        MEM_WB_Rdst  : in  std_logic_vector(2 downto 0);
-        ID_EX_Rsrc1   : in  std_logic_vector(2 downto 0);
-        ID_EX_Rsrc2   : in  std_logic_vector(2 downto 0);
-        EX_MEM_WBReg : in  std_logic;
-        MEM_WB_WBReg : in  std_logic;
-        ForwardA      : out std_logic_vector(1 downto 0);
-        ForwardB      : out std_logic_vector(1 downto 0)
+ENTITY forward_unit IS
+    PORT (
+        EX_MEM_Rdst : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+        MEM_WB_Rdst : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+        ID_EX_Rsrc1 : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+        ID_EX_Rsrc2 : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+        EX_MEM_WBReg : IN STD_LOGIC;
+        MEM_WB_WBReg : IN STD_LOGIC;
+        EX_MEM_IN_signal : IN STD_LOGIC;
+        ForwardA : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+        ForwardB : OUT STD_LOGIC_VECTOR(1 DOWNTO 0)
     );
-end forward_unit;
+END forward_unit;
 
-architecture forward_arch of forward_unit is
-begin
-    process(EX_MEM_Rdst, MEM_WB_Rdst, ID_EX_Rsrc1, ID_EX_Rsrc2, EX_MEM_WBReg, MEM_WB_WBReg)
-    begin
- 
-        if(EX_MEM_WBReg = '1' and EX_MEM_Rdst = ID_EX_Rsrc1) then
+ARCHITECTURE forward_arch OF forward_unit IS
+BEGIN
+    PROCESS (EX_MEM_Rdst, MEM_WB_Rdst, ID_EX_Rsrc1, ID_EX_Rsrc2, EX_MEM_WBReg, MEM_WB_WBReg)
+    BEGIN
+
+        IF (EX_MEM_IN_signal = '1' AND EX_MEM_Rdst = ID_EX_Rsrc1) THEN
+            ForwardA <= "11";
+        ELSIF (EX_MEM_WBReg = '1' AND EX_MEM_Rdst = ID_EX_Rsrc1) THEN
             ForwardA <= "01";
-        elsif (MEM_WB_WBReg = '1' and MEM_WB_Rdst = ID_EX_Rsrc1) then
+        ELSIF (MEM_WB_WBReg = '1' AND MEM_WB_Rdst = ID_EX_Rsrc1) THEN
             ForwardA <= "10";
-        else 
+        ELSE
             ForwardA <= "00";
-        end if;
+        END IF;
 
-
-        if(EX_MEM_WBReg = '1' and EX_MEM_Rdst = ID_EX_Rsrc2) then
+        IF (EX_MEM_IN_signal = '1' AND EX_MEM_Rdst = ID_EX_Rsrc2) THEN
+            ForwardB <= "11";
+        ELSIF (EX_MEM_WBReg = '1' AND EX_MEM_Rdst = ID_EX_Rsrc2) THEN
             ForwardB <= "01";
-        elsif (MEM_WB_WBReg = '1' and MEM_WB_Rdst = ID_EX_Rsrc2) then
+        ELSIF (MEM_WB_WBReg = '1' AND MEM_WB_Rdst = ID_EX_Rsrc2) THEN
             ForwardB <= "10";
-        else 
+        ELSE
             ForwardB <= "00";
-        end if;
+        END IF;
 
-    end process;
-end forward_arch;
+    END PROCESS;
+END forward_arch;
