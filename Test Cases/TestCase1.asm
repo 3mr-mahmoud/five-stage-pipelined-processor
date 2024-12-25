@@ -6,16 +6,16 @@
 .ORG 0  #this is the reset address
 200
 
-.ORG 2  #this is the address of the empty stack exception handler
+.ORG 1  #this is the address of the empty stack exception handler
 400
 
-.ORG 3  #this is the address of the invalid memory address exception handler
+.ORG 2  #this is the address of the invalid memory address exception handler
 600
 
 .ORG 6  #this is the address of INT0
 800
 
-.ORG 7  #this is the address of INT2
+.ORG 8  #this is the address of INT2
 0A00
 
 # Empty Stack Exception Handler
