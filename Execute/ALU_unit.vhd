@@ -22,6 +22,7 @@ BEGIN
     -- Process for ALU operations
     PROCESS (reset, enable, branch_code, ALU_func, A, B)
         VARIABLE result : STD_LOGIC_VECTOR(WIDTH - 1 DOWNTO 0) := (OTHERS => '0');
+        VARIABLE Sum : STD_LOGIC_VECTOR(WIDTH DOWNTO 0) := (OTHERS => '0');
     BEGIN
         IF reset = '1' THEN
             result := (OTHERS => '0');
@@ -46,15 +47,12 @@ BEGIN
                 WHEN "010" => -- AND operation
                     result := A AND B;
                 WHEN "011" => -- Addition
-                    result := STD_LOGIC_VECTOR(unsigned(A) + unsigned(B));
-                    IF unsigned(A) + unsigned(B) > 2 ** WIDTH - 1 THEN
-                        flags(2) <= '1';
-                    ELSE
-                        flags(2) <= '0';
-                    END IF;
+                    Sum := STD_LOGIC_VECTOR(('0'&unsigned(A)) + ('0'&unsigned(B)));
+                    result := Sum(WIDTH - 1 DOWNTO 0);
+                    flags(2) <= Sum(WIDTH);
                 WHEN "100" => -- Subtraction
                     result := STD_LOGIC_VECTOR(unsigned(A) - unsigned(B));
-                    IF unsigned(A) - unsigned(B) > 2 ** WIDTH - 1 THEN
+                    IF unsigned(A) < unsigned(B) THEN
                         flags(2) <= '1';
                     ELSE
                         flags(2) <= '0';
